@@ -14,19 +14,19 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   Choices:
   - ChoiceName: 2A 1
-    ResultText: 
-    HP: 0
+    ResultText: 1
+    HP: -100
     Stress: 0
     Cost: 0
     NewState: {fileID: 0}
   - ChoiceName: 2A 2
-    ResultText: 
+    ResultText: 2
     HP: 0
     Stress: 0
     Cost: 0
     NewState: {fileID: 0}
   - ChoiceName: 2A 3
-    ResultText: 
+    ResultText: 3
     HP: 0
     Stress: 0
     Cost: 0

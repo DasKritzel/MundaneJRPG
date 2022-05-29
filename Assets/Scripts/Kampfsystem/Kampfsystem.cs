@@ -5,9 +5,24 @@ using UnityEngine.UI;
 using TMPro;
 using System;
 
+enum BattleStates
+{
+    PLAYER,
+    PLAYERRESOLVE,
+    ENEMY,
+    ENEMYRESOLVE,
+    END
+}
 public class Player
 {
-    int HP = 20;
+    public int HP = 20;
+}
+
+public class Button
+{
+    public GameObject ButtonObject;
+    public TextMeshProUGUI Text;
+    public UnityEngine.UI.Button ButtonField;
 }
 
 public class Kampfsystem : MonoBehaviour
@@ -15,23 +30,25 @@ public class Kampfsystem : MonoBehaviour
     public static Kampfsystem Instance;
 
     [SerializeField]
-    private GameObject Button1;
-    [SerializeField]
-    private GameObject Button2;
-    [SerializeField]
-    private GameObject Button3;
+    private GameObject[] ButtonGameObjects = new GameObject[3];
+
+    private Button[] Buttons = new Button[3];
 
     [SerializeField]
     private TextMeshProUGUI Dialogbox;
 
-    private TextMeshProUGUI B1Text, B2Text, B3Text;
-    private Button B1, B2, B3;
-
     [SerializeField]
-    private Player Player;
+    private Player Player = new Player();
     private AEnemyBaseClass Enemy;
 
     private ScriptableKampfstate currentState;
+
+    [SerializeField]
+    private TextMeshProUGUI UI;
+
+    private bool isActiveBattle;
+
+    private BattleStates CurrentBattleState;
 
     private void Awake()
     {
@@ -40,64 +57,130 @@ public class Kampfsystem : MonoBehaviour
 
     private void Start()
     {
-        B1Text = Button1.GetComponentInChildren<TextMeshProUGUI>();
-        B2Text = Button2.GetComponentInChildren<TextMeshProUGUI>();
-        B3Text = Button3.GetComponentInChildren<TextMeshProUGUI>();
-        B1 = Button1.GetComponent<Button>();
-        B2 = Button2.GetComponent<Button>();
-        B3 = Button3.GetComponent<Button>();
+        for (int i = 0; i < ButtonGameObjects.Length; i++)
+        {
+            Buttons[i] = new Button();
+            Buttons[i].ButtonObject = ButtonGameObjects[i];
+            Buttons[i].ButtonField = ButtonGameObjects[i].GetComponent<UnityEngine.UI.Button>();
+            Buttons[i].Text = ButtonGameObjects[i].GetComponentInChildren<TextMeshProUGUI>();
+        }
+    }
+
+    private void Update()
+    {
+        if (isActiveBattle)
+            Turn();
     }
 
     public void InitBattle(AEnemyBaseClass newenemy)
     {
         Enemy = newenemy;
         SetStep(Enemy.GetInitState);
+        isActiveBattle = true;
     }
-
     public void SetStep(ScriptableKampfstate newState)
     {
         currentState = newState;
         SetButtonText(currentState);
     }
 
+    private void UpdateUI()
+    {
+        UI.text = "Player HP: " + Player.HP + " " + "Enemy HP: " + Enemy.GetHP;
+    }
+
+    public void Turn()
+    {
+
+        UpdateUI();
+
+        switch (CurrentBattleState)
+        {
+            case BattleStates.PLAYER:
+                ResolvePlayer();
+                break;
+            case BattleStates.PLAYERRESOLVE:
+                if (Input.GetKeyDown(KeyCode.Mouse0))
+                {
+                    CurrentBattleState = BattleStates.ENEMY;
+                }
+                break;
+            case BattleStates.ENEMY:
+                ResolveEnemy();
+                break;
+            case BattleStates.ENEMYRESOLVE:
+                if (Input.GetKeyDown(KeyCode.Mouse0))
+                    CurrentBattleState = BattleStates.PLAYER;
+                break;
+            case BattleStates.END:
+                EndBattle();
+                break;
+        }
+    }
     private void SetButtonText(ScriptableKampfstate State)
     {
-        B1Text.text = State.GetChoices[0].ChoiceName;
-        B2Text.text = State.GetChoices[1].ChoiceName;
-        B3Text.text = State.GetChoices[2].ChoiceName;
+        for (int i = 0; i < ButtonGameObjects.Length; i++)
+        {
+            Buttons[i].Text.text = State.GetChoices[i].ChoiceName;
+        }
     }
 
     public void OnButton1()
     {
-        ResolveState(currentState.GetChoices[0]);
+        ResolvePlayerChoice(currentState.GetChoices[0]);
     }
 
     public void OnButton2()
     {
-        ResolveState(currentState.GetChoices[1]);
+        ResolvePlayerChoice(currentState.GetChoices[1]);
     }
     public void OnButton3()
     {
-        ResolveState(currentState.GetChoices[2]);
+        ResolvePlayerChoice(currentState.GetChoices[2]);
     }
-    private void ResolveState(KampfstateListItem choice)
+
+    public void ResolvePlayer()
+    {
+        Dialogbox.text = "Bitte wähle eine Aktion";
+        if (!Buttons[0].ButtonObject.activeInHierarchy)
+            for (int i = 0; i < ButtonGameObjects.Length; i++)
+            {
+                Buttons[i].ButtonObject.SetActive(true);
+            }
+    }
+    public void ResolveEnemy()
+    {
+        Dialogbox.text = Enemy.AttackDisplay;
+        Player.HP += Enemy.Attack();
+        CurrentBattleState = BattleStates.ENEMYRESOLVE;
+    }
+    private void ResolvePlayerChoice(KampfstateListItem choice)
     {
         Enemy.SetDamage(choice.HP, choice.Stress);
-        Dialogbox.text = choice.ResultText;
         if (Enemy.EndCheck())
         {
-            EndBattle();
+            CurrentBattleState = BattleStates.END;
             return;
         }
 
+        Dialogbox.text = choice.ResultText;
         SetStep(choice.NewState);
+        if (Buttons[0].ButtonObject.activeInHierarchy)
+            for (int i = 0; i < ButtonGameObjects.Length; i++)
+            {
+                Buttons[i].ButtonObject.SetActive(false);
+            }
+        CurrentBattleState = BattleStates.PLAYERRESOLVE;
     }
     private void EndBattle()
     {
         Dialogbox.text = "ENDE GELÄNDE";
-        Button1.gameObject.SetActive(false);
-        Button2.gameObject.SetActive(false);
-        Button3.gameObject.SetActive(false);
+        for (int i = 0; i < ButtonGameObjects.Length; i++)
+        {
+            Buttons[i].ButtonObject.SetActive(false);
+        }
+
+        isActiveBattle = false;
 
     }
 }

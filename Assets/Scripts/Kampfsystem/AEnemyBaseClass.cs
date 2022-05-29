@@ -8,6 +8,8 @@ public abstract class AEnemyBaseClass : MonoBehaviour
     public ScriptableKampfstate GetInitState => InitState;
     public int GetHP => HP;
 
+    public string AttackDisplay => AttackText;
+
     [SerializeField]
     private ScriptableKampfstate InitState;
 

@@ -12,4 +12,22 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: a8a83d138610e9e43b0773c467b3da6f, type: 3}
   m_Name: 2A
   m_EditorClassIdentifier: 
-  Choices: []
+  Choices:
+  - ChoiceName: 2A 1
+    ResultText: 
+    HP: 0
+    Stress: 0
+    Cost: 0
+    NewState: {fileID: 0}
+  - ChoiceName: 2A 2
+    ResultText: 
+    HP: 0
+    Stress: 0
+    Cost: 0
+    NewState: {fileID: 0}
+  - ChoiceName: 2A 3
+    ResultText: 
+    HP: 0
+    Stress: 0
+    Cost: 0
+    NewState: {fileID: 0}

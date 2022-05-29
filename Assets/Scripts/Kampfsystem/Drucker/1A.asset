@@ -17,14 +17,17 @@ MonoBehaviour:
     ResultText: Tritt den Drucker
     HP: -10
     Stress: 30
+    Cost: 0
     NewState: {fileID: 11400000, guid: bf7375689eced8a4396f566e3f7b36dd, type: 2}
-  - ChoiceName: 
+  - ChoiceName: Titten
     ResultText: 
     HP: 0
     Stress: 0
+    Cost: 0
     NewState: {fileID: 0}
-  - ChoiceName: 
+  - ChoiceName: Fitten
     ResultText: 
     HP: 0
     Stress: 0
+    Cost: 0
     NewState: {fileID: 0}

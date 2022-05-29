@@ -9,5 +9,6 @@ public class KampfstateListItem
     public string ResultText;
     public int HP;
     public int Stress;
+    public int Cost;
     public ScriptableKampfstate NewState;
 }

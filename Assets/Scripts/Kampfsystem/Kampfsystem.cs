@@ -152,6 +152,13 @@ public class Kampfsystem : MonoBehaviour
     {
         Dialogbox.text = Enemy.AttackDisplay;
         Player.HP += Enemy.Attack();
+
+        if (Player.HP <= 0)
+        {
+            CurrentBattleState = BattleStates.END;
+            return;
+        }
+
         CurrentBattleState = BattleStates.ENEMYRESOLVE;
     }
     private void ResolvePlayerChoice(KampfstateListItem choice)

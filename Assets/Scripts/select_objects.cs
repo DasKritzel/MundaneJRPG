@@ -9,6 +9,7 @@ public class select_objects : MonoBehaviour
     RaycastHit hit;
 
     public LayerMask Selectable;
+    public bool IsInMenu = false;
     // Start is called before the first frame update
     void Start()
     {
@@ -18,7 +19,7 @@ public class select_objects : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        if (Input.GetMouseButtonDown(0))
+        if (Input.GetMouseButtonDown(0)&&!IsInMenu)
         {
             ray = Levelcam.ScreenPointToRay(Input.mousePosition);
             if (Physics.Raycast(ray, out hit, 100, Selectable))

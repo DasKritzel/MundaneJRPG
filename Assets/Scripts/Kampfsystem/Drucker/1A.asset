@@ -19,13 +19,13 @@ MonoBehaviour:
     Stress: 30
     Cost: 0
     NewState: {fileID: 11400000, guid: bf7375689eced8a4396f566e3f7b36dd, type: 2}
-  - ChoiceName: Titten
+  - ChoiceName: Ausschalten
     ResultText: 
     HP: 0
     Stress: 0
     Cost: 0
     NewState: {fileID: 0}
-  - ChoiceName: Fitten
+  - ChoiceName: BLABLA
     ResultText: 
     HP: 0
     Stress: 0

@@ -670,7 +670,7 @@ MonoBehaviour:
   InitState: {fileID: 11400000, guid: 49e660d38a3fc964bb92f48209ef6d34, type: 2}
   HP: 20
   Stress: 0
-  ATK: -10
+  ATK: -5
   AttackText: Der Drucker druckt.
   HPEndCondition: 0
   StressEndCondition: 100

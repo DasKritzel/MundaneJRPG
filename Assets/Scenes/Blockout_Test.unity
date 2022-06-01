@@ -1409,6 +1409,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 378652333}
+  - component: {fileID: 378652334}
   m_Layer: 0
   m_Name: Room_Scene
   m_TagString: Untagged
@@ -1449,6 +1450,22 @@ Transform:
   m_Father: {fileID: 0}
   m_RootOrder: 5
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &378652334
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 378652332}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 4cebb34b21d6302489bcfbcf6f0fb686, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  Levelcam: {fileID: 834434730}
+  Selectable:
+    serializedVersion: 2
+    m_Bits: 64
 --- !u!1 &387608139
 GameObject:
   m_ObjectHideFlags: 0
@@ -6299,6 +6316,11 @@ PrefabInstance:
       propertyPath: m_Name
       value: Plant
       objectReference: {fileID: 0}
+    - target: {fileID: 3844922715131283072, guid: b708ca09105673e46b465b5bee0f9aee,
+        type: 3}
+      propertyPath: m_Layer
+      value: 6
+      objectReference: {fileID: 0}
     - target: {fileID: 3844922715131283076, guid: b708ca09105673e46b465b5bee0f9aee,
         type: 3}
       propertyPath: m_RootOrder
@@ -6422,6 +6444,11 @@ PrefabInstance:
         type: 3}
       propertyPath: m_Name
       value: Painting
+      objectReference: {fileID: 0}
+    - target: {fileID: 4815201013412080702, guid: 6d224a243ffaa474ab872b5bd40c4421,
+        type: 3}
+      propertyPath: m_Layer
+      value: 6
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 6d224a243ffaa474ab872b5bd40c4421, type: 3}
@@ -6574,6 +6601,16 @@ PrefabInstance:
         type: 3}
       propertyPath: m_Name
       value: Printer
+      objectReference: {fileID: 0}
+    - target: {fileID: 7238793264154284761, guid: fc59c07dee4cb4b4197c81f5c4710176,
+        type: 3}
+      propertyPath: m_Layer
+      value: 6
+      objectReference: {fileID: 0}
+    - target: {fileID: 7238793264154284761, guid: fc59c07dee4cb4b4197c81f5c4710176,
+        type: 3}
+      propertyPath: m_TagString
+      value: Enemy
       objectReference: {fileID: 0}
     - target: {fileID: 7238793264154284773, guid: fc59c07dee4cb4b4197c81f5c4710176,
         type: 3}

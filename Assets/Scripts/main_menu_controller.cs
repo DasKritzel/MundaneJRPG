@@ -20,7 +20,9 @@ public class main_menu_controller : MonoBehaviour
     /// </summary>
     public void Exit_game()
     {
+#if UNITY_EDITOR
         Debug.Log("Exit Game");
+#endif
         Application.Quit();
     }
 }

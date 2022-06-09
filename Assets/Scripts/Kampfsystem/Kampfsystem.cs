@@ -55,17 +55,6 @@ public class Kampfsystem : MonoBehaviour
         Instance = this;
     }
 
-    private void Start()
-    {
-        for (int i = 0; i < ButtonGameObjects.Length; i++)
-        {
-            Buttons[i] = new Button();
-            Buttons[i].ButtonObject = ButtonGameObjects[i];
-            Buttons[i].ButtonField = ButtonGameObjects[i].GetComponent<UnityEngine.UI.Button>();
-            Buttons[i].Text = ButtonGameObjects[i].GetComponentInChildren<TextMeshProUGUI>();
-        }
-    }
-
     private void Update()
     {
         if (isActiveBattle)
@@ -74,6 +63,14 @@ public class Kampfsystem : MonoBehaviour
 
     public void InitBattle(AEnemyBaseClass newenemy)
     {
+        for (int i = 0; i < ButtonGameObjects.Length; i++)
+        {
+            Buttons[i] = new Button();
+            Buttons[i].ButtonObject = ButtonGameObjects[i];
+            Buttons[i].ButtonField = ButtonGameObjects[i].GetComponent<UnityEngine.UI.Button>();
+            Buttons[i].Text = ButtonGameObjects[i].GetComponentInChildren<TextMeshProUGUI>();
+        }
+
         Enemy = newenemy;
         SetStep(Enemy.GetInitState);
         isActiveBattle = true;

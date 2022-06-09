@@ -1,0 +1,36 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: a8a83d138610e9e43b0773c467b3da6f, type: 3}
+  m_Name: AC
+  m_EditorClassIdentifier: 
+  Choices:
+  - ChoiceName: "Stromabel \xFCberpr\xFCfen"
+    ResultText: "Du uberpr\xFCfst das Stromkabel.... Es ist offensichtlich richtig
+      drin..."
+    HP: 0
+    Stress: 0
+    Cost: 0
+    NewState: {fileID: 11400000}
+  - ChoiceName: "LAN-Kabel \xFCberpr\xFCfen"
+    ResultText: "Du uberpr\xFCfst das LAN-Kabel... Es war ein bisschen locker aber
+      sitzt jetzt wieder richtig.... Nichts \xE4ndert sich"
+    HP: 0
+    Stress: 0
+    Cost: 0
+    NewState: {fileID: 11400000}
+  - ChoiceName: Sich aufraffen
+    ResultText: "Du stehst vom Boden auf und b\xE4umst dich erneut vor dem Drucker
+      auf..."
+    HP: 0
+    Stress: 0
+    Cost: 0
+    NewState: {fileID: 11400000, guid: 49e660d38a3fc964bb92f48209ef6d34, type: 2}

@@ -10,24 +10,24 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: a8a83d138610e9e43b0773c467b3da6f, type: 3}
-  m_Name: 2A
+  m_Name: ABCAA
   m_EditorClassIdentifier: 
   Choices:
-  - ChoiceName: Treten
-    ResultText: Du trittst den Drucker noch einmal
-    HP: -5
-    Stress: 5
+  - ChoiceName: Papier aufheben
+    ResultText: ENDLICH
+    HP: -100
+    Stress: -100
     Cost: 0
-    NewState: {fileID: 11400000, guid: 37e2208b350ea724ab437343ff1fa917, type: 2}
-  - ChoiceName: 2A 2
-    ResultText: 2
-    HP: 0
-    Stress: 0
+    NewState: {fileID: 11400000}
+  - ChoiceName: Papier aufheben
+    ResultText: ENDLICH
+    HP: -100
+    Stress: -100
     Cost: 0
-    NewState: {fileID: 0}
-  - ChoiceName: 2A 3
-    ResultText: 3
-    HP: 0
-    Stress: 0
+    NewState: {fileID: 11400000}
+  - ChoiceName: Papier aufheben
+    ResultText: ENDLICH
+    HP: -100
+    Stress: -100
     Cost: 0
-    NewState: {fileID: 0}
+    NewState: {fileID: 11400000}

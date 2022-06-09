@@ -11,7 +11,7 @@ GameObject:
   - component: {fileID: 9073657942348126168}
   - component: {fileID: 9093449472504255652}
   - component: {fileID: 5479142831753216171}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: drawer_low
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -92,7 +92,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 3500645732684317446}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: SM_Desk_low
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -107,7 +107,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 4314195640164981180}
   m_LocalRotation: {x: 0, y: -1, z: 0, w: 0}
-  m_LocalPosition: {x: 0.023, y: -0.548, z: 0.013}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
   m_LocalScale: {x: 0.7142857, y: 1.3698629, z: 1.6666665}
   m_ConstrainProportionsScale: 0
   m_Children:
@@ -127,7 +127,7 @@ GameObject:
   - component: {fileID: 4925029132370263567}
   - component: {fileID: 1156076605300743983}
   - component: {fileID: 969773264896384040}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: desk_low
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -209,7 +209,7 @@ GameObject:
   m_Component:
   - component: {fileID: 6257281763640108094}
   - component: {fileID: 6257281763640108091}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: Desk
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -243,5 +243,5 @@ BoxCollider:
   m_IsTrigger: 0
   m_Enabled: 1
   serializedVersion: 2
-  m_Size: {x: 0.99999994, y: 0.99999994, z: 0.99999994}
+  m_Size: {x: 0.95, y: 2.33, z: 1.03}
   m_Center: {x: 0, y: 0, z: 0}

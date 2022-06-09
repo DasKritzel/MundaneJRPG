@@ -20,7 +20,14 @@ public class load_main_menu : MonoBehaviour
     public void loadmenu()
     {
         Debug.Log("Ich lade jetzt die Scene " + SceneName);
-        SceneManager.LoadScene(SceneName);
+        SceneManager.LoadScene(SceneName, LoadSceneMode.Single);
+    }
+
+    public void loadbattle()
+    {
+        Debug.Log("Ich lade jetzt die Scene " + SceneName);
+        SceneManager.LoadScene(SceneName, LoadSceneMode.Additive);
+        menu_controller.RoomScene.SetActive(false);
     }
 
 }

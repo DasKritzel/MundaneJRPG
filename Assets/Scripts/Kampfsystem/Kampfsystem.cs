@@ -4,6 +4,7 @@ using UnityEngine;
 using UnityEngine.UI;
 using TMPro;
 using System;
+using UnityEngine.SceneManagement;
 
 enum BattleStates
 {
@@ -59,6 +60,16 @@ public class Kampfsystem : MonoBehaviour
     {
         if (isActiveBattle)
             Turn();
+        else
+        {
+
+            if (Input.GetKey(KeyCode.Mouse0))
+            {
+                menu_controller.RoomScene.SetActive(true);
+                SceneManager.UnloadSceneAsync("Kampf");
+            }
+
+        }
     }
 
     public void InitBattle(AEnemyBaseClass newenemy)
@@ -185,6 +196,5 @@ public class Kampfsystem : MonoBehaviour
         }
 
         isActiveBattle = false;
-
     }
 }

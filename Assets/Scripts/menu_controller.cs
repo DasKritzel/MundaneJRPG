@@ -4,11 +4,15 @@ using UnityEngine;
 
 public class menu_controller : MonoBehaviour
 {
+    public GameObject RoomObjects;
     public GameObject Pause_menu;
     public select_objects Clickables;
+
+    public static GameObject RoomScene;
     // Start is called before the first frame update
     void Start()
     {
+        RoomScene = RoomObjects;
         Close_Ingame_Menu();
     }
 

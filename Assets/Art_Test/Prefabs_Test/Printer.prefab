@@ -126,6 +126,7 @@ GameObject:
   m_Component:
   - component: {fileID: 7238793264154284773}
   - component: {fileID: 7238793264154284760}
+  - component: {fileID: 3493561530054243285}
   m_Layer: 0
   m_Name: Printer
   m_TagString: Untagged
@@ -162,6 +163,19 @@ BoxCollider:
   serializedVersion: 2
   m_Size: {x: 1.1, y: 1.51, z: 1}
   m_Center: {x: 0, y: 0.76, z: 0}
+--- !u!114 &3493561530054243285
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 7238793264154284761}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 227282a1d12c70e4a9e2fefe4a028c25, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  SceneName: Kampf
 --- !u!1 &7827938025842174107
 GameObject:
   m_ObjectHideFlags: 0

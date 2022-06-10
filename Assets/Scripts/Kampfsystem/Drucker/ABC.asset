@@ -1,0 +1,37 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: a8a83d138610e9e43b0773c467b3da6f, type: 3}
+  m_Name: ABC
+  m_EditorClassIdentifier: 
+  Choices:
+  - ChoiceName: Accept the Void
+    ResultText: "Du empf\xE4ngst die Dunkelheit des Druckers.... Du h\xE4lst die
+      Papiere in die Luft um den Druckerg\xF6ttern zu zeigen \"ICH GLAUBE AN EUCH,
+      GEBT MIR EIN ZEICHEN!!!!\"...."
+    HP: 0
+    Stress: -10
+    Cost: 0
+    NewState: {fileID: 11400000, guid: 8430ec30f4eacde4f933ba9f7f9509f9, type: 2}
+  - ChoiceName: Reality Check
+    ResultText: "Dir wird bewusst du h\xE4ttest gestern Nacht nicht noch Drama Serien
+      bingen sollen.... Du stehst auf und machst dich wieder an die Arbeit..."
+    HP: 0
+    Stress: 0
+    Cost: 0
+    NewState: {fileID: 11400000, guid: 49e660d38a3fc964bb92f48209ef6d34, type: 2}
+  - ChoiceName: Tritt
+    ResultText: "Voller Verzweiflung trittst du den Drucker... Eine Klappe f\xE4llt
+      ab"
+    HP: 0
+    Stress: 0
+    Cost: 0
+    NewState: {fileID: 11400000, guid: bf7375689eced8a4396f566e3f7b36dd, type: 2}

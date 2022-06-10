@@ -4,6 +4,7 @@ using UnityEngine;
 using UnityEngine.UI;
 using TMPro;
 using System;
+using UnityEngine.SceneManagement;
 
 enum BattleStates
 {
@@ -55,7 +56,23 @@ public class Kampfsystem : MonoBehaviour
         Instance = this;
     }
 
-    private void Start()
+    private void Update()
+    {
+        if (isActiveBattle)
+            Turn();
+        else
+        {
+
+            if (Input.GetKey(KeyCode.Mouse0))
+            {
+                menu_controller.RoomScene.SetActive(true);
+                SceneManager.UnloadSceneAsync("Kampf");
+            }
+
+        }
+    }
+
+    public void InitBattle(AEnemyBaseClass newenemy)
     {
         for (int i = 0; i < ButtonGameObjects.Length; i++)
         {
@@ -64,16 +81,7 @@ public class Kampfsystem : MonoBehaviour
             Buttons[i].ButtonField = ButtonGameObjects[i].GetComponent<UnityEngine.UI.Button>();
             Buttons[i].Text = ButtonGameObjects[i].GetComponentInChildren<TextMeshProUGUI>();
         }
-    }
 
-    private void Update()
-    {
-        if (isActiveBattle)
-            Turn();
-    }
-
-    public void InitBattle(AEnemyBaseClass newenemy)
-    {
         Enemy = newenemy;
         SetStep(Enemy.GetInitState);
         isActiveBattle = true;
@@ -188,6 +196,5 @@ public class Kampfsystem : MonoBehaviour
         }
 
         isActiveBattle = false;
-
     }
 }

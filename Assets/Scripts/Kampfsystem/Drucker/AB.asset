@@ -1,0 +1,35 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: a8a83d138610e9e43b0773c467b3da6f, type: 3}
+  m_Name: AB
+  m_EditorClassIdentifier: 
+  Choices:
+  - ChoiceName: Neu-Neustarten
+    ResultText: Der Drucker ist wieder aus... Und mal wieder an...
+    HP: 0
+    Stress: -10
+    Cost: 0
+    NewState: {fileID: 11400000, guid: c57ef94e47953f947b28f7f178d0b599, type: 2}
+  - ChoiceName: "PC \xFCberpr\xFCfen"
+    ResultText: "Der PC hat sich aufgehangen.... Nat\xFCrlich"
+    HP: 0
+    Stress: 0
+    Cost: 0
+    NewState: {fileID: 11400000, guid: 52e8a3f5c217ab1419146950688a217b, type: 2}
+  - ChoiceName: Aufgeben
+    ResultText: "Dir wird pl\xF6tzlich die Sinnlosigkeit deiner Existenz und deine
+      Hilflosigkeit gegen\xFCber der Drucker-Overlords bewusst.... Du legst dich
+      auf den Boden und heulst..."
+    HP: 0
+    Stress: 0
+    Cost: 0
+    NewState: {fileID: 11400000, guid: ddac9b3fd0a588e41a6fb92a6ed426e5, type: 2}

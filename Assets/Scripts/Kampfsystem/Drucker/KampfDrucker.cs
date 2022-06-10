@@ -4,6 +4,10 @@ using UnityEngine;
 
 public class KampfDrucker : AEnemyBaseClass
 {
+    private void Start()
+    {
+        StartBattle();
+    }
 
     [ContextMenu("BATTLE!")]
     public void StartBattle()

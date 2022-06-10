@@ -10,24 +10,24 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: a8a83d138610e9e43b0773c467b3da6f, type: 3}
-  m_Name: 3A
+  m_Name: ABA
   m_EditorClassIdentifier: 
   Choices:
-  - ChoiceName: Finish him!
-    ResultText: FINISH HIM!!
-    HP: -100
-    Stress: 0
+  - ChoiceName: Neu-Neu-Neustarten
+    ResultText: Der Drucker ist wieder aus... Und mal wieder an...mal wieder
+    HP: 0
+    Stress: -10
     Cost: 0
-    NewState: {fileID: 0}
-  - ChoiceName: 3A 2
-    ResultText: 
+    NewState: {fileID: 11400000}
+  - ChoiceName: Abwarten...
+    ResultText: "Du guckst den Drucker an..... Und er starrt zur\xFCck...."
+    HP: 0
+    Stress: -5
+    Cost: 0
+    NewState: {fileID: 11400000}
+  - ChoiceName: Aufgeben
+    ResultText: Was ne Zeitverschwendung... Du versuchst was anderes...
     HP: 0
     Stress: 0
-    Cost: 0
-    NewState: {fileID: 0}
-  - ChoiceName: Oh shit go back
-    ResultText: Du klatschst die Klappe wieder dran
-    HP: 10
-    Stress: -5
     Cost: 0
     NewState: {fileID: 11400000, guid: 49e660d38a3fc964bb92f48209ef6d34, type: 2}

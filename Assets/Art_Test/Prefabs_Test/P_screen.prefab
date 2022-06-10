@@ -180,7 +180,7 @@ GameObject:
   - component: {fileID: 2961629486523980487}
   - component: {fileID: 2961629486523980486}
   m_Layer: 0
-  m_Name: Screen
+  m_Name: P_screen
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0

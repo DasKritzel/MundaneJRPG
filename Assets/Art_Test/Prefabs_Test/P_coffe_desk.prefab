@@ -94,7 +94,7 @@ GameObject:
   - component: {fileID: 2854639795584915519}
   - component: {fileID: 2854639795584915516}
   m_Layer: 0
-  m_Name: Coffe_Desk
+  m_Name: P_coffe_desk
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0

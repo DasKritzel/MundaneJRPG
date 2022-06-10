@@ -263,7 +263,7 @@ GameObject:
   - component: {fileID: 5415813992126727228}
   - component: {fileID: 3756282170778580599}
   m_Layer: 0
-  m_Name: Coffe_maker
+  m_Name: P_coffee_maker
   m_TagString: Enemy
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0

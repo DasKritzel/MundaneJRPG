@@ -1358,7 +1358,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 227282a1d12c70e4a9e2fefe4a028c25, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  SceneName: Blockout_Test
+  SceneName: Indoor_Scene
 --- !u!1 &1240326860
 GameObject:
   m_ObjectHideFlags: 0

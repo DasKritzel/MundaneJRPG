@@ -27,11 +27,16 @@ public class select_objects : MonoBehaviour
                 Debug.Log("hit");
                 if (hit.transform.gameObject.CompareTag("Enemy"))
                 {
+                    Debug.Log("Hit Enemy");
                     hit.transform.gameObject.GetComponent<load_main_menu>().loadbattle();
                 }
                 else if (hit.transform.gameObject.CompareTag("Gadget"))
                 {
-
+                    Debug.Log("Hit gadget");
+                    if(hit.transform.gameObject.TryGetComponent(out Gadget gadget))
+                    {
+                        gadget.Action();
+                    }
                 }
             }
         }

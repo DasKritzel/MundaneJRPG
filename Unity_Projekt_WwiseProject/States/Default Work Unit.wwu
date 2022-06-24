@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8"?>
+<WwiseDocument Type="WorkUnit" ID="{C2FAFB9C-DA68-40DA-80B9-339CCDFBEEE3}" SchemaVersion="103">
+	<States>
+		<WorkUnit Name="Default Work Unit" ID="{C2FAFB9C-DA68-40DA-80B9-339CCDFBEEE3}" PersistMode="Standalone">
+			<ChildrenList>
+				<StateGroup Name="Music_States" ID="{69F5B8D6-AAA2-49CC-A2F6-843E53FC342F}">
+					<ChildrenList>
+						<State Name="None" ID="{DF51509B-D476-465A-984B-191AA991555F}"/>
+						<State Name="Main_Scene" ID="{82D89716-B8E0-4F27-AB90-FD7AD37E530D}"/>
+						<State Name="Fight_Scene" ID="{22AB9564-CF37-4609-B2DA-2DE428C20F0A}"/>
+						<State Name="Menu_Scene" ID="{FC2E87BF-D41E-4A51-8CAA-11B2AF8F03D8}"/>
+						<State Name="Win" ID="{01702D83-5FCA-450F-ADE3-FABAE21E5C0A}"/>
+						<State Name="Defeated" ID="{19950167-3382-4555-8931-D2C70C5A384C}"/>
+					</ChildrenList>
+				</StateGroup>
+			</ChildrenList>
+		</WorkUnit>
+	</States>
+</WwiseDocument>

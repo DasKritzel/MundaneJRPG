@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="utf-8"?>
+<WwiseDocument Type="WorkUnit" ID="{E26CF459-EF1A-47F3-BB44-BD6A307A6312}" SchemaVersion="103">
+	<SoundBanks>
+		<WorkUnit Name="Default Work Unit" ID="{E26CF459-EF1A-47F3-BB44-BD6A307A6312}" PersistMode="Standalone">
+			<ChildrenList>
+				<SoundBank Name="Music" ID="{9C919BA6-8717-49D3-AFB7-D49588354D8B}">
+					<ObjectInclusionList>
+						<ObjectRef Name="Play_Soundtracks" ID="{C0904AB2-8263-46ED-B626-C24978DF76B9}" WorkUnitID="{F26B51CF-102B-4DD1-8F89-7A1EE28BA579}" Origin="Manual" Filter="7"/>
+					</ObjectInclusionList>
+					<ObjectExclusionList/>
+					<GameSyncExclusionList/>
+				</SoundBank>
+				<SoundBank Name="Sounds" ID="{74F45368-97B1-408F-B1FF-A2CC3856D24C}">
+					<ObjectInclusionList>
+						<ObjectRef Name="Play_Button" ID="{4D674F08-5B86-40C1-AD94-461C4619B2CB}" WorkUnitID="{1D07277A-854F-4A3A-8D5B-D54D417B440D}" Origin="Manual" Filter="7"/>
+						<ObjectRef Name="Play_Button_1__START_" ID="{BBDDA076-62EF-4670-B794-725AC3C2E511}" WorkUnitID="{1D07277A-854F-4A3A-8D5B-D54D417B440D}" Origin="Manual" Filter="7"/>
+						<ObjectRef Name="Play_Forest_Sun" ID="{85CC497E-3FC7-4708-9C91-F52CC69A9D4D}" WorkUnitID="{1D07277A-854F-4A3A-8D5B-D54D417B440D}" Origin="Manual" Filter="7"/>
+						<ObjectRef Name="Play_ESC_Menu_Button" ID="{EE71655B-5EDE-4950-B2E4-FC8535260E83}" WorkUnitID="{1D07277A-854F-4A3A-8D5B-D54D417B440D}" Origin="Manual" Filter="7"/>
+						<ObjectRef Name="Play_Next_Textblock" ID="{9D1A74BE-2333-4A39-8D85-8CCD9D09B544}" WorkUnitID="{1D07277A-854F-4A3A-8D5B-D54D417B440D}" Origin="Manual" Filter="7"/>
+						<ObjectRef Name="Play_Button_4" ID="{A3F1650C-D036-4AD7-9DD5-FC692AA629BF}" WorkUnitID="{1D07277A-854F-4A3A-8D5B-D54D417B440D}" Origin="Manual" Filter="7"/>
+					</ObjectInclusionList>
+					<ObjectExclusionList/>
+					<GameSyncExclusionList/>
+				</SoundBank>
+			</ChildrenList>
+		</WorkUnit>
+	</SoundBanks>
+</WwiseDocument>

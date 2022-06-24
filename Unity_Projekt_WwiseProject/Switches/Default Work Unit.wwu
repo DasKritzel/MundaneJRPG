@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8"?>
+<WwiseDocument Type="WorkUnit" ID="{3D290F71-8A1C-4ADE-A225-3F7C5B23CD37}" SchemaVersion="103">
+	<Switches>
+		<WorkUnit Name="Default Work Unit" ID="{3D290F71-8A1C-4ADE-A225-3F7C5B23CD37}" PersistMode="Standalone">
+			<ChildrenList>
+				<SwitchGroup Name="Music_Switches" ID="{94822FC4-5D02-4E92-8B47-53EEEB373537}">
+					<PropertyList>
+						<Property Name="UseGameParameter" Type="bool" Value="True"/>
+					</PropertyList>
+					<ChildrenList>
+						<Switch Name="Fight_Scene" ID="{973733F7-D5B1-4683-824F-03CEF9FA422A}"/>
+						<Switch Name="Main_Scene" ID="{08E77CF7-4090-43E8-99B2-6F73B72066DA}"/>
+						<Switch Name="Menu_Scene" ID="{A056A02B-7C89-4886-9832-005C663B6722}"/>
+					</ChildrenList>
+				</SwitchGroup>
+			</ChildrenList>
+		</WorkUnit>
+	</Switches>
+</WwiseDocument>

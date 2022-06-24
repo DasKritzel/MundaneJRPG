@@ -1,0 +1,929 @@
+<?xml version="1.0" encoding="utf-8"?>
+<WwiseDocument Type="WorkUnit" ID="{7E722D2B-BD56-43E1-A653-6AFB63CA3C04}" SchemaVersion="103">
+	<InteractiveMusic>
+		<WorkUnit Name="Music" ID="{7E722D2B-BD56-43E1-A653-6AFB63CA3C04}" PersistMode="Standalone">
+			<ChildrenList>
+				<MusicSwitchContainer Name="Soundtracks" ID="{8974D9BB-151A-4B35-B61A-239CBB8FC3F2}" ShortID="243075912">
+					<PropertyList>
+						<Property Name="Tempo" Type="Real64" Value="73"/>
+						<Property Name="Volume" Type="Real64">
+							<ValueList>
+								<Value>-12</Value>
+							</ValueList>
+						</Property>
+					</PropertyList>
+					<ReferenceList>
+						<Reference Name="Conversion">
+							<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{BCB6C5A7-A54E-4C84-8011-DBB801000DB2}"/>
+						</Reference>
+						<Reference Name="OutputBus">
+							<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{6BCEEE9D-0B38-4D68-B81E-E17343311DB9}"/>
+						</Reference>
+					</ReferenceList>
+					<ChildrenList>
+						<MusicPlaylistContainer Name="Fight Scene" ID="{E3CA8103-F87B-476D-811D-4F1AE2D0B882}" ShortID="492572446">
+							<ReferenceList>
+								<Reference Name="Conversion">
+									<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{BCB6C5A7-A54E-4C84-8011-DBB801000DB2}"/>
+								</Reference>
+								<Reference Name="OutputBus">
+									<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{6BCEEE9D-0B38-4D68-B81E-E17343311DB9}"/>
+								</Reference>
+							</ReferenceList>
+							<ChildrenList>
+								<MusicSegment Name="JRPG - Fight Theme" ID="{F1E99E55-D7FF-431A-9141-196D17E8D0BA}" ShortID="419677397">
+									<PropertyList>
+										<Property Name="EndPosition" Type="Real64" Value="172602.731449771"/>
+										<Property Name="Tempo" Type="Real64" Value="73"/>
+										<Property Name="Volume" Type="Real64">
+											<ValueList>
+												<Value>-9</Value>
+											</ValueList>
+										</Property>
+									</PropertyList>
+									<ReferenceList>
+										<Reference Name="Conversion">
+											<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{BCB6C5A7-A54E-4C84-8011-DBB801000DB2}"/>
+										</Reference>
+										<Reference Name="OutputBus">
+											<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{6BCEEE9D-0B38-4D68-B81E-E17343311DB9}"/>
+										</Reference>
+									</ReferenceList>
+									<ChildrenList>
+										<MusicTrack Name="JRPG - Fight Theme" ID="{1D21A028-E13C-4DE1-845B-4E3F2D0F8008}" ShortID="659712515">
+											<PropertyList>
+												<Property Name="MusicTrackType" Type="int16" Value="1"/>
+											</PropertyList>
+											<ReferenceList>
+												<Reference Name="OutputBus">
+													<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{6BCEEE9D-0B38-4D68-B81E-E17343311DB9}"/>
+												</Reference>
+											</ReferenceList>
+											<ChildrenList>
+												<AudioFileSource Name="JRPG - Fight Theme" ID="{8621182C-B3AB-44F8-BE26-8B7458BFFB46}">
+													<Language>SFX</Language>
+													<AudioFile>JRPG - Fight Theme.wav</AudioFile>
+													<MediaIDList>
+														<MediaID ID="23389556"/>
+													</MediaIDList>
+												</AudioFileSource>
+											</ChildrenList>
+											<TransitionList>
+												<MusicTransition Name="Root" ID="{7422AF63-1CCF-4FFA-97AB-BCE20B8F3BD5}">
+													<PropertyList>
+														<Property Name="IsFolder" Type="bool" Value="True"/>
+													</PropertyList>
+													<TransitionInfo/>
+												</MusicTransition>
+											</TransitionList>
+											<ObjectLists>
+												<ObjectList Name="Sequences">
+													<Reference>
+														<Local>
+															<MusicTrackSequence Name="" ID="{E89D8D1F-E5FB-4432-92D3-CE84E419DFBF}">
+																<ObjectLists>
+																	<ObjectList Name="Clips">
+																		<Reference>
+																			<Local>
+																				<MusicClip Name="JRPG - Fight Theme" ID="{BB6F7485-C4FF-43CD-A949-222CEEDB4A99}">
+																					<PropertyList>
+																						<Property Name="EndTrimOffset" Type="Real64" Value="170958.895833333"/>
+																						<Property Name="FadeInDuration" Type="Real64" Value="13.5360666399588"/>
+																						<Property Name="FadeOutDuration" Type="Real64" Value="13.260817471717"/>
+																					</PropertyList>
+																					<AudioSourceRef Name="JRPG - Fight Theme" ID="{8621182C-B3AB-44F8-BE26-8B7458BFFB46}"/>
+																				</MusicClip>
+																			</Local>
+																		</Reference>
+																	</ObjectList>
+																</ObjectLists>
+															</MusicTrackSequence>
+														</Local>
+													</Reference>
+												</ObjectList>
+											</ObjectLists>
+										</MusicTrack>
+									</ChildrenList>
+									<ObjectLists>
+										<ObjectList Name="Cues">
+											<Reference>
+												<Local>
+													<MusicCue Name="Entry Cue" ID="{1238DD83-4D3A-4FD5-A715-1A6C666739F6}"/>
+												</Local>
+											</Reference>
+											<Reference>
+												<Local>
+													<MusicCue Name="Exit Cue" ID="{7A927504-6121-4283-931B-F3F1966CD5AB}">
+														<PropertyList>
+															<Property Name="CueType" Type="int16" Value="1"/>
+															<Property Name="TimeMs" Type="Real64" Value="170958.895833333"/>
+														</PropertyList>
+													</MusicCue>
+												</Local>
+											</Reference>
+										</ObjectList>
+									</ObjectLists>
+								</MusicSegment>
+							</ChildrenList>
+							<TransitionList>
+								<MusicTransition Name="Root" ID="{428FF8BB-552A-4307-B953-28F72CB72B62}">
+									<PropertyList>
+										<Property Name="IsFolder" Type="bool" Value="True"/>
+									</PropertyList>
+									<ChildrenList>
+										<MusicTransition Name="Transition" ID="{4DE07E3D-77ED-4139-B079-A594701B0E85}">
+											<TransitionInfo/>
+										</MusicTransition>
+									</ChildrenList>
+									<TransitionInfo/>
+								</MusicTransition>
+							</TransitionList>
+							<ObjectLists/>
+							<Playlist>
+								<MusicPlaylistItem Name="" ID="{4F03DAE8-4D46-43BF-9BD8-C544F3FBC041}" ShortID="698018452">
+									<PropertyList>
+										<Property Name="PlayMode" Type="int16" Value="1"/>
+									</PropertyList>
+									<ChildrenList>
+										<MusicPlaylistItem Name="" ID="{3D648F85-D100-4C47-B13B-367EE7F9EBD2}" ShortID="886221968">
+											<PropertyList>
+												<Property Name="LoopCount" Type="int16" Value="0"/>
+												<Property Name="PlaylistItemType" Type="int16" Value="1"/>
+											</PropertyList>
+											<SegmentRef Name="JRPG - Fight Theme" ID="{F1E99E55-D7FF-431A-9141-196D17E8D0BA}"/>
+										</MusicPlaylistItem>
+									</ChildrenList>
+								</MusicPlaylistItem>
+							</Playlist>
+						</MusicPlaylistContainer>
+						<MusicPlaylistContainer Name="Main Theme" ID="{EFF6A2CF-8177-4B4E-B7CF-AB2C5928C7BD}" ShortID="634083330">
+							<ReferenceList>
+								<Reference Name="Conversion">
+									<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{BCB6C5A7-A54E-4C84-8011-DBB801000DB2}"/>
+								</Reference>
+								<Reference Name="OutputBus">
+									<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{6BCEEE9D-0B38-4D68-B81E-E17343311DB9}"/>
+								</Reference>
+							</ReferenceList>
+							<ChildrenList>
+								<MusicSegment Name="JRPG - Main Theme" ID="{253A8552-A272-482B-BBD3-CC333EF41DEE}" ShortID="482588447">
+									<PropertyList>
+										<Property Name="EndPosition" Type="Real64" Value="271324.718851839"/>
+										<Property Name="Tempo" Type="Real64" Value="73"/>
+										<Property Name="Volume" Type="Real64">
+											<ValueList>
+												<Value>-8</Value>
+											</ValueList>
+										</Property>
+									</PropertyList>
+									<ReferenceList>
+										<Reference Name="Conversion">
+											<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{BCB6C5A7-A54E-4C84-8011-DBB801000DB2}"/>
+										</Reference>
+										<Reference Name="OutputBus">
+											<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{6BCEEE9D-0B38-4D68-B81E-E17343311DB9}"/>
+										</Reference>
+									</ReferenceList>
+									<ChildrenList>
+										<MusicTrack Name="JRPG - Main Theme" ID="{8B92E00F-E039-4717-B74E-86E94F2155F4}" ShortID="659853207">
+											<PropertyList>
+												<Property Name="MusicTrackType" Type="int16" Value="1"/>
+											</PropertyList>
+											<ReferenceList>
+												<Reference Name="OutputBus">
+													<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{6BCEEE9D-0B38-4D68-B81E-E17343311DB9}"/>
+												</Reference>
+											</ReferenceList>
+											<ChildrenList>
+												<AudioFileSource Name="JRPG - Main Theme" ID="{8C1F17E2-2D2A-4105-849E-00143E560890}">
+													<Language>SFX</Language>
+													<AudioFile>JRPG - Main Theme.wav</AudioFile>
+													<MediaIDList>
+														<MediaID ID="68637131"/>
+													</MediaIDList>
+												</AudioFileSource>
+											</ChildrenList>
+											<TransitionList>
+												<MusicTransition Name="Root" ID="{3159BD94-851D-4BAD-8B88-6B2AB1848025}">
+													<PropertyList>
+														<Property Name="IsFolder" Type="bool" Value="True"/>
+													</PropertyList>
+													<TransitionInfo/>
+												</MusicTransition>
+											</TransitionList>
+											<ObjectLists>
+												<ObjectList Name="Sequences">
+													<Reference>
+														<Local>
+															<MusicTrackSequence Name="" ID="{9900596E-870F-4D14-8BD9-1EE316F5D347}">
+																<ObjectLists>
+																	<ObjectList Name="Clips">
+																		<Reference>
+																			<Local>
+																				<MusicClip Name="JRPG - Main Theme" ID="{F1F2DCCC-D72E-4963-9401-6300C82EE6A7}">
+																					<PropertyList>
+																						<Property Name="EndTrimOffset" Type="Real64" Value="249863.01369863"/>
+																						<Property Name="FadeInDuration" Type="Real64" Value="2442.79489641527"/>
+																						<Property Name="FadeOutMode" Type="int16" Value="0"/>
+																					</PropertyList>
+																					<AudioSourceRef Name="JRPG - Main Theme" ID="{8C1F17E2-2D2A-4105-849E-00143E560890}"/>
+																					<PropertyCurveList>
+																						<PropertyCurve PropertyName="Highpass">
+																							<Curve Name="" ID="{4228D5E0-6015-4175-A8E3-8CC7BC4B52BE}">
+																								<PropertyList>
+																									<Property Name="Flags" Type="int32" Value="1"/>
+																								</PropertyList>
+																								<PointList>
+																									<Point>
+																										<XPos>0</XPos>
+																										<YPos>0</YPos>
+																										<Flags>5</Flags>
+																									</Point>
+																									<Point>
+																										<XPos>249.86301</XPos>
+																										<YPos>0</YPos>
+																										<Flags>37</Flags>
+																									</Point>
+																								</PointList>
+																							</Curve>
+																						</PropertyCurve>
+																						<PropertyCurve PropertyName="Lowpass">
+																							<Curve Name="" ID="{F53B564D-6B34-4DF9-A580-AA5A27E3157D}">
+																								<PropertyList>
+																									<Property Name="Flags" Type="int32" Value="1"/>
+																								</PropertyList>
+																								<PointList>
+																									<Point>
+																										<XPos>0</XPos>
+																										<YPos>0</YPos>
+																										<Flags>5</Flags>
+																									</Point>
+																									<Point>
+																										<XPos>249.86301</XPos>
+																										<YPos>0</YPos>
+																										<Flags>37</Flags>
+																									</Point>
+																								</PointList>
+																							</Curve>
+																						</PropertyCurve>
+																						<PropertyCurve PropertyName="Volume">
+																							<Curve Name="" ID="{E73A8553-8DD8-4833-B968-6E07D4640D11}">
+																								<PropertyList>
+																									<Property Name="Flags" Type="int32" Value="3"/>
+																								</PropertyList>
+																								<PointList>
+																									<Point>
+																										<XPos>0</XPos>
+																										<YPos>0</YPos>
+																										<Flags>5</Flags>
+																									</Point>
+																									<Point>
+																										<XPos>249.86301</XPos>
+																										<YPos>0</YPos>
+																										<Flags>37</Flags>
+																									</Point>
+																								</PointList>
+																							</Curve>
+																						</PropertyCurve>
+																					</PropertyCurveList>
+																				</MusicClip>
+																			</Local>
+																		</Reference>
+																	</ObjectList>
+																</ObjectLists>
+															</MusicTrackSequence>
+														</Local>
+													</Reference>
+												</ObjectList>
+											</ObjectLists>
+										</MusicTrack>
+									</ChildrenList>
+									<ObjectLists>
+										<ObjectList Name="Cues">
+											<Reference>
+												<Local>
+													<MusicCue Name="Entry Cue" ID="{AB46C13A-F474-4C9B-BCB5-2C1BC807F482}"/>
+												</Local>
+											</Reference>
+											<Reference>
+												<Local>
+													<MusicCue Name="Exit Cue" ID="{21DCC957-9138-47D6-B80C-CA889F9118C8}">
+														<PropertyList>
+															<Property Name="CueType" Type="int16" Value="1"/>
+															<Property Name="TimeMs" Type="Real64" Value="249863.020833333"/>
+														</PropertyList>
+													</MusicCue>
+												</Local>
+											</Reference>
+											<Reference>
+												<Local>
+													<MusicCue Name="Transition" ID="{C7BFB1B5-6EB6-4B4D-AE50-6D95BFF64C7C}">
+														<PropertyList>
+															<Property Name="Color" Type="int16" Value="10"/>
+															<Property Name="CueType" Type="int16" Value="2"/>
+															<Property Name="OverrideColor" Type="bool" Value="True"/>
+															<Property Name="TimeMs" Type="Real64" Value="26301.3698630137"/>
+														</PropertyList>
+													</MusicCue>
+												</Local>
+											</Reference>
+										</ObjectList>
+									</ObjectLists>
+								</MusicSegment>
+							</ChildrenList>
+							<TransitionList>
+								<MusicTransition Name="Root" ID="{B67EF3DD-FBCD-4FE6-83A7-0CCF52F22CB0}">
+									<PropertyList>
+										<Property Name="IsFolder" Type="bool" Value="True"/>
+									</PropertyList>
+									<ChildrenList>
+										<MusicTransition Name="Transition" ID="{C8A8C9C9-F3C2-4D9A-911F-72558619FD51}">
+											<TransitionInfo/>
+										</MusicTransition>
+									</ChildrenList>
+									<TransitionInfo/>
+								</MusicTransition>
+							</TransitionList>
+							<ObjectLists/>
+							<Playlist>
+								<MusicPlaylistItem Name="" ID="{4E762045-651E-4C5D-9166-96FC9E45A2B0}" ShortID="96176757">
+									<ChildrenList>
+										<MusicPlaylistItem Name="" ID="{0AEAC36C-A1AF-412E-BD7E-31E8229F227A}" ShortID="587137505">
+											<PropertyList>
+												<Property Name="LoopCount" Type="int16" Value="0"/>
+												<Property Name="PlaylistItemType" Type="int16" Value="1"/>
+											</PropertyList>
+											<SegmentRef Name="JRPG - Main Theme" ID="{253A8552-A272-482B-BBD3-CC333EF41DEE}"/>
+										</MusicPlaylistItem>
+									</ChildrenList>
+								</MusicPlaylistItem>
+							</Playlist>
+						</MusicPlaylistContainer>
+						<MusicPlaylistContainer Name="Menu Theme" ID="{291F74F0-CA8A-4BDF-899D-15E265D63FF7}" ShortID="972652229">
+							<ReferenceList>
+								<Reference Name="Conversion">
+									<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{BCB6C5A7-A54E-4C84-8011-DBB801000DB2}"/>
+								</Reference>
+								<Reference Name="OutputBus">
+									<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{6BCEEE9D-0B38-4D68-B81E-E17343311DB9}"/>
+								</Reference>
+							</ReferenceList>
+							<ChildrenList>
+								<MusicSegment Name="JRPG - Menu Theme" ID="{DDFDACD3-09FF-4F33-8331-2249B298DC10}" ShortID="452307793">
+									<PropertyList>
+										<Property Name="EndPosition" Type="Real64" Value="249863.020833333"/>
+										<Property Name="Tempo" Type="Real64" Value="73"/>
+									</PropertyList>
+									<ReferenceList>
+										<Reference Name="Conversion">
+											<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{BCB6C5A7-A54E-4C84-8011-DBB801000DB2}"/>
+										</Reference>
+										<Reference Name="OutputBus">
+											<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{6BCEEE9D-0B38-4D68-B81E-E17343311DB9}"/>
+										</Reference>
+									</ReferenceList>
+									<ChildrenList>
+										<MusicTrack Name="JRPG - Menu Theme" ID="{3A2A55E3-B106-4541-B379-70BCD159F504}" ShortID="379743693">
+											<PropertyList>
+												<Property Name="Volume" Type="Real64">
+													<ValueList>
+														<Value>-8</Value>
+													</ValueList>
+												</Property>
+											</PropertyList>
+											<ReferenceList>
+												<Reference Name="OutputBus">
+													<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{6BCEEE9D-0B38-4D68-B81E-E17343311DB9}"/>
+												</Reference>
+											</ReferenceList>
+											<ChildrenList>
+												<AudioFileSource Name="JRPG - Menu Theme" ID="{00C66154-21BB-433A-985C-0BCB62C5FF64}">
+													<Language>SFX</Language>
+													<AudioFile>JRPG - Menu Theme.wav</AudioFile>
+													<MediaIDList>
+														<MediaID ID="170275601"/>
+													</MediaIDList>
+												</AudioFileSource>
+											</ChildrenList>
+											<TransitionList>
+												<MusicTransition Name="Root" ID="{678C1102-5EE9-4D4C-9B23-525AFA766197}">
+													<PropertyList>
+														<Property Name="IsFolder" Type="bool" Value="True"/>
+													</PropertyList>
+													<TransitionInfo/>
+												</MusicTransition>
+											</TransitionList>
+											<ObjectLists>
+												<ObjectList Name="Sequences">
+													<Reference>
+														<Local>
+															<MusicTrackSequence Name="" ID="{E8BB45E3-12FE-4C0C-BB71-D14B40278326}">
+																<ObjectLists>
+																	<ObjectList Name="Clips">
+																		<Reference>
+																			<Local>
+																				<MusicClip Name="JRPG - Menu Theme" ID="{CC7295A0-CD4C-4FAE-BB18-FE6A27DDF266}">
+																					<PropertyList>
+																						<Property Name="EndTrimOffset" Type="Real64" Value="249863.020833333"/>
+																						<Property Name="FadeInMode" Type="int16" Value="0"/>
+																						<Property Name="FadeOutMode" Type="int16" Value="0"/>
+																					</PropertyList>
+																					<AudioSourceRef Name="JRPG - Menu Theme" ID="{00C66154-21BB-433A-985C-0BCB62C5FF64}"/>
+																				</MusicClip>
+																			</Local>
+																		</Reference>
+																	</ObjectList>
+																</ObjectLists>
+															</MusicTrackSequence>
+														</Local>
+													</Reference>
+												</ObjectList>
+											</ObjectLists>
+										</MusicTrack>
+									</ChildrenList>
+									<ObjectLists>
+										<ObjectList Name="Cues">
+											<Reference>
+												<Local>
+													<MusicCue Name="Entry Cue" ID="{E206D2DC-CE60-4296-90B2-90FFA08678AB}"/>
+												</Local>
+											</Reference>
+											<Reference>
+												<Local>
+													<MusicCue Name="Exit Cue" ID="{C67AE6BA-6C71-49BB-A467-2CB0D378450A}">
+														<PropertyList>
+															<Property Name="CueType" Type="int16" Value="1"/>
+															<Property Name="TimeMs" Type="Real64" Value="249863.020833333"/>
+														</PropertyList>
+													</MusicCue>
+												</Local>
+											</Reference>
+										</ObjectList>
+									</ObjectLists>
+								</MusicSegment>
+							</ChildrenList>
+							<TransitionList>
+								<MusicTransition Name="Root" ID="{9EF2D726-3DDD-4B70-A47B-E0B3ACF7D49C}">
+									<PropertyList>
+										<Property Name="IsFolder" Type="bool" Value="True"/>
+									</PropertyList>
+									<ChildrenList>
+										<MusicTransition Name="Transition" ID="{58207155-4F18-4AA2-AB24-7A6FB15C67AC}">
+											<TransitionInfo/>
+										</MusicTransition>
+									</ChildrenList>
+									<TransitionInfo/>
+								</MusicTransition>
+							</TransitionList>
+							<ObjectLists/>
+							<Playlist>
+								<MusicPlaylistItem Name="" ID="{20461C8A-BA75-4BC7-9D34-A0AAA0C645BC}" ShortID="287265637">
+									<PropertyList>
+										<Property Name="LoopCount" Type="int16" Value="0"/>
+									</PropertyList>
+									<ChildrenList>
+										<MusicPlaylistItem Name="" ID="{73347D05-0528-4586-92FF-EBA6E3804C70}" ShortID="593731766">
+											<PropertyList>
+												<Property Name="PlaylistItemType" Type="int16" Value="1"/>
+											</PropertyList>
+											<SegmentRef Name="JRPG - Menu Theme" ID="{DDFDACD3-09FF-4F33-8331-2249B298DC10}"/>
+										</MusicPlaylistItem>
+									</ChildrenList>
+								</MusicPlaylistItem>
+							</Playlist>
+						</MusicPlaylistContainer>
+						<MusicSegment Name="JRPG - Defeated" ID="{FFE0FE1B-DB29-42D4-9451-EB856FA4806C}" ShortID="429197563">
+							<PropertyList>
+								<Property Name="EndPosition" Type="Real64" Value="7184.79337029336"/>
+								<Property Name="Volume" Type="Real64">
+									<ValueList>
+										<Value>-8</Value>
+									</ValueList>
+								</Property>
+							</PropertyList>
+							<ReferenceList>
+								<Reference Name="Conversion">
+									<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{BCB6C5A7-A54E-4C84-8011-DBB801000DB2}"/>
+								</Reference>
+								<Reference Name="OutputBus">
+									<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{6BCEEE9D-0B38-4D68-B81E-E17343311DB9}"/>
+								</Reference>
+							</ReferenceList>
+							<ChildrenList>
+								<MusicTrack Name="JRPG - Defeated" ID="{29E29303-6C3A-4B50-9538-E74CC42E1046}" ShortID="212087599">
+									<ReferenceList>
+										<Reference Name="OutputBus">
+											<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{6BCEEE9D-0B38-4D68-B81E-E17343311DB9}"/>
+										</Reference>
+									</ReferenceList>
+									<ChildrenList>
+										<AudioFileSource Name="JRPG - Defeated" ID="{0F3D7CB2-DF96-4B23-86E6-A7D8A0391BFA}">
+											<Language>SFX</Language>
+											<AudioFile>JRPG - Defeated.wav</AudioFile>
+											<MediaIDList>
+												<MediaID ID="452081813"/>
+											</MediaIDList>
+										</AudioFileSource>
+									</ChildrenList>
+									<TransitionList>
+										<MusicTransition Name="Root" ID="{F386679C-A91D-48E4-828C-55584E9BF2EF}">
+											<PropertyList>
+												<Property Name="IsFolder" Type="bool" Value="True"/>
+											</PropertyList>
+											<TransitionInfo/>
+										</MusicTransition>
+									</TransitionList>
+									<ObjectLists>
+										<ObjectList Name="Sequences">
+											<Reference>
+												<Local>
+													<MusicTrackSequence Name="" ID="{403A7911-4E92-415C-B3F6-93CA0D82101A}">
+														<ObjectLists>
+															<ObjectList Name="Clips">
+																<Reference>
+																	<Local>
+																		<MusicClip Name="JRPG - Defeated" ID="{97BC872D-5092-4CEE-B1EF-3B71CD252831}">
+																			<PropertyList>
+																				<Property Name="EndTrimOffset" Type="Real64" Value="6986.29166666667"/>
+																				<Property Name="FadeInMode" Type="int16" Value="0"/>
+																				<Property Name="FadeOutMode" Type="int16" Value="0"/>
+																			</PropertyList>
+																			<AudioSourceRef Name="JRPG - Defeated" ID="{0F3D7CB2-DF96-4B23-86E6-A7D8A0391BFA}"/>
+																		</MusicClip>
+																	</Local>
+																</Reference>
+															</ObjectList>
+														</ObjectLists>
+													</MusicTrackSequence>
+												</Local>
+											</Reference>
+										</ObjectList>
+									</ObjectLists>
+								</MusicTrack>
+							</ChildrenList>
+							<ObjectLists>
+								<ObjectList Name="Cues">
+									<Reference>
+										<Local>
+											<MusicCue Name="Entry Cue" ID="{8E62DF55-82B7-467C-A156-9C0FCA59449D}">
+												<PropertyList>
+													<Property Name="TimeMs" Type="Real64" Value="406.686417186417"/>
+												</PropertyList>
+											</MusicCue>
+										</Local>
+									</Reference>
+									<Reference>
+										<Local>
+											<MusicCue Name="Exit Cue" ID="{45DDDAC3-E3E1-4751-BA97-7A6EDEA57041}">
+												<PropertyList>
+													<Property Name="CueType" Type="int16" Value="1"/>
+													<Property Name="TimeMs" Type="Real64" Value="6986.29166666666"/>
+												</PropertyList>
+											</MusicCue>
+										</Local>
+									</Reference>
+								</ObjectList>
+							</ObjectLists>
+						</MusicSegment>
+						<MusicSegment Name="JRPG - Win" ID="{7DD4CF34-FE94-4486-A20B-BA130778DA3B}" ShortID="69959567">
+							<PropertyList>
+								<Property Name="EndPosition" Type="Real64" Value="13378.375"/>
+								<Property Name="Volume" Type="Real64">
+									<ValueList>
+										<Value>-6</Value>
+									</ValueList>
+								</Property>
+							</PropertyList>
+							<ReferenceList>
+								<Reference Name="Conversion">
+									<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{BCB6C5A7-A54E-4C84-8011-DBB801000DB2}"/>
+								</Reference>
+								<Reference Name="OutputBus">
+									<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{6BCEEE9D-0B38-4D68-B81E-E17343311DB9}"/>
+								</Reference>
+							</ReferenceList>
+							<ChildrenList>
+								<MusicTrack Name="JRPG - Win_2" ID="{E03F1934-3E8B-4E97-AE6F-1BF328EB2A28}" ShortID="100178294">
+									<ReferenceList>
+										<Reference Name="OutputBus">
+											<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{6BCEEE9D-0B38-4D68-B81E-E17343311DB9}"/>
+										</Reference>
+									</ReferenceList>
+									<ChildrenList>
+										<AudioFileSource Name="JRPG - Win_2" ID="{D411BA3A-654E-4E0C-B673-AA70B57FA000}">
+											<Language>SFX</Language>
+											<AudioFile>JRPG - Win_2.wav</AudioFile>
+											<MediaIDList>
+												<MediaID ID="218030426"/>
+											</MediaIDList>
+										</AudioFileSource>
+									</ChildrenList>
+									<TransitionList>
+										<MusicTransition Name="Root" ID="{3F505D56-B366-4297-BB23-4D0D5248D273}">
+											<PropertyList>
+												<Property Name="IsFolder" Type="bool" Value="True"/>
+											</PropertyList>
+											<TransitionInfo/>
+										</MusicTransition>
+									</TransitionList>
+									<ObjectLists>
+										<ObjectList Name="Sequences">
+											<Reference>
+												<Local>
+													<MusicTrackSequence Name="" ID="{1C8F4735-7836-4CA6-8097-894F7EC4325A}">
+														<ObjectLists>
+															<ObjectList Name="Clips">
+																<Reference>
+																	<Local>
+																		<MusicClip Name="JRPG - Win_2" ID="{288FAA5A-0B82-4E03-8920-1EF9B954481C}">
+																			<PropertyList>
+																				<Property Name="EndTrimOffset" Type="Real64" Value="7905.39583333333"/>
+																				<Property Name="FadeInMode" Type="int16" Value="0"/>
+																				<Property Name="FadeOutMode" Type="int16" Value="0"/>
+																			</PropertyList>
+																			<AudioSourceRef Name="JRPG - Win_2" ID="{D411BA3A-654E-4E0C-B673-AA70B57FA000}"/>
+																		</MusicClip>
+																	</Local>
+																</Reference>
+															</ObjectList>
+														</ObjectLists>
+													</MusicTrackSequence>
+												</Local>
+											</Reference>
+										</ObjectList>
+									</ObjectLists>
+								</MusicTrack>
+							</ChildrenList>
+							<ObjectLists>
+								<ObjectList Name="Cues">
+									<Reference>
+										<Local>
+											<MusicCue Name="Entry Cue" ID="{EC3C2D6E-194E-40B7-84B2-050D7DF3A196}">
+												<PropertyList>
+													<Property Name="TimeMs" Type="Real64" Value="407.933818433818"/>
+												</PropertyList>
+											</MusicCue>
+										</Local>
+									</Reference>
+									<Reference>
+										<Local>
+											<MusicCue Name="Exit Cue" ID="{8358E608-DC2D-403C-B25E-29A159270832}">
+												<PropertyList>
+													<Property Name="CueType" Type="int16" Value="1"/>
+													<Property Name="TimeMs" Type="Real64" Value="6971.95980595981"/>
+												</PropertyList>
+											</MusicCue>
+										</Local>
+									</Reference>
+								</ObjectList>
+							</ObjectLists>
+						</MusicSegment>
+					</ChildrenList>
+					<StateInfo>
+						<StateGroupList>
+							<StateGroupInfo>
+								<StateGroupRef Name="Music_States" ID="{69F5B8D6-AAA2-49CC-A2F6-843E53FC342F}"/>
+							</StateGroupInfo>
+						</StateGroupList>
+						<CustomStateList>
+							<CustomState>
+								<StateRef Name="Win" ID="{01702D83-5FCA-450F-ADE3-FABAE21E5C0A}"/>
+								<CustomState Name="" ID="{0A8CADDB-54CA-4633-8F00-19986EE4418E}" ShortID="409548810"/>
+							</CustomState>
+							<CustomState>
+								<StateRef Name="Defeated" ID="{19950167-3382-4555-8931-D2C70C5A384C}"/>
+								<CustomState Name="" ID="{679178F2-5D34-4264-9BB5-714318F508DA}" ShortID="96865453"/>
+							</CustomState>
+							<CustomState>
+								<StateRef Name="Fight_Scene" ID="{22AB9564-CF37-4609-B2DA-2DE428C20F0A}"/>
+								<CustomState Name="" ID="{696BA0A3-C23A-4144-BAF7-5F9A961D5A97}" ShortID="1059255692"/>
+							</CustomState>
+							<CustomState>
+								<StateRef Name="Menu_Scene" ID="{FC2E87BF-D41E-4A51-8CAA-11B2AF8F03D8}"/>
+								<CustomState Name="" ID="{5A554B32-763D-4DDF-9A29-1E6B6246D635}" ShortID="837685064"/>
+							</CustomState>
+							<CustomState>
+								<StateRef Name="Main_Scene" ID="{82D89716-B8E0-4F27-AB90-FD7AD37E530D}"/>
+								<CustomState Name="" ID="{EECA1A33-265C-4DF7-A5BD-54251DB37D86}" ShortID="429800216"/>
+							</CustomState>
+						</CustomStateList>
+					</StateInfo>
+					<TransitionList>
+						<MusicTransition Name="Root" ID="{4AE28403-908B-4554-9E95-6D87222A4F07}">
+							<PropertyList>
+								<Property Name="IsFolder" Type="bool" Value="True"/>
+							</PropertyList>
+							<ChildrenList>
+								<MusicTransition Name="Transition" ID="{8933E829-AB86-40E4-ABFF-B98C65B4C673}">
+									<PropertyList>
+										<Property Name="DestinationJumpPositionPreset" Type="int16" Value="1"/>
+										<Property Name="DestinationPlaylistJumpTo" Type="int16" Value="2"/>
+										<Property Name="EnableDestinationFadeIn" Type="bool" Value="True"/>
+										<Property Name="EnableSourceFadeOut" Type="bool" Value="True"/>
+										<Property Name="ExitSourceAt" Type="int16" Value="2"/>
+										<Property Name="JumpToCustomCueMatchName" Type="string" Value=" "/>
+									</PropertyList>
+									<TransitionInfo>
+										<SourceFadeOut>
+											<MusicFade Name="Source Fade-out" ID="{B0B5B7ED-89E6-40BC-8620-481BDD92A243}">
+												<PropertyList>
+													<Property Name="FadeCurve" Type="int16" Value="7"/>
+													<Property Name="FadeTime" Type="Real64" Value="0.5"/>
+													<Property Name="FadeType" Type="int16" Value="1"/>
+												</PropertyList>
+											</MusicFade>
+										</SourceFadeOut>
+										<DestinationFadeIn>
+											<MusicFade Name="Destination Fade-in" ID="{EF9C219F-3E3B-4B65-B23A-E74C7342BF18}">
+												<PropertyList>
+													<Property Name="FadeCurve" Type="int16" Value="2"/>
+													<Property Name="FadeOffset" Type="Real64" Value="-1"/>
+													<Property Name="FadeTime" Type="Real64" Value="1"/>
+												</PropertyList>
+											</MusicFade>
+										</DestinationFadeIn>
+									</TransitionInfo>
+								</MusicTransition>
+								<MusicTransition Name="Transition" ID="{5A32F297-93E5-4955-BD04-F65E572BB07E}">
+									<PropertyList>
+										<Property Name="DestinationContextType" Type="int16" Value="1"/>
+										<Property Name="ExitSourceAt" Type="int16" Value="0"/>
+									</PropertyList>
+									<TransitionInfo/>
+								</MusicTransition>
+								<MusicTransition Name="Transition" ID="{EB1CAC50-E685-4593-909D-4F0588FB8B6B}">
+									<PropertyList>
+										<Property Name="EnableDestinationFadeIn" Type="bool" Value="True"/>
+										<Property Name="EnableSourceFadeOut" Type="bool" Value="True"/>
+										<Property Name="ExitSourceAt" Type="int16" Value="0"/>
+										<Property Name="SourceContextType" Type="int16" Value="2"/>
+									</PropertyList>
+									<ReferenceList>
+										<Reference Name="SourceContextObject">
+											<ObjectRef Name="JRPG - Menu Theme" ID="{DDFDACD3-09FF-4F33-8331-2249B298DC10}" WorkUnitID="{7E722D2B-BD56-43E1-A653-6AFB63CA3C04}"/>
+										</Reference>
+									</ReferenceList>
+									<TransitionInfo>
+										<SourceFadeOut>
+											<MusicFade Name="Source Fade-out" ID="{F8B35FAF-F453-43DD-81BC-A369155738C0}">
+												<PropertyList>
+													<Property Name="FadeCurve" Type="int16" Value="7"/>
+													<Property Name="FadeTime" Type="Real64" Value="4"/>
+													<Property Name="FadeType" Type="int16" Value="1"/>
+												</PropertyList>
+											</MusicFade>
+										</SourceFadeOut>
+										<DestinationFadeIn>
+											<MusicFade Name="Destination Fade-in" ID="{0CB358A5-B07A-4516-AD06-696A41BA98A0}">
+												<PropertyList>
+													<Property Name="FadeCurve" Type="int16" Value="7"/>
+													<Property Name="FadeTime" Type="Real64" Value="4"/>
+												</PropertyList>
+											</MusicFade>
+										</DestinationFadeIn>
+									</TransitionInfo>
+								</MusicTransition>
+								<MusicTransition Name="Transition" ID="{8C7CEC2A-03D5-4FDD-825E-F2A39C3B1050}">
+									<PropertyList>
+										<Property Name="DestinationContextType" Type="int16" Value="2"/>
+										<Property Name="EnableDestinationFadeIn" Type="bool" Value="True"/>
+										<Property Name="EnableSourceFadeOut" Type="bool" Value="True"/>
+										<Property Name="ExitSourceAt" Type="int16" Value="0"/>
+									</PropertyList>
+									<ReferenceList>
+										<Reference Name="DestinationContextObject">
+											<ObjectRef Name="JRPG - Menu Theme" ID="{DDFDACD3-09FF-4F33-8331-2249B298DC10}" WorkUnitID="{7E722D2B-BD56-43E1-A653-6AFB63CA3C04}"/>
+										</Reference>
+									</ReferenceList>
+									<TransitionInfo>
+										<SourceFadeOut>
+											<MusicFade Name="Source Fade-out" ID="{354948B5-CE50-49E0-B845-358F3D40A8A4}">
+												<PropertyList>
+													<Property Name="FadeCurve" Type="int16" Value="7"/>
+													<Property Name="FadeTime" Type="Real64" Value="4"/>
+													<Property Name="FadeType" Type="int16" Value="1"/>
+												</PropertyList>
+											</MusicFade>
+										</SourceFadeOut>
+										<DestinationFadeIn>
+											<MusicFade Name="Destination Fade-in" ID="{4120FEE2-2EA5-475B-B4C9-BDEB41D1E999}">
+												<PropertyList>
+													<Property Name="FadeCurve" Type="int16" Value="7"/>
+													<Property Name="FadeTime" Type="Real64" Value="4"/>
+												</PropertyList>
+											</MusicFade>
+										</DestinationFadeIn>
+									</TransitionInfo>
+								</MusicTransition>
+								<MusicTransition Name="Transition" ID="{3AEFF5D4-8FF9-4FFA-9D2A-04B5EE24D3B2}">
+									<PropertyList>
+										<Property Name="DestinationContextType" Type="int16" Value="2"/>
+										<Property Name="EnableDestinationFadeIn" Type="bool" Value="True"/>
+										<Property Name="SourceContextType" Type="int16" Value="1"/>
+									</PropertyList>
+									<ReferenceList>
+										<Reference Name="DestinationContextObject">
+											<ObjectRef Name="JRPG - Menu Theme" ID="{DDFDACD3-09FF-4F33-8331-2249B298DC10}" WorkUnitID="{7E722D2B-BD56-43E1-A653-6AFB63CA3C04}"/>
+										</Reference>
+									</ReferenceList>
+									<TransitionInfo>
+										<DestinationFadeIn>
+											<MusicFade Name="Destination Fade-in" ID="{4D9E2353-C80C-4422-A39E-52CEEB57D058}"/>
+										</DestinationFadeIn>
+									</TransitionInfo>
+								</MusicTransition>
+								<MusicTransition Name="Transition" ID="{B5D3E3D2-A050-4A6A-832D-037384B583EF}">
+									<PropertyList>
+										<Property Name="DestinationContextType" Type="int16" Value="2"/>
+										<Property Name="ExitSourceAt" Type="int16" Value="0"/>
+										<Property Name="SourceContextType" Type="int16" Value="2"/>
+									</PropertyList>
+									<ReferenceList>
+										<Reference Name="DestinationContextObject">
+											<ObjectRef Name="JRPG - Defeated" ID="{FFE0FE1B-DB29-42D4-9451-EB856FA4806C}" WorkUnitID="{7E722D2B-BD56-43E1-A653-6AFB63CA3C04}"/>
+										</Reference>
+										<Reference Name="SourceContextObject">
+											<ObjectRef Name="JRPG - Fight Theme" ID="{F1E99E55-D7FF-431A-9141-196D17E8D0BA}" WorkUnitID="{7E722D2B-BD56-43E1-A653-6AFB63CA3C04}"/>
+										</Reference>
+									</ReferenceList>
+									<TransitionInfo/>
+								</MusicTransition>
+								<MusicTransition Name="Transition" ID="{3226945E-FF11-46C7-B931-7125F2DD839D}">
+									<PropertyList>
+										<Property Name="DestinationContextType" Type="int16" Value="2"/>
+										<Property Name="ExitSourceAt" Type="int16" Value="0"/>
+										<Property Name="SourceContextType" Type="int16" Value="2"/>
+									</PropertyList>
+									<ReferenceList>
+										<Reference Name="DestinationContextObject">
+											<ObjectRef Name="JRPG - Win" ID="{7DD4CF34-FE94-4486-A20B-BA130778DA3B}" WorkUnitID="{7E722D2B-BD56-43E1-A653-6AFB63CA3C04}"/>
+										</Reference>
+										<Reference Name="SourceContextObject">
+											<ObjectRef Name="JRPG - Fight Theme" ID="{F1E99E55-D7FF-431A-9141-196D17E8D0BA}" WorkUnitID="{7E722D2B-BD56-43E1-A653-6AFB63CA3C04}"/>
+										</Reference>
+									</ReferenceList>
+									<TransitionInfo/>
+								</MusicTransition>
+							</ChildrenList>
+							<TransitionInfo/>
+						</MusicTransition>
+					</TransitionList>
+					<ObjectLists/>
+					<ArgumentList>
+						<ArgumentRef Name="Music_States" ID="{69F5B8D6-AAA2-49CC-A2F6-843E53FC342F}"/>
+					</ArgumentList>
+					<EntryList>
+						<Entry>
+							<Path>
+								<PathElementRef Name="Music_States" ID="{69F5B8D6-AAA2-49CC-A2F6-843E53FC342F}"/>
+							</Path>
+							<AudioNodeInfo>
+								<NoObject Platform="Linked"/>
+							</AudioNodeInfo>
+						</Entry>
+						<Entry>
+							<Path>
+								<PathElementRef Name="Main_Scene" ID="{82D89716-B8E0-4F27-AB90-FD7AD37E530D}"/>
+							</Path>
+							<AudioNodeInfo>
+								<AudioNodeRef Name="Main Theme" ID="{EFF6A2CF-8177-4B4E-B7CF-AB2C5928C7BD}" WorkUnitID="{7E722D2B-BD56-43E1-A653-6AFB63CA3C04}" Platform="Linked"/>
+							</AudioNodeInfo>
+						</Entry>
+						<Entry>
+							<Path>
+								<PathElementRef Name="Fight_Scene" ID="{22AB9564-CF37-4609-B2DA-2DE428C20F0A}"/>
+							</Path>
+							<AudioNodeInfo>
+								<AudioNodeRef Name="Fight Scene" ID="{E3CA8103-F87B-476D-811D-4F1AE2D0B882}" WorkUnitID="{7E722D2B-BD56-43E1-A653-6AFB63CA3C04}" Platform="Linked"/>
+							</AudioNodeInfo>
+						</Entry>
+						<Entry>
+							<Path>
+								<PathElementRef Name="Menu_Scene" ID="{FC2E87BF-D41E-4A51-8CAA-11B2AF8F03D8}"/>
+							</Path>
+							<AudioNodeInfo>
+								<AudioNodeRef Name="Menu Theme" ID="{291F74F0-CA8A-4BDF-899D-15E265D63FF7}" WorkUnitID="{7E722D2B-BD56-43E1-A653-6AFB63CA3C04}" Platform="Linked"/>
+							</AudioNodeInfo>
+						</Entry>
+						<Entry>
+							<Path>
+								<PathElementRef Name="Win" ID="{01702D83-5FCA-450F-ADE3-FABAE21E5C0A}"/>
+							</Path>
+							<AudioNodeInfo>
+								<AudioNodeRef Name="JRPG - Win" ID="{7DD4CF34-FE94-4486-A20B-BA130778DA3B}" WorkUnitID="{7E722D2B-BD56-43E1-A653-6AFB63CA3C04}" Platform="Linked"/>
+							</AudioNodeInfo>
+						</Entry>
+						<Entry>
+							<Path>
+								<PathElementRef Name="Defeated" ID="{19950167-3382-4555-8931-D2C70C5A384C}"/>
+							</Path>
+							<AudioNodeInfo>
+								<AudioNodeRef Name="JRPG - Defeated" ID="{FFE0FE1B-DB29-42D4-9451-EB856FA4806C}" WorkUnitID="{7E722D2B-BD56-43E1-A653-6AFB63CA3C04}" Platform="Linked"/>
+							</AudioNodeInfo>
+						</Entry>
+					</EntryList>
+				</MusicSwitchContainer>
+			</ChildrenList>
+		</WorkUnit>
+	</InteractiveMusic>
+</WwiseDocument>

@@ -1,0 +1,75 @@
+<?xml version="1.0" encoding="utf-8"?>
+<WwiseDocument Type="WorkUnit" ID="{1D07277A-854F-4A3A-8D5B-D54D417B440D}" SchemaVersion="103">
+	<Events>
+		<WorkUnit Name="Default Work Unit" ID="{1D07277A-854F-4A3A-8D5B-D54D417B440D}" PersistMode="Standalone">
+			<ChildrenList>
+				<Event Name="Play_Forest_Sun" ID="{85CC497E-3FC7-4708-9C91-F52CC69A9D4D}">
+					<ChildrenList>
+						<Action Name="" ID="{DD657E8E-141C-482E-990A-CD5DCB9DA102}" ShortID="355773270">
+							<ReferenceList>
+								<Reference Name="Target">
+									<ObjectRef Name="Forest_Sun" ID="{E617F259-7F60-44BE-A9D1-C3F3FBAE7D6F}" WorkUnitID="{FED79B37-4E58-40BC-BE67-59BDB74BEA60}"/>
+								</Reference>
+							</ReferenceList>
+						</Action>
+					</ChildrenList>
+				</Event>
+				<Event Name="Play_Button" ID="{4D674F08-5B86-40C1-AD94-461C4619B2CB}">
+					<ChildrenList>
+						<Action Name="" ID="{3425D69B-E68C-4A25-9467-7E2D91B77C19}" ShortID="541882334">
+							<ReferenceList>
+								<Reference Name="Target">
+									<ObjectRef Name="Button" ID="{190A42C9-48D1-486D-8B8F-630F2849B214}" WorkUnitID="{FED79B37-4E58-40BC-BE67-59BDB74BEA60}"/>
+								</Reference>
+							</ReferenceList>
+						</Action>
+					</ChildrenList>
+				</Event>
+				<Event Name="Play_Button_1__START_" ID="{BBDDA076-62EF-4670-B794-725AC3C2E511}">
+					<ChildrenList>
+						<Action Name="" ID="{2586C962-BCA6-4422-91BC-B3F739E8C0ED}" ShortID="61511762">
+							<ReferenceList>
+								<Reference Name="Target">
+									<ObjectRef Name="Button 1 [START]" ID="{C5585979-CD4D-43D7-A96E-C4AA95F14175}" WorkUnitID="{FED79B37-4E58-40BC-BE67-59BDB74BEA60}"/>
+								</Reference>
+							</ReferenceList>
+						</Action>
+					</ChildrenList>
+				</Event>
+				<Event Name="Play_ESC_Menu_Button" ID="{EE71655B-5EDE-4950-B2E4-FC8535260E83}">
+					<ChildrenList>
+						<Action Name="" ID="{A0E21552-ED0D-4B7D-B476-83EB1DDC075F}" ShortID="914749027">
+							<ReferenceList>
+								<Reference Name="Target">
+									<ObjectRef Name="ESC Menu Button" ID="{8FE36116-735E-4521-A00A-87F17F482A5B}" WorkUnitID="{FED79B37-4E58-40BC-BE67-59BDB74BEA60}"/>
+								</Reference>
+							</ReferenceList>
+						</Action>
+					</ChildrenList>
+				</Event>
+				<Event Name="Play_Button_4" ID="{A3F1650C-D036-4AD7-9DD5-FC692AA629BF}">
+					<ChildrenList>
+						<Action Name="" ID="{315A5CF2-3B19-47F4-863A-04F8EBB922AE}" ShortID="200611571">
+							<ReferenceList>
+								<Reference Name="Target">
+									<ObjectRef Name="Button 4" ID="{70197176-5E5C-46F1-8095-EE20983A14B6}" WorkUnitID="{FED79B37-4E58-40BC-BE67-59BDB74BEA60}"/>
+								</Reference>
+							</ReferenceList>
+						</Action>
+					</ChildrenList>
+				</Event>
+				<Event Name="Play_Next_Textblock" ID="{9D1A74BE-2333-4A39-8D85-8CCD9D09B544}">
+					<ChildrenList>
+						<Action Name="" ID="{3C9345E3-DBE4-444D-830A-1D7DCBAD7276}" ShortID="314505027">
+							<ReferenceList>
+								<Reference Name="Target">
+									<ObjectRef Name="Next_Textblock" ID="{3860BC2E-F1D4-43EF-8AC0-14A0EB89E704}" WorkUnitID="{FED79B37-4E58-40BC-BE67-59BDB74BEA60}"/>
+								</Reference>
+							</ReferenceList>
+						</Action>
+					</ChildrenList>
+				</Event>
+			</ChildrenList>
+		</WorkUnit>
+	</Events>
+</WwiseDocument>

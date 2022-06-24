@@ -1,0 +1,24 @@
+Event	ID	Name			Wwise Object Path	Notes
+	922140700	Play_ESC_Menu_Button			\Default Work Unit\Play_ESC_Menu_Button	
+	2099555730	Play_Button			\Default Work Unit\Play_Button	
+	2296794015	Play_Button_4			\Default Work Unit\Play_Button_4	
+	3957949786	Play_Forest_Sun			\Default Work Unit\Play_Forest_Sun	
+	3971818183	Play_Button_1__START_			\Default Work Unit\Play_Button_1__START_	
+	4158330684	Play_Next_Textblock			\Default Work Unit\Play_Next_Textblock	
+
+In Memory Audio	ID	Name	Audio source file		Wwise Object Path	Notes	Data Size
+	60334032	Next Textblock 3	C:\Users\Matte\SAE\5FSC0XD003 0322\Wwise\JRPG_Wwiseproject_01\.cache\Windows\SFX\Next Textblock 3_10C4C929.wem		\Actor-Mixer Hierarchy\Default Work Unit\Buttons\Next_Textblock\Next Textblock 3		88744
+	122849998	Forest_Sun	C:\Users\Matte\SAE\5FSC0XD003 0322\Wwise\JRPG_Wwiseproject_01\.cache\Windows\SFX\Forest_Sun_8011BD83.wem		\Actor-Mixer Hierarchy\Default Work Unit\Atmos & Background\Forest_Sun		29167884
+	150133880	Next Textblock 5	C:\Users\Matte\SAE\5FSC0XD003 0322\Wwise\JRPG_Wwiseproject_01\.cache\Windows\SFX\Next Textblock 5_10C4C929.wem		\Actor-Mixer Hierarchy\Default Work Unit\Buttons\Next_Textblock\Next Textblock 5		88744
+	190649876	Next Textblock 8	C:\Users\Matte\SAE\5FSC0XD003 0322\Wwise\JRPG_Wwiseproject_01\.cache\Windows\SFX\Next Textblock 8_10C4C929.wem		\Actor-Mixer Hierarchy\Default Work Unit\Buttons\Next_Textblock\Next Textblock 8		88744
+	213231498	Next Textblock 4	C:\Users\Matte\SAE\5FSC0XD003 0322\Wwise\JRPG_Wwiseproject_01\.cache\Windows\SFX\Next Textblock 4_10C4C929.wem		\Actor-Mixer Hierarchy\Default Work Unit\Buttons\Next_Textblock\Next Textblock 4		88744
+	237520884	Button	C:\Users\Matte\SAE\5FSC0XD003 0322\Wwise\JRPG_Wwiseproject_01\.cache\Windows\SFX\Button 2_10C4C929.wem		\Actor-Mixer Hierarchy\Default Work Unit\Buttons\Menu_Buttuns\Button		87820
+	241752961	ESC Menu Button	C:\Users\Matte\SAE\5FSC0XD003 0322\Wwise\JRPG_Wwiseproject_01\.cache\Windows\SFX\Button 3_10C4C929.wem		\Actor-Mixer Hierarchy\Default Work Unit\Buttons\Menu_Buttuns\ESC Menu Button		159820
+	420253372	Next Textblock 1	C:\Users\Matte\SAE\5FSC0XD003 0322\Wwise\JRPG_Wwiseproject_01\.cache\Windows\SFX\Next Textblock 1_10C4C929.wem		\Actor-Mixer Hierarchy\Default Work Unit\Buttons\Next_Textblock\Next Textblock 1		88744
+	508147055	Button 4	C:\Users\Matte\SAE\5FSC0XD003 0322\Wwise\JRPG_Wwiseproject_01\.cache\Windows\SFX\Button 4_10C4C929.wem		\Actor-Mixer Hierarchy\Default Work Unit\Buttons\Menu_Buttuns\Button 4		53664
+	591529937	Next Textblock 6	C:\Users\Matte\SAE\5FSC0XD003 0322\Wwise\JRPG_Wwiseproject_01\.cache\Windows\SFX\Next Textblock 6_10C4C929.wem		\Actor-Mixer Hierarchy\Default Work Unit\Buttons\Next_Textblock\Next Textblock 6		88744
+	716030811	Button 1 [START]	C:\Users\Matte\SAE\5FSC0XD003 0322\Wwise\JRPG_Wwiseproject_01\.cache\Windows\SFX\Button 1 [START]_10C4C929.wem		\Actor-Mixer Hierarchy\Default Work Unit\Buttons\Menu_Buttuns\Button 1 [START]		141360
+	755852302	Next Textblock 9	C:\Users\Matte\SAE\5FSC0XD003 0322\Wwise\JRPG_Wwiseproject_01\.cache\Windows\SFX\Next Textblock 9_10C4C929.wem		\Actor-Mixer Hierarchy\Default Work Unit\Buttons\Next_Textblock\Next Textblock 9		88744
+	779608179	Next Textblock 7	C:\Users\Matte\SAE\5FSC0XD003 0322\Wwise\JRPG_Wwiseproject_01\.cache\Windows\SFX\Next Textblock 7_10C4C929.wem		\Actor-Mixer Hierarchy\Default Work Unit\Buttons\Next_Textblock\Next Textblock 7		88744
+	874652298	Next Textblock 2	C:\Users\Matte\SAE\5FSC0XD003 0322\Wwise\JRPG_Wwiseproject_01\.cache\Windows\SFX\Next Textblock 2_10C4C929.wem		\Actor-Mixer Hierarchy\Default Work Unit\Buttons\Next_Textblock\Next Textblock 2		88744
+

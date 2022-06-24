@@ -1,0 +1,21 @@
+Event	ID	Name			Wwise Object Path	Notes
+	457337183	Music_start_screen_play			\Music\Music_start_screen_play	
+
+State Group	ID	Name			Wwise Object Path	Notes
+	1690668539	Music_States			\Default Work Unit\Music_States	
+
+State	ID	Name	State Group			Notes
+	649557016	Fight_Scene	Music_States			
+	748895195	None	Music_States			
+	979765101	Win	Music_States			
+	1594779195	Main_Scene	Music_States			
+	2791675679	Defeated	Music_States			
+	4094426505	Menu_Scene	Music_States			
+
+In Memory Audio	ID	Name	Audio source file		Wwise Object Path	Notes	Data Size
+	23389556	JRPG - Fight Theme	C:\Users\Matte\SAE\5FSC0XD003 0322\Wwise\JRPG_Wwiseproject_01\.cache\Windows\SFX\JRPG - Fight Theme_D79FB2B7.wem		\Interactive Music Hierarchy\Music\Soundtracks\Fight Scene\JRPG - Fight Theme\JRPG - Fight Theme		32824236
+	68637131	JRPG - Main Theme	C:\Users\Matte\SAE\5FSC0XD003 0322\Wwise\JRPG_Wwiseproject_01\.cache\Windows\SFX\JRPG - Main Theme_D79FB2B7.wem		\Interactive Music Hierarchy\Music\Soundtracks\Main Theme\JRPG - Main Theme\JRPG - Main Theme		47973828
+	170275601	JRPG - Menu Theme	C:\Users\Matte\SAE\5FSC0XD003 0322\Wwise\JRPG_Wwiseproject_01\.cache\Windows\SFX\JRPG - Menu Theme_D79FB2B7.wem		\Interactive Music Hierarchy\Music\Soundtracks\Menu Theme\JRPG - Menu Theme\JRPG - Menu Theme		47973828
+	218030426	JRPG - Win_2	C:\Users\Matte\SAE\5FSC0XD003 0322\Wwise\JRPG_Wwiseproject_01\.cache\Windows\SFX\JRPG - Win_2_D79FB2B7.wem		\Interactive Music Hierarchy\Music\Soundtracks\JRPG - Win\JRPG - Win_2		1517964
+	452081813	JRPG - Defeated	C:\Users\Matte\SAE\5FSC0XD003 0322\Wwise\JRPG_Wwiseproject_01\.cache\Windows\SFX\JRPG - Defeated_D79FB2B7.wem		\Interactive Music Hierarchy\Music\Soundtracks\JRPG - Defeated\JRPG - Defeated		1341496
+

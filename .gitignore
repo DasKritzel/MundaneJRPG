@@ -58,5 +58,19 @@ sysinfo.txt
 *.unitypackage
 
 # Crashlytics generated file
-crashlytics-build.properties
-
+crashlytics-build.properties
+
+#Wwise Project Data
+Unity_Projekt_WwiseProject/.cache/
+Unity_Projekt_WwiseProject/*.prof
+Unity_Projekt_WwiseProject/*_WwiseProject.*.validationcache
+Unity_Projekt_WwiseProject/*_WwiseProject.*.wsettings
+Unity_Projekt_WwiseProject/**/*.akd
+Plugins/Wwise
+Unity_Projekt_WwiseProject/Originals
+Content/WwiseAudio/Media/
+Assets/WWise/Editor/ProjectData/AkWwiseProjectData.asset*
+WwiseUnityIntegration_*_Src.zip
+
+
+

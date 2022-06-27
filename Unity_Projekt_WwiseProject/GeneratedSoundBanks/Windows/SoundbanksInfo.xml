@@ -1,22 +1,22 @@
 <?xml version="1.0" encoding="utf-8"?>
 <SoundBanksInfo Platform="Windows" BasePlatform="Windows" SchemaVersion="12" SoundbankVersion="140">
 	<RootPaths>
-		<ProjectRoot>C:\Users\Matte\SAE\5FSC0XD003 0322\Wwise\JRPG_Wwiseproject_01\</ProjectRoot>
-		<SourceFilesRoot>C:\Users\Matte\SAE\5FSC0XD003 0322\Wwise\JRPG_Wwiseproject_01\.cache\Windows\</SourceFilesRoot>
-		<SoundBanksRoot>C:\Users\Matte\SAE\5FSC0XD003 0322\Wwise\JRPG_Wwiseproject_01\GeneratedSoundBanks\Windows\</SoundBanksRoot>
+		<ProjectRoot>C:\Users\Matte\SAE\5FSC0XD003 0322\Unity_Projekt\Unity_Projekt_WwiseProject\</ProjectRoot>
+		<SourceFilesRoot>C:\Users\Matte\SAE\5FSC0XD003 0322\Unity_Projekt\Unity_Projekt_WwiseProject\.cache\Windows\</SourceFilesRoot>
+		<SoundBanksRoot>C:\Users\Matte\SAE\5FSC0XD003 0322\Unity_Projekt\Unity_Projekt_WwiseProject\GeneratedSoundBanks\Windows\</SoundBanksRoot>
 		<ExternalSourcesInputFile></ExternalSourcesInputFile>
-		<ExternalSourcesOutputRoot>C:\Users\Matte\SAE\5FSC0XD003 0322\Wwise\JRPG_Wwiseproject_01\GeneratedSoundBanks\Windows</ExternalSourcesOutputRoot>
+		<ExternalSourcesOutputRoot>C:\Users\Matte\SAE\5FSC0XD003 0322\Unity_Projekt\Unity_Projekt_WwiseProject\GeneratedSoundBanks\Windows</ExternalSourcesOutputRoot>
 	</RootPaths>
 	<DialogueEvents/>
 	<StreamedFiles/>
 	<MediaFilesNotInAnyBank/>
 	<SoundBanks>
-		<SoundBank Id="1355168291" Language="SFX" Hash="4152972220">
+		<SoundBank Id="1355168291" Language="SFX" Hash="139355489">
 			<ObjectPath>Init</ObjectPath>
 			<ShortName>Init</ShortName>
 			<Path>Init.bnk</Path>
 		</SoundBank>
-		<SoundBank Id="1492361653" Language="SFX" Hash="3582746635">
+		<SoundBank Id="1492361653" Language="SFX" Hash="684197899">
 			<ObjectPath>\SoundBanks\Default Work Unit\Sounds</ObjectPath>
 			<ShortName>Sounds</ShortName>
 			<Path>Sounds.bnk</Path>

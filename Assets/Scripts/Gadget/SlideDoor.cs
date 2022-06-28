@@ -14,6 +14,10 @@ public class SlideDoor : Gadget
     private float moveDistance;
     private float startTime;
 
+    public AK.Wwise.RTPC ww_doorstate;
+    public GameObject ww_door;
+    private float door_openclose_distance;
+
     public override void Action()
     {
         isOpen = !isOpen;
@@ -54,5 +58,11 @@ public class SlideDoor : Gadget
         {
             transform.position = Vector3.Lerp(currentPosition, OpenPoint.position, fractionOfJourney);
         }
+
+        float door_openclose_distance = Vector3.Distance(ww_door.transform.position, ClosePoint.transform.position);
+
+        ww_doorstate.SetGlobalValue(door_openclose_distance);
+
+        //print(door_openclose_distance);
     }
 }

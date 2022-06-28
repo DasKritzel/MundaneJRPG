@@ -1,0 +1,17 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 8c60b9f1e7aae4e4083f3e138e40a50d, type: 3}
+  m_Name: 53496111-199D-46CB-AB8E-3FCD2FD2FFCE
+  m_EditorClassIdentifier: 
+  objectName: Door_State
+  id: 2801520815
+  guid: 53496111-199D-46CB-AB8E-3FCD2FD2FFCE

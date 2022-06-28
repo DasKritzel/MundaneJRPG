@@ -455,8 +455,8 @@ GameObject:
   - component: {fileID: 796647435}
   - component: {fileID: 796647434}
   - component: {fileID: 796647433}
-  - component: {fileID: 796647437}
   - component: {fileID: 796647436}
+  - component: {fileID: 796647437}
   m_Layer: 0
   m_Name: WwiseGlobal
   m_TagString: Untagged
@@ -476,7 +476,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 4eb910abc22939c4ea61c85a88fe3c4e, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  triggerList: ae8d9d44f7e1664c
+  triggerList: f7e1664c
   useOtherObject: 0
   data:
     idInternal: 0
@@ -549,7 +549,7 @@ MonoBehaviour:
     valueGuidInternal: 
     groupIdInternal: 0
     groupGuidInternal: 
-    WwiseObjectReference: {fileID: 11400000, guid: 81fa125deed570240991fac5e5baa559,
+    WwiseObjectReference: {fileID: 11400000, guid: e5da39d3231f7f344833a53fc7dee410,
       type: 2}
   valueIdInternal: 0
   groupIdInternal: 0
@@ -564,22 +564,22 @@ MonoBehaviour:
   m_GameObject: {fileID: 796647432}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 4eb910abc22939c4ea61c85a88fe3c4e, type: 3}
+  m_Script: {fileID: 11500000, guid: d537b2c27bd868945a462d3d46229425, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  triggerList: f7e1664c
+  triggerList: 958ca0ea
   useOtherObject: 0
   data:
     idInternal: 0
     valueGuidInternal: 
-    WwiseObjectReference: {fileID: 11400000, guid: 9fd1eccda825610439855b40c2bb829d,
+    groupIdInternal: 0
+    groupGuidInternal: 
+    WwiseObjectReference: {fileID: 11400000, guid: 95b7d01882808d140a0bde0bff941924,
       type: 2}
-  decodeBank: 0
-  loadAsynchronous: 0
-  saveDecodedBank: 0
-  unloadTriggerList: 958ca0ea
-  bankNameInternal: 
+  valueIdInternal: 0
+  groupIdInternal: 0
   valueGuidInternal: 
+  groupGuidInternal: 
 --- !u!1 &917979368
 GameObject:
   m_ObjectHideFlags: 0

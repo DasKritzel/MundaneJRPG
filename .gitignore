@@ -69,7 +69,7 @@ Unity_Projekt_WwiseProject/**/*.akd
 Plugins/Wwise
 Unity_Projekt_WwiseProject/Originals
 Content/WwiseAudio/Media/
-Assets/WWise/Editor/ProjectData/AkWwiseProjectData.asset*
+#Assets/WWise/Editor/ProjectData/AkWwiseProjectData.asset*
 WwiseUnityIntegration_*_Src.zip
 
 

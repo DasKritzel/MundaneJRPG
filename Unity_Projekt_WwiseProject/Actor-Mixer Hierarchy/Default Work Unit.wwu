@@ -207,11 +207,6 @@
 							<ChildrenList>
 								<Sound Name="Next Textblock 1" ID="{28B43131-418C-4C55-BAEB-C8B3420F5109}" ShortID="577197701">
 									<PropertyList>
-										<Property Name="CenterPercentage" Type="int32">
-											<RTPCList>
-												<RTPC Name="" ID="{C2970708-D203-4E8C-8B38-C8820B529658}" ShortID="677879468"/>
-											</RTPCList>
-										</Property>
 										<Property Name="OverridePositioning" Type="bool" Value="True"/>
 									</PropertyList>
 									<ReferenceList>
@@ -1001,6 +996,37 @@
 									<ValueList>
 										<Value>31</Value>
 									</ValueList>
+									<RTPCList>
+										<RTPC Name="" ID="{98D917AC-F7C5-4FD3-80D7-01BC20E2FD21}" ShortID="733950794">
+											<ReferenceList>
+												<Reference Name="ControlInput">
+													<ObjectRef Name="Door_OpenClose" ID="{65D0FA37-96B2-490F-A9BC-79F1766EEF21}" WorkUnitID="{D0744A15-8A43-49D4-B7CE-2FA31EF67649}"/>
+												</Reference>
+											</ReferenceList>
+											<Curve Name="" ID="{DC58965A-540B-4DEC-B779-BD4CDD6F4ED2}">
+												<PropertyList>
+													<Property Name="Flags" Type="int32" Value="65537"/>
+												</PropertyList>
+												<PointList>
+													<Point>
+														<XPos>0</XPos>
+														<YPos>32</YPos>
+														<Flags>5</Flags>
+													</Point>
+													<Point>
+														<XPos>0.386559865092749</XPos>
+														<YPos>0</YPos>
+														<Flags>0</Flags>
+													</Point>
+													<Point>
+														<XPos>0.81</XPos>
+														<YPos>0</YPos>
+														<Flags>37</Flags>
+													</Point>
+												</PointList>
+											</Curve>
+										</RTPC>
+									</RTPCList>
 								</Property>
 								<Property Name="Volume" Type="Real64">
 									<ValueList>

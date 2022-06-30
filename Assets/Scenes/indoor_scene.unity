@@ -38,7 +38,7 @@ RenderSettings:
   m_ReflectionIntensity: 1
   m_CustomReflection: {fileID: 0}
   m_Sun: {fileID: 0}
-  m_IndirectSpecularColor: {r: 0, g: 0, b: 0, a: 1}
+  m_IndirectSpecularColor: {r: 262.38354, g: 325.1084, b: 430.30957, a: 1}
   m_UseRadianceAmbientProbe: 0
 --- !u!157 &3
 LightmapSettings:
@@ -9163,7 +9163,7 @@ PrefabInstance:
         type: 3}
       propertyPath: ww_doorstate.WwiseObjectReference
       value: 
-      objectReference: {fileID: 11400000, guid: 1c6643b193085f3488e1dd313b9ff0e1,
+      objectReference: {fileID: 11400000, guid: f82d6059d3fcdcc40a063b8336d13989,
         type: 2}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: b8257951e7c9e2e4e8419fb64088f7c4, type: 3}

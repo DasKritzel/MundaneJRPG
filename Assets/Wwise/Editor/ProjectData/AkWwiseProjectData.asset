@@ -399,12 +399,26 @@ MonoBehaviour:
       guid: 00000000000000000000000000000000
     - ElementName: Default Work Unit
       ObjectType: 12
-      guid: d06a517adabac14ebd1e34a2e6b68abf
+      guid: 154a74d0438ad449b7ce2fa31ef67649
     ParentPath: Game Parameters\Default Work Unit
-    guid: d06a517adabac14ebd1e34a2e6b68abf
+    guid: 154a74d0438ad449b7ce2fa31ef67649
     GuidInternal: 
-    m_lastTime: -8585455370686140285
-    List: []
+    m_lastTime: -8585450238371744850
+    List:
+    - name: Door_OpenClose
+      guid: 37fad065b2960f49a9bc79f1766eef21
+      id: 3351328524
+      PathAndIcons:
+      - ElementName: Game Parameters
+        ObjectType: 5
+        guid: 00000000000000000000000000000000
+      - ElementName: Default Work Unit
+        ObjectType: 12
+        guid: 154a74d0438ad449b7ce2fa31ef67649
+      - ElementName: Door_OpenClose
+        ObjectType: 13
+        guid: 37fad065b2960f49a9bc79f1766eef21
+      Path: Game Parameters\Default Work Unit\Door_OpenClose
   StateWwu:
   - PhysicalPath: States\Default Work Unit.wwu
     PathAndIcons:
@@ -448,7 +462,7 @@ MonoBehaviour:
     m_lastTime: -8585455370687125463
     List: []
   ExpandedFileSystemItemIds: 
-  ExpandedWaapiItemIds: 0100000006000000070000000e0000000f00000010000000110000001200000013000000140000001500000017000000180000001a0000001e0000001f000000
+  ExpandedWaapiItemIds: 1e0000001f000000
   AutoSyncSelection: 0
   autoPopulateEnabled: 1
   currentDataSource: 0

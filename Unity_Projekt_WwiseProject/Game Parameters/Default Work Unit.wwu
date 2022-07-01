@@ -9,6 +9,13 @@
 						<Property Name="Max" Type="Real64" Value="0.81"/>
 					</PropertyList>
 				</GameParameter>
+				<GameParameter Name="Music_Volume" ID="{1A5E2F11-83A1-4FC1-8EA9-A19A2338CB4E}">
+					<PropertyList>
+						<Property Name="InitialValue" Type="Real64" Value="0"/>
+						<Property Name="Max" Type="Real64" Value="0"/>
+						<Property Name="Min" Type="Real64" Value="-48"/>
+					</PropertyList>
+				</GameParameter>
 			</ChildrenList>
 		</WorkUnit>
 	</GameParameters>

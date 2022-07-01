@@ -15,6 +15,7 @@
 						<ObjectRef Name="Play_Button" ID="{4D674F08-5B86-40C1-AD94-461C4619B2CB}" WorkUnitID="{1D07277A-854F-4A3A-8D5B-D54D417B440D}" Origin="Manual" Filter="7"/>
 						<ObjectRef Name="Play_Button_1__START_" ID="{BBDDA076-62EF-4670-B794-725AC3C2E511}" WorkUnitID="{1D07277A-854F-4A3A-8D5B-D54D417B440D}" Origin="Manual" Filter="7"/>
 						<ObjectRef Name="Play_Forest_Sun" ID="{85CC497E-3FC7-4708-9C91-F52CC69A9D4D}" WorkUnitID="{1D07277A-854F-4A3A-8D5B-D54D417B440D}" Origin="Manual" Filter="7"/>
+						<ObjectRef Name="Play_Printer" ID="{BB4A0094-240B-470B-AF52-719BA1511DBB}" WorkUnitID="{1D07277A-854F-4A3A-8D5B-D54D417B440D}" Origin="Manual" Filter="7"/>
 						<ObjectRef Name="Play_ESC_Menu_Button" ID="{EE71655B-5EDE-4950-B2E4-FC8535260E83}" WorkUnitID="{1D07277A-854F-4A3A-8D5B-D54D417B440D}" Origin="Manual" Filter="7"/>
 						<ObjectRef Name="Play_Next_Textblock" ID="{9D1A74BE-2333-4A39-8D85-8CCD9D09B544}" WorkUnitID="{1D07277A-854F-4A3A-8D5B-D54D417B440D}" Origin="Manual" Filter="7"/>
 						<ObjectRef Name="Play_Button_4" ID="{A3F1650C-D036-4AD7-9DD5-FC692AA629BF}" WorkUnitID="{1D07277A-854F-4A3A-8D5B-D54D417B440D}" Origin="Manual" Filter="7"/>

@@ -303,7 +303,7 @@ MonoBehaviour:
     ParentPath: Master-Mixer Hierarchy\Default Work Unit
     guid: 9deece6b380b684db81ee17343311db9
     GuidInternal: 
-    m_lastTime: -8585452736457474792
+    m_lastTime: -8585449390271466671
     List:
     - name: Buttons
       guid: d1ba1f51f70d55478a7411ea8c333419
@@ -319,6 +319,20 @@ MonoBehaviour:
         ObjectType: 2
         guid: d1ba1f51f70d55478a7411ea8c333419
       Path: Master-Mixer Hierarchy\Default Work Unit\Buttons
+    - name: Enemys
+      guid: 8a50073e8b3db245bed5c686238b7521
+      id: 1312765294
+      PathAndIcons:
+      - ElementName: Master-Mixer Hierarchy
+        ObjectType: 5
+        guid: 00000000000000000000000000000000
+      - ElementName: Default Work Unit
+        ObjectType: 12
+        guid: 9deece6b380b684db81ee17343311db9
+      - ElementName: Enemys
+        ObjectType: 2
+        guid: 8a50073e8b3db245bed5c686238b7521
+      Path: Master-Mixer Hierarchy\Default Work Unit\Enemys
     - name: Master Audio Bus
       guid: d8a41415a61d2a41a17e75ca0c2149f3
       id: 3803692087
@@ -333,6 +347,20 @@ MonoBehaviour:
         ObjectType: 2
         guid: d8a41415a61d2a41a17e75ca0c2149f3
       Path: Master-Mixer Hierarchy\Default Work Unit\Master Audio Bus
+    - name: Music
+      guid: cf23c0e266d8c048854c7cc48f5cdbcf
+      id: 3991942870
+      PathAndIcons:
+      - ElementName: Master-Mixer Hierarchy
+        ObjectType: 5
+        guid: 00000000000000000000000000000000
+      - ElementName: Default Work Unit
+        ObjectType: 12
+        guid: 9deece6b380b684db81ee17343311db9
+      - ElementName: Music
+        ObjectType: 2
+        guid: cf23c0e266d8c048854c7cc48f5cdbcf
+      Path: Master-Mixer Hierarchy\Default Work Unit\Music
   BankWwu:
   - PhysicalPath: SoundBanks\Default Work Unit.wwu
     PathAndIcons:
@@ -341,12 +369,40 @@ MonoBehaviour:
       guid: 00000000000000000000000000000000
     - ElementName: Default Work Unit
       ObjectType: 12
-      guid: 323d4e6b0e68d74c86e611228d80bb76
+      guid: 59f46ce21aeff347bb44bd6a307a6312
     ParentPath: SoundBanks\Default Work Unit
-    guid: 323d4e6b0e68d74c86e611228d80bb76
+    guid: 59f46ce21aeff347bb44bd6a307a6312
     GuidInternal: 
-    m_lastTime: -8585455370685680200
-    List: []
+    m_lastTime: -8585449390271421660
+    List:
+    - name: Music
+      guid: a69b919c1787d349afb7d49588354d8b
+      id: 3991942870
+      PathAndIcons:
+      - ElementName: SoundBanks
+        ObjectType: 5
+        guid: 00000000000000000000000000000000
+      - ElementName: Default Work Unit
+        ObjectType: 12
+        guid: 59f46ce21aeff347bb44bd6a307a6312
+      - ElementName: Music
+        ObjectType: 7
+        guid: a69b919c1787d349afb7d49588354d8b
+      Path: SoundBanks\Default Work Unit\Music
+    - name: Sounds
+      guid: 6853f474b1978f40b1ffa2cc3856d24c
+      id: 1492361653
+      PathAndIcons:
+      - ElementName: SoundBanks
+        ObjectType: 5
+        guid: 00000000000000000000000000000000
+      - ElementName: Default Work Unit
+        ObjectType: 12
+        guid: 59f46ce21aeff347bb44bd6a307a6312
+      - ElementName: Sounds
+        ObjectType: 7
+        guid: 6853f474b1978f40b1ffa2cc3856d24c
+      Path: SoundBanks\Default Work Unit\Sounds
   EventWwu:
   - PhysicalPath: Events\Default Work Unit.wwu
     PathAndIcons:
@@ -355,12 +411,160 @@ MonoBehaviour:
       guid: 00000000000000000000000000000000
     - ElementName: Default Work Unit
       ObjectType: 12
-      guid: d277b9dc73096442803c86023ac9d7b4
+      guid: 7a27071d4f853a4a8d5bd54d417b440d
     ParentPath: Events\Default Work Unit
-    guid: d277b9dc73096442803c86023ac9d7b4
+    guid: 7a27071d4f853a4a8d5bd54d417b440d
     GuidInternal: 
-    m_lastTime: -8585455370685635194
-    List: []
+    m_lastTime: -8585449390271331646
+    List:
+    - name: Buttons
+      guid: fe254861deb5e14484d8937d1a5e6ece
+      id: 203100604
+      PathAndIcons:
+      - ElementName: Events
+        ObjectType: 5
+        guid: 00000000000000000000000000000000
+      - ElementName: Default Work Unit
+        ObjectType: 12
+        guid: 7a27071d4f853a4a8d5bd54d417b440d
+      - ElementName: Buttons
+        ObjectType: 4
+        guid: fe254861deb5e14484d8937d1a5e6ece
+      Path: Events\Default Work Unit\Buttons
+      maxAttenuation: 0
+      maxDuration: -1
+      minDuration: -1
+    - name: Play_Button
+      guid: 084f674d865bc140ad94461c4619b2cb
+      id: 2099555730
+      PathAndIcons:
+      - ElementName: Events
+        ObjectType: 5
+        guid: 00000000000000000000000000000000
+      - ElementName: Default Work Unit
+        ObjectType: 12
+        guid: 7a27071d4f853a4a8d5bd54d417b440d
+      - ElementName: Buttons
+        ObjectType: 4
+        guid: fe254861deb5e14484d8937d1a5e6ece
+      - ElementName: Play_Button
+        ObjectType: 3
+        guid: 084f674d865bc140ad94461c4619b2cb
+      Path: Events\Default Work Unit\Buttons\Play_Button
+      maxAttenuation: 0
+      maxDuration: 0.477226
+      minDuration: 0.443471
+    - name: Play_Button_1__START_
+      guid: 76a0ddbbef627046b794725ac3c2e511
+      id: 3971818183
+      PathAndIcons:
+      - ElementName: Events
+        ObjectType: 5
+        guid: 00000000000000000000000000000000
+      - ElementName: Default Work Unit
+        ObjectType: 12
+        guid: 7a27071d4f853a4a8d5bd54d417b440d
+      - ElementName: Buttons
+        ObjectType: 4
+        guid: fe254861deb5e14484d8937d1a5e6ece
+      - ElementName: Play_Button_1__START_
+        ObjectType: 3
+        guid: 76a0ddbbef627046b794725ac3c2e511
+      Path: Events\Default Work Unit\Buttons\Play_Button_1__START_
+      maxAttenuation: 0
+      maxDuration: 0.735583
+      minDuration: 0.735583
+    - name: Play_Button_4
+      guid: 0c65f1a336d0d74a9dd5fc692aa629bf
+      id: 2296794015
+      PathAndIcons:
+      - ElementName: Events
+        ObjectType: 5
+        guid: 00000000000000000000000000000000
+      - ElementName: Default Work Unit
+        ObjectType: 12
+        guid: 7a27071d4f853a4a8d5bd54d417b440d
+      - ElementName: Buttons
+        ObjectType: 4
+        guid: fe254861deb5e14484d8937d1a5e6ece
+      - ElementName: Play_Button_4
+        ObjectType: 3
+        guid: 0c65f1a336d0d74a9dd5fc692aa629bf
+      Path: Events\Default Work Unit\Buttons\Play_Button_4
+      maxAttenuation: 0
+      maxDuration: 0.278833
+      minDuration: 0.278833
+    - name: Play_ESC_Menu_Button
+      guid: 5b6571eede5e5049b2e4fc8535260e83
+      id: 922140700
+      PathAndIcons:
+      - ElementName: Events
+        ObjectType: 5
+        guid: 00000000000000000000000000000000
+      - ElementName: Default Work Unit
+        ObjectType: 12
+        guid: 7a27071d4f853a4a8d5bd54d417b440d
+      - ElementName: Buttons
+        ObjectType: 4
+        guid: fe254861deb5e14484d8937d1a5e6ece
+      - ElementName: Play_ESC_Menu_Button
+        ObjectType: 3
+        guid: 5b6571eede5e5049b2e4fc8535260e83
+      Path: Events\Default Work Unit\Buttons\Play_ESC_Menu_Button
+      maxAttenuation: 0
+      maxDuration: 0.831729
+      minDuration: 0.831729
+    - name: Play_Forest_Sun
+      guid: 7e49cc85c73f08479c91f52cc69a9d4d
+      id: 3957949786
+      PathAndIcons:
+      - ElementName: Events
+        ObjectType: 5
+        guid: 00000000000000000000000000000000
+      - ElementName: Default Work Unit
+        ObjectType: 12
+        guid: 7a27071d4f853a4a8d5bd54d417b440d
+      - ElementName: Play_Forest_Sun
+        ObjectType: 3
+        guid: 7e49cc85c73f08479c91f52cc69a9d4d
+      Path: Events\Default Work Unit\Play_Forest_Sun
+      maxAttenuation: 30
+      maxDuration: -1
+      minDuration: -1
+    - name: Play_Next_Textblock
+      guid: be741a9d3323394a8d858ccd9d09b544
+      id: 4158330684
+      PathAndIcons:
+      - ElementName: Events
+        ObjectType: 5
+        guid: 00000000000000000000000000000000
+      - ElementName: Default Work Unit
+        ObjectType: 12
+        guid: 7a27071d4f853a4a8d5bd54d417b440d
+      - ElementName: Play_Next_Textblock
+        ObjectType: 3
+        guid: be741a9d3323394a8d858ccd9d09b544
+      Path: Events\Default Work Unit\Play_Next_Textblock
+      maxAttenuation: 0
+      maxDuration: 0.496385
+      minDuration: 0.422747
+    - name: Play_Printer
+      guid: 94004abb0b240b47af52719ba1511dbb
+      id: 2791703278
+      PathAndIcons:
+      - ElementName: Events
+        ObjectType: 5
+        guid: 00000000000000000000000000000000
+      - ElementName: Default Work Unit
+        ObjectType: 12
+        guid: 7a27071d4f853a4a8d5bd54d417b440d
+      - ElementName: Play_Printer
+        ObjectType: 3
+        guid: 94004abb0b240b47af52719ba1511dbb
+      Path: Events\Default Work Unit\Play_Printer
+      maxAttenuation: 0
+      maxDuration: 3.235583
+      minDuration: 2.370188
   - PhysicalPath: Events\Music.wwu
     PathAndIcons:
     - ElementName: Events
@@ -403,7 +607,7 @@ MonoBehaviour:
     ParentPath: Game Parameters\Default Work Unit
     guid: 154a74d0438ad449b7ce2fa31ef67649
     GuidInternal: 
-    m_lastTime: -8585450238371744850
+    m_lastTime: -8585449390271511678
     List:
     - name: Door_OpenClose
       guid: 37fad065b2960f49a9bc79f1766eef21
@@ -419,6 +623,20 @@ MonoBehaviour:
         ObjectType: 13
         guid: 37fad065b2960f49a9bc79f1766eef21
       Path: Game Parameters\Default Work Unit\Door_OpenClose
+    - name: Music_Volume
+      guid: 112f5e1aa183c14f8ea9a19a2338cb4e
+      id: 1006694123
+      PathAndIcons:
+      - ElementName: Game Parameters
+        ObjectType: 5
+        guid: 00000000000000000000000000000000
+      - ElementName: Default Work Unit
+        ObjectType: 12
+        guid: 154a74d0438ad449b7ce2fa31ef67649
+      - ElementName: Music_Volume
+        ObjectType: 13
+        guid: 112f5e1aa183c14f8ea9a19a2338cb4e
+      Path: Game Parameters\Default Work Unit\Music_Volume
   StateWwu:
   - PhysicalPath: States\Default Work Unit.wwu
     PathAndIcons:
@@ -462,7 +680,7 @@ MonoBehaviour:
     m_lastTime: -8585455370687125463
     List: []
   ExpandedFileSystemItemIds: 
-  ExpandedWaapiItemIds: 1e0000001f000000
+  ExpandedWaapiItemIds: 06000000070000000800000022000000
   AutoSyncSelection: 0
   autoPopulateEnabled: 1
   currentDataSource: 0

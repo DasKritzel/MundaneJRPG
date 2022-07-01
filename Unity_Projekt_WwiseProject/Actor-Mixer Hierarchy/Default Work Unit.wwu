@@ -1102,6 +1102,140 @@
 						</Sound>
 					</ChildrenList>
 				</Folder>
+				<RandomSequenceContainer Name="Printer" ID="{32957DBF-A5D1-40E1-8F87-55512878D13B}" ShortID="164587765">
+					<PropertyList>
+						<Property Name="NormalOrShuffle" Type="int16" Value="0"/>
+						<Property Name="SpeakerPanning" Type="int16" Value="1"/>
+						<Property Name="Volume" Type="Real64">
+							<ValueList>
+								<Value>-15</Value>
+							</ValueList>
+						</Property>
+					</PropertyList>
+					<ReferenceList>
+						<Reference Name="Conversion">
+							<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{BCB6C5A7-A54E-4C84-8011-DBB801000DB2}"/>
+						</Reference>
+						<Reference Name="OutputBus">
+							<ObjectRef Name="Enemys" ID="{3E07508A-3D8B-45B2-BED5-C686238B7521}" WorkUnitID="{6BCEEE9D-0B38-4D68-B81E-E17343311DB9}"/>
+						</Reference>
+					</ReferenceList>
+					<ChildrenList>
+						<Sound Name="Print 1" ID="{16746E30-C3D0-4EA5-979A-E86A851BD5FC}" ShortID="546985554">
+							<PropertyList>
+								<Property Name="Highpass" Type="int16">
+									<ValueList>
+										<Value>24</Value>
+									</ValueList>
+								</Property>
+								<Property Name="Lowpass" Type="int16">
+									<ValueList>
+										<Value>30</Value>
+									</ValueList>
+								</Property>
+								<Property Name="Volume" Type="Real64">
+									<ValueList>
+										<Value>-2</Value>
+									</ValueList>
+								</Property>
+							</PropertyList>
+							<ReferenceList>
+								<Reference Name="Conversion">
+									<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{BCB6C5A7-A54E-4C84-8011-DBB801000DB2}"/>
+								</Reference>
+								<Reference Name="OutputBus">
+									<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{6BCEEE9D-0B38-4D68-B81E-E17343311DB9}"/>
+								</Reference>
+							</ReferenceList>
+							<ChildrenList>
+								<AudioFileSource Name="Print 1" ID="{F3C073A7-6C7B-4B36-B321-D55E9925E6D5}">
+									<Language>SFX</Language>
+									<AudioFile>Print 1.wav</AudioFile>
+									<MediaIDList>
+										<MediaID ID="242810273"/>
+									</MediaIDList>
+								</AudioFileSource>
+							</ChildrenList>
+							<ObjectLists/>
+							<ActiveSourceList>
+								<ActiveSource Name="Print 1" ID="{F3C073A7-6C7B-4B36-B321-D55E9925E6D5}" Platform="Linked"/>
+							</ActiveSourceList>
+						</Sound>
+						<Sound Name="Print 2" ID="{D5509560-3E3C-48BE-B5DC-03922D328813}" ShortID="638041595">
+							<PropertyList>
+								<Property Name="Lowpass" Type="int16">
+									<ValueList>
+										<Value>28</Value>
+									</ValueList>
+								</Property>
+								<Property Name="Pitch" Type="int32">
+									<ModifierList>
+										<ModifierInfo>
+											<Modifier Name="" ID="{D24DAA13-592F-4B25-8070-187B2495AC90}">
+												<PropertyList>
+													<Property Name="Enabled" Type="bool" Value="True"/>
+												</PropertyList>
+											</Modifier>
+										</ModifierInfo>
+									</ModifierList>
+								</Property>
+							</PropertyList>
+							<ReferenceList>
+								<Reference Name="Conversion">
+									<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{BCB6C5A7-A54E-4C84-8011-DBB801000DB2}"/>
+								</Reference>
+								<Reference Name="OutputBus">
+									<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{6BCEEE9D-0B38-4D68-B81E-E17343311DB9}"/>
+								</Reference>
+							</ReferenceList>
+							<ChildrenList>
+								<AudioFileSource Name="Print 2" ID="{02B07E03-F528-4642-837F-594F45D6E2B5}">
+									<Language>SFX</Language>
+									<AudioFile>Print 2.wav</AudioFile>
+									<MediaIDList>
+										<MediaID ID="675680187"/>
+									</MediaIDList>
+								</AudioFileSource>
+							</ChildrenList>
+							<ObjectLists/>
+							<ActiveSourceList>
+								<ActiveSource Name="Print 2" ID="{02B07E03-F528-4642-837F-594F45D6E2B5}" Platform="Linked"/>
+							</ActiveSourceList>
+						</Sound>
+						<Sound Name="Print 3" ID="{4BEEC801-5DD6-43B3-9C6C-97027EEF880D}" ShortID="198592629">
+							<ReferenceList>
+								<Reference Name="Conversion">
+									<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{BCB6C5A7-A54E-4C84-8011-DBB801000DB2}"/>
+								</Reference>
+								<Reference Name="OutputBus">
+									<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{6BCEEE9D-0B38-4D68-B81E-E17343311DB9}"/>
+								</Reference>
+							</ReferenceList>
+							<ChildrenList>
+								<AudioFileSource Name="Print 3" ID="{A15662F4-D24B-4977-8EC3-FF37998B22B1}">
+									<Language>SFX</Language>
+									<AudioFile>Print 3.wav</AudioFile>
+									<MediaIDList>
+										<MediaID ID="806015713"/>
+									</MediaIDList>
+								</AudioFileSource>
+							</ChildrenList>
+							<ObjectLists/>
+							<ActiveSourceList>
+								<ActiveSource Name="Print 3" ID="{A15662F4-D24B-4977-8EC3-FF37998B22B1}" Platform="Linked"/>
+							</ActiveSourceList>
+						</Sound>
+					</ChildrenList>
+					<PositioningInfo>
+						<Panner Name="" ID="{3494612D-D6E3-4031-914D-4CA3E6D97D36}">
+							<PropertyList>
+								<Property Name="PanX" Type="Real64" Value="59.2734225621415"/>
+								<Property Name="PanY" Type="Real64" Value="84.9898580121704"/>
+							</PropertyList>
+						</Panner>
+					</PositioningInfo>
+					<ObjectLists/>
+				</RandomSequenceContainer>
 			</ChildrenList>
 		</WorkUnit>
 	</AudioObjects>

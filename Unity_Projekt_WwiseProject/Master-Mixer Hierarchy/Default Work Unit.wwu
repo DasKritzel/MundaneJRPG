@@ -15,7 +15,7 @@
 					<PropertyList>
 						<Property Name="BusVolume" Type="Real64">
 							<ValueList>
-								<Value>-2</Value>
+								<Value>-11</Value>
 							</ValueList>
 						</Property>
 					</PropertyList>
@@ -72,6 +72,13 @@
 					<ObjectLists/>
 				</Bus>
 				<Bus Name="Music" ID="{E2C023CF-D866-48C0-854C-7CC48F5CDBCF}">
+					<PropertyList>
+						<Property Name="BusVolume" Type="Real64">
+							<ValueList>
+								<Value>-11</Value>
+							</ValueList>
+						</Property>
+					</PropertyList>
 					<ReferenceList>
 						<Reference Name="AudioDevice">
 							<ObjectRef Name="System" ID="{E86CD9BB-3398-4E56-B7EF-FA76E7F56659}" WorkUnitID="{5F75AC31-1823-413C-B873-807713572C5C}"/>

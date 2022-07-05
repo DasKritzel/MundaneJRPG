@@ -1,6 +1,27 @@
 <?xml version="1.0" encoding="utf-8"?>
 <WwiseDocument Type="WorkUnit" ID="{40C91F05-8830-44CB-9EB8-DF604B2B88ED}" SchemaVersion="103">
 	<SoundcasterSessions>
-		<WorkUnit Name="Default Work Unit" ID="{40C91F05-8830-44CB-9EB8-DF604B2B88ED}" PersistMode="Standalone"/>
+		<WorkUnit Name="Default Work Unit" ID="{40C91F05-8830-44CB-9EB8-DF604B2B88ED}" PersistMode="Standalone">
+			<ChildrenList>
+				<SoundcasterSession Name="New Soundcaster Session" ID="{DCA97881-9C14-4FA7-8631-6D738C5AD829}">
+					<RTPCValueList ShowAll="true">
+						<RTPCValue>
+							<GameParameterRef Name="Door_OpenClose" ID="{65D0FA37-96B2-490F-A9BC-79F1766EEF21}"/>
+							<Value>0.0484308600337268</Value>
+						</RTPCValue>
+						<RTPCValue>
+							<GameParameterRef Name="Music_Volume" ID="{1A5E2F11-83A1-4FC1-8EA9-A19A2338CB4E}"/>
+							<Value>0</Value>
+						</RTPCValue>
+					</RTPCValueList>
+					<CurrentStateList ShowAll="true">
+						<CurrentStateRef Name="Main_Scene" ID="{82D89716-B8E0-4F27-AB90-FD7AD37E530D}"/>
+					</CurrentStateList>
+					<CurrentSwitchList ShowAll="true">
+						<CurrentSwitchRef Name="Fight_Scene" ID="{973733F7-D5B1-4683-824F-03CEF9FA422A}"/>
+					</CurrentSwitchList>
+				</SoundcasterSession>
+			</ChildrenList>
+		</WorkUnit>
 	</SoundcasterSessions>
 </WwiseDocument>

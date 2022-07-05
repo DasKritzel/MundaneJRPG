@@ -15,13 +15,86 @@
 					<PropertyList>
 						<Property Name="BusVolume" Type="Real64">
 							<ValueList>
-								<Value>-2</Value>
+								<Value>-11</Value>
 							</ValueList>
 						</Property>
 					</PropertyList>
 					<ReferenceList>
 						<Reference Name="AudioDevice">
 							<ObjectRef Name="System" ID="{E86CD9BB-3398-4E56-B7EF-FA76E7F56659}" WorkUnitID="{5F75AC31-1823-413C-B873-807713572C5C}"/>
+						</Reference>
+					</ReferenceList>
+					<ObjectLists/>
+				</Bus>
+				<Bus Name="Enemys" ID="{3E07508A-3D8B-45B2-BED5-C686238B7521}">
+					<PropertyList>
+						<Property Name="Volume" Type="Real64">
+							<RTPCList>
+								<RTPC Name="" ID="{9C663F0E-060D-44C7-97D0-EF902725911C}" ShortID="920949021">
+									<ReferenceList>
+										<Reference Name="ControlInput">
+											<ObjectRef Name="Music_Volume" ID="{1A5E2F11-83A1-4FC1-8EA9-A19A2338CB4E}" WorkUnitID="{D0744A15-8A43-49D4-B7CE-2FA31EF67649}"/>
+										</Reference>
+									</ReferenceList>
+									<Curve Name="" ID="{5065EA79-AC4C-44EC-AE9F-E5EE5BA3473B}">
+										<PropertyList>
+											<Property Name="Flags" Type="int32" Value="3"/>
+										</PropertyList>
+										<PointList>
+											<Point>
+												<XPos>-48</XPos>
+												<YPos>0</YPos>
+												<Flags>5</Flags>
+												<SegmentShape>Log1</SegmentShape>
+											</Point>
+											<Point>
+												<XPos>-34.56</XPos>
+												<YPos>-1.71528</YPos>
+												<Flags>0</Flags>
+												<SegmentShape>Exp1</SegmentShape>
+											</Point>
+											<Point>
+												<XPos>0</XPos>
+												<YPos>-200</YPos>
+												<Flags>37</Flags>
+											</Point>
+										</PointList>
+									</Curve>
+								</RTPC>
+							</RTPCList>
+						</Property>
+					</PropertyList>
+					<ReferenceList>
+						<Reference Name="AudioDevice">
+							<ObjectRef Name="System" ID="{E86CD9BB-3398-4E56-B7EF-FA76E7F56659}" WorkUnitID="{5F75AC31-1823-413C-B873-807713572C5C}"/>
+						</Reference>
+					</ReferenceList>
+					<ObjectLists/>
+				</Bus>
+				<Bus Name="Music" ID="{E2C023CF-D866-48C0-854C-7CC48F5CDBCF}">
+					<PropertyList>
+						<Property Name="BusVolume" Type="Real64">
+							<ValueList>
+								<Value>-11</Value>
+							</ValueList>
+						</Property>
+					</PropertyList>
+					<ReferenceList>
+						<Reference Name="AudioDevice">
+							<ObjectRef Name="System" ID="{E86CD9BB-3398-4E56-B7EF-FA76E7F56659}" WorkUnitID="{5F75AC31-1823-413C-B873-807713572C5C}"/>
+						</Reference>
+						<Reference Name="Effect0">
+							<Custom>
+								<Effect Name="Wwise Meter (Custom)" ID="{33B486C4-BDFD-482C-B68A-68323F5ED13A}" ShortID="418666341" PluginName="Wwise Meter" CompanyID="0" PluginID="129" PluginType="3">
+									<PropertyList>
+										<Property Name="AttackTime" Type="Real32" Value="0.1"/>
+										<Property Name="MeterMode" Type="int32" Value="1"/>
+									</PropertyList>
+									<PluginData>
+	<GameParameter Name="Music_Volume" ID="{1A5E2F11-83A1-4FC1-8EA9-A19A2338CB4E}"/>
+</PluginData>
+								</Effect>
+							</Custom>
 						</Reference>
 					</ReferenceList>
 					<ObjectLists/>

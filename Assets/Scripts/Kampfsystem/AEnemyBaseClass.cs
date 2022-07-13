@@ -2,6 +2,7 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
+//Hinzufügen von Modifiern und Texten zu Gegnern
 public abstract class AEnemyBaseClass : MonoBehaviour
 {
     public bool BattleHasEnded => BattleEnded;
@@ -30,6 +31,7 @@ public abstract class AEnemyBaseClass : MonoBehaviour
 
     protected bool BattleEnded;
 
+    //TODO: EndCheck überarbeiten
     public void SetDamage(int dmg, int str)
     {
         HP += dmg;

@@ -19,12 +19,14 @@ MonoBehaviour:
     HP: -5
     Stress: 10
     Cost: 0
+    ExhaustedSprite: 0
     NewState: {fileID: 11400000, guid: bf7375689eced8a4396f566e3f7b36dd, type: 2}
   - ChoiceName: Neustarten
     ResultText: 'Der Drucker ist jetzt aus... und wieder an... '
     HP: 0
     Stress: -10
     Cost: 0
+    ExhaustedSprite: 0
     NewState: {fileID: 11400000, guid: ef23bfc47b65d14498ed0fe55cd8f645, type: 2}
   - ChoiceName: Verzweifeln
     ResultText: "Du  legst dich hin und f\xE4ngst auf dem Boden an zu heulen...Doch
@@ -32,4 +34,5 @@ MonoBehaviour:
     HP: 0
     Stress: 0
     Cost: 0
+    ExhaustedSprite: 0
     NewState: {fileID: 11400000, guid: b8c4f27393fcecf47be2604ddc5f38b2, type: 2}

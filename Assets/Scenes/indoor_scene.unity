@@ -2055,13 +2055,13 @@ Transform:
   - {fileID: 1803032005}
   - {fileID: 1485171600844114874}
   - {fileID: 2648860834891912124}
+  - {fileID: 1887904845}
   - {fileID: 575658733}
   - {fileID: 346037490}
   - {fileID: 663705300}
   - {fileID: 242187047}
   - {fileID: 5820006876434979676}
   - {fileID: 8583196747193095794}
-  - {fileID: 1887904845}
   - {fileID: 5553331643229808452}
   - {fileID: 8884340014803739371}
   - {fileID: 354929307328797436}
@@ -7358,7 +7358,7 @@ Light:
   m_Type: 1
   m_Shape: 0
   m_Color: {r: 1, g: 0.95686275, b: 0.8392157, a: 1}
-  m_Intensity: 3578.0652
+  m_Intensity: 61522.36
   m_Range: 10
   m_SpotAngle: 30
   m_InnerSpotAngle: 21.80208
@@ -7401,13 +7401,13 @@ Light:
   m_LightShadowCasterMode: 2
   m_AreaSize: {x: 0.5, y: 0.5}
   m_BounceIntensity: 1
-  m_ColorTemperature: 6570
+  m_ColorTemperature: 4327
   m_UseColorTemperature: 1
   m_BoundingSphereOverride: {x: 0, y: 0, z: 0, w: 0}
   m_UseBoundingSphereOverride: 0
   m_UseViewFrustumForShadowCasterCull: 1
   m_ShadowRadius: 0
-  m_ShadowAngle: 0
+  m_ShadowAngle: 1.4
 --- !u!4 &1478706178
 Transform:
   m_ObjectHideFlags: 0
@@ -7415,14 +7415,14 @@ Transform:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1478706176}
-  m_LocalRotation: {x: 0.48397598, y: -0.017959055, z: -0.009935239, w: 0.8748406}
-  m_LocalPosition: {x: 5.87, y: 0.12400007, z: 0.20499992}
+  m_LocalRotation: {x: 0.95323634, y: -0.009999263, z: -0.010743934, w: 0.30186933}
+  m_LocalPosition: {x: 1.96, y: 0.079999, z: 5.05}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 220035181}
   m_RootOrder: 1
-  m_LocalEulerAnglesHint: {x: 57.827, y: -4.42, z: -3.744}
+  m_LocalEulerAnglesHint: {x: 144.88, y: 1.858002, z: 1.79001}
 --- !u!114 &1478706179
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -7435,13 +7435,13 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 7a68c43fe1f2a47cfa234b5eeaa98012, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  m_Intensity: 3578.0652
+  m_Intensity: 61522.36
   m_EnableSpotReflector: 1
   m_LuxAtDistance: 1
   m_InnerSpotPercent: 0
   m_SpotIESCutoffPercent: 100
   m_LightDimmer: 1
-  m_VolumetricDimmer: 1
+  m_VolumetricDimmer: 1.3
   m_LightUnit: 2
   m_FadeDistance: 10000
   m_VolumetricFadeDistance: 10000
@@ -7465,7 +7465,7 @@ MonoBehaviour:
   m_AreaLightShadowCone: 120
   m_UseScreenSpaceShadows: 0
   m_InteractsWithSky: 1
-  m_AngularDiameter: 0.5
+  m_AngularDiameter: 1.4
   m_FlareSize: 2
   m_FlareTint: {r: 1, g: 1, b: 1, a: 1}
   m_FlareFalloff: 4
@@ -8683,7 +8683,7 @@ Transform:
   - {fileID: 2143604705}
   - {fileID: 1413243170}
   m_Father: {fileID: 378652333}
-  m_RootOrder: 13
+  m_RootOrder: 7
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &1894179630
 GameObject:

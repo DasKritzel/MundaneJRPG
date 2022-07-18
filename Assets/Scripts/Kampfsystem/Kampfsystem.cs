@@ -9,9 +9,9 @@ using UnityEngine.SceneManagement;
 enum BattleStates
 {
     PLAYER,
-    PLAYERRESOLVE,
+    PLAYERRESOLVED,
     ENEMY,
-    ENEMYRESOLVE,
+    ENEMYRESOLVED,
     END
 }
 public class Player
@@ -21,6 +21,13 @@ public class Player
 
 public class Button
 {
+    public Button(GameObject _obj)
+    {
+        ButtonObject = _obj;
+        ButtonField = _obj.GetComponent<UnityEngine.UI.Button>();
+        Text = _obj.GetComponentInChildren<TextMeshProUGUI>();
+    }
+
     public GameObject ButtonObject;
     public TextMeshProUGUI Text;
     public UnityEngine.UI.Button ButtonField;
@@ -55,7 +62,7 @@ public class Kampfsystem : MonoBehaviour
     {
         Instance = this;
     }
-
+    
     private void Update()
     {
         if (isActiveBattle)
@@ -72,34 +79,73 @@ public class Kampfsystem : MonoBehaviour
         }
     }
 
+    //TODO: Kämpfe sollen abgebrochen werden können und Gegner behalten ihre HP/Stress bei Wiederaufnahme
     public void InitBattle(AEnemyBaseClass newenemy)
     {
+        //ruft bei Kampfstart das UI auf
         for (int i = 0; i < ButtonGameObjects.Length; i++)
         {
-            Buttons[i] = new Button();
-            Buttons[i].ButtonObject = ButtonGameObjects[i];
-            Buttons[i].ButtonField = ButtonGameObjects[i].GetComponent<UnityEngine.UI.Button>();
-            Buttons[i].Text = ButtonGameObjects[i].GetComponentInChildren<TextMeshProUGUI>();
+            Buttons[i] = new Button(ButtonGameObjects[i]);
         }
 
         Enemy = newenemy;
         SetStep(Enemy.GetInitState);
         isActiveBattle = true;
     }
+
+    /// <summary>
+    /// Bereitet den Text und die State-Update auf einen neuen State vor
+    /// </summary>
+    /// <param name="newState">Der neue State, in dem sich der Gegner befindet</param>
     public void SetStep(ScriptableKampfstate newState)
     {
         currentState = newState;
         SetButtonText(currentState);
     }
-
+    //TODO: Player HP und Gegner HP unabhängig voneinander im UI anzeigen
     private void UpdateUI()
     {
+        //Zeigt die derzeitigen HP des Spielers und Gegners an
         UI.text = "Player HP: " + Player.HP + " " + "Enemy HP: " + Enemy.GetHP;
     }
-
+    //public enum LeosState
+    //{
+        //despair,
+        //cry,
+        //happy,
+        //sadsoup,
+        //iloveyoubaby,
+    //}
+    //public void LeosSwitch(LeosState currentState)
+    //{
+        //if (currentState == LeosState.despair)
+        //{
+            ////lie down
+        //}
+        //else if (currentState == LeosState.cry)
+        //{
+            ////cry
+        //}
+        //else if (currentState == LeosState.happy)
+        //{
+            ////laugh
+        //}
+        //else if (currentState == LeosState.sadsoup)
+        //{
+            ////number E
+        //}
+        //else if (currentState == LeosState.iloveyoubaby)
+        //{
+            ////*intense head bopping*
+        //}
+    //}
+    //TODO: Mit Dialog/Monologsystem verbinden, Namenskonvention ändern, (UI Update mit Event)
+    /// <summary>
+    /// Geht schrittweise die Zugreihenfolge ab: Spielerangriff > Ergebnistext > Gegnerangriff > Ergebnistext, repeat oder Kampfende
+    /// </summary>
     public void Turn()
     {
-
+        //
         UpdateUI();
 
         switch (CurrentBattleState)
@@ -107,7 +153,7 @@ public class Kampfsystem : MonoBehaviour
             case BattleStates.PLAYER:
                 ResolvePlayer();
                 break;
-            case BattleStates.PLAYERRESOLVE:
+            case BattleStates.PLAYERRESOLVED:
                 if (Input.GetKeyDown(KeyCode.Mouse0))
                 {
                     CurrentBattleState = BattleStates.ENEMY;
@@ -116,7 +162,7 @@ public class Kampfsystem : MonoBehaviour
             case BattleStates.ENEMY:
                 ResolveEnemy();
                 break;
-            case BattleStates.ENEMYRESOLVE:
+            case BattleStates.ENEMYRESOLVED:
                 if (Input.GetKeyDown(KeyCode.Mouse0))
                     CurrentBattleState = BattleStates.PLAYER;
                 break;
@@ -125,6 +171,8 @@ public class Kampfsystem : MonoBehaviour
                 break;
         }
     }
+
+    // Updated den Buttontext zum neuen Kampfstate
     private void SetButtonText(ScriptableKampfstate State)
     {
         for (int i = 0; i < ButtonGameObjects.Length; i++)
@@ -132,21 +180,21 @@ public class Kampfsystem : MonoBehaviour
             Buttons[i].Text.text = State.GetChoices[i].ChoiceName;
         }
     }
-
-    public void OnButton1()
+    /// <summary>
+    /// Holt sich Ergebnis für Buttonklick
+    /// </summary>
+    /// <param name="choice"></param>
+    public void OnButton(int choice)
     {
-        ResolvePlayerChoice(currentState.GetChoices[0]);
-    }
+        if (choice <= 0)
+            choice = 1;
 
-    public void OnButton2()
-    {
-        ResolvePlayerChoice(currentState.GetChoices[1]);
+        ResolvePlayerChoice(currentState.GetChoices[choice - 1]);
     }
-    public void OnButton3()
-    {
-        ResolvePlayerChoice(currentState.GetChoices[2]);
-    }
-
+    //TODO: Von Updateschleife entkoppeln
+    /// <summary>
+    /// Aktiviert Buttons und wartet auf Auswahl
+    /// </summary>
     public void ResolvePlayer()
     {
         Dialogbox.text = "Bitte wähle eine Aktion";
@@ -156,6 +204,8 @@ public class Kampfsystem : MonoBehaviour
                 Buttons[i].ButtonObject.SetActive(true);
             }
     }
+    //TODO: Resolvemethoden zusammenführen
+    //Fügt dem Spieler den Angriffswert des Gegners als Schaden zu, checkt ob Spieler HP auf 0 gefallen sind
     public void ResolveEnemy()
     {
         Dialogbox.text = Enemy.AttackDisplay;
@@ -167,8 +217,13 @@ public class Kampfsystem : MonoBehaviour
             return;
         }
 
-        CurrentBattleState = BattleStates.ENEMYRESOLVE;
+        CurrentBattleState = BattleStates.ENEMYRESOLVED;
     }
+    /// <summary>
+    /// Ändert Gegner HP und Stress, checkt für Kampfende, updated Dialogfeld und Buttontext, deaktiviert Buttons währenddessen
+    /// Markiert Spielerzug als beendet (Nächster State wartet auf Mausklick)
+    /// </summary>
+    /// <param name="choice"></param>
     private void ResolvePlayerChoice(KampfstateListItem choice)
     {
         Enemy.SetDamage(choice.HP, choice.Stress);
@@ -185,8 +240,12 @@ public class Kampfsystem : MonoBehaviour
             {
                 Buttons[i].ButtonObject.SetActive(false);
             }
-        CurrentBattleState = BattleStates.PLAYERRESOLVE;
+        CurrentBattleState = BattleStates.PLAYERRESOLVED;
     }
+    //TODO: Sieg/Losescreen einbauen
+    /// <summary>
+    /// Entfernt Buttons, setzt ActiveBattle auf falsch und lässt aus der Turnorder springen
+    /// </summary>
     private void EndBattle()
     {
         Dialogbox.text = "ENDE GELÄNDE";

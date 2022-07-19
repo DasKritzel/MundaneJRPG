@@ -24,7 +24,11 @@ MonoBehaviour:
     m_Value: 1
   fixedExposure:
     m_OverrideState: 1
+<<<<<<< HEAD
+    m_Value: 10.48249
+=======
     m_Value: 10.482492
+>>>>>>> develop
   compensation:
     m_OverrideState: 0
     m_Value: 0

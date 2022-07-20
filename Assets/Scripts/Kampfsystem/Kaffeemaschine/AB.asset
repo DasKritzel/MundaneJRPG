@@ -10,32 +10,30 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: a8a83d138610e9e43b0773c467b3da6f, type: 3}
-  m_Name: A
+  m_Name: AB
   m_EditorClassIdentifier: 
   Choices:
-  - ChoiceName: Treten
-    ResultText: "Der Drucker kriegt einen ordentlichen Tritt... Die Seitenklappe
-      f\xE4llt ab."
-    HP: -5
-    SolveValueChange: 0
-    PlayerStressChange: 0
-    EnergyCost: 0
-    ExhaustedSprite: 0
-    NewState: {fileID: 11400000, guid: bf7375689eced8a4396f566e3f7b36dd, type: 2}
-  - ChoiceName: Neustarten
-    ResultText: 'Der Drucker ist jetzt aus... und wieder an... '
+  - ChoiceName: 
+    ResultText: 
     HP: 0
     SolveValueChange: 0
     PlayerStressChange: 0
     EnergyCost: 0
     ExhaustedSprite: 0
-    NewState: {fileID: 11400000, guid: ef23bfc47b65d14498ed0fe55cd8f645, type: 2}
-  - ChoiceName: Verzweifeln
-    ResultText: "Du  legst dich hin und f\xE4ngst auf dem Boden an zu heulen...Doch
-      was ist das?!"
+    NewState: {fileID: 0}
+  - ChoiceName: 
+    ResultText: 
     HP: 0
     SolveValueChange: 0
     PlayerStressChange: 0
-    EnergyCost: 20
+    EnergyCost: 0
     ExhaustedSprite: 0
-    NewState: {fileID: 11400000, guid: b8c4f27393fcecf47be2604ddc5f38b2, type: 2}
+    NewState: {fileID: 0}
+  - ChoiceName: 
+    ResultText: 
+    HP: 0
+    SolveValueChange: 0
+    PlayerStressChange: 0
+    EnergyCost: 0
+    ExhaustedSprite: 0
+    NewState: {fileID: 0}

@@ -8,6 +8,7 @@ public abstract class AEnemyBaseClass : MonoBehaviour
     public bool BattleHasEnded => BattleEnded;
     public ScriptableKampfstate GetInitState => InitState;
     public int GetHP => HP;
+    public int MaxHP => maxHP;
 
     public string AttackDisplay => AttackText;
 
@@ -17,7 +18,7 @@ public abstract class AEnemyBaseClass : MonoBehaviour
     [SerializeField]
     protected int HP;
     [SerializeField]
-    protected int Stress;
+    protected int SolveValue; //Versteckter Wert der Fortschritt zur Problemlösung trackt
 
     [SerializeField]
     protected int ATK;
@@ -27,15 +28,22 @@ public abstract class AEnemyBaseClass : MonoBehaviour
     [SerializeField]
     protected int HPEndCondition;
     [SerializeField]
-    protected int StressEndCondition;
+    protected int SolveEndCondition;
 
     protected bool BattleEnded;
+
+    protected int maxHP;
+
+    private void Awake()
+    {
+        maxHP = HP;
+    }
 
     //TODO: EndCheck überarbeiten
     public void SetDamage(int dmg, int str)
     {
         HP += dmg;
-        Stress += str;
+        SolveValue += str;
         BattleEnded = EndCheck();
     }
 
@@ -44,9 +52,11 @@ public abstract class AEnemyBaseClass : MonoBehaviour
         return ATK;
     }
 
+    //TODO: HP, Solve und Stress EndConditions führen zu verschiedenen Win/Lose Screens
+
     public virtual bool EndCheck()
     {
-        return HP <= HPEndCondition  || Stress >= StressEndCondition;
+        return HP <= HPEndCondition  || SolveValue >= SolveEndCondition;
     }
 
 }

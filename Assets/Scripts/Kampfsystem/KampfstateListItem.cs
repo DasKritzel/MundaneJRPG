@@ -9,8 +9,9 @@ public class KampfstateListItem
     public string ChoiceName;
     public string ResultText;
     public int HP;
-    public int Stress;
-    public int Cost;
+    public int SolveValueChange;
+    public int PlayerStressChange;
+    public int EnergyCost;
     public bool ExhaustedSprite;
     public ScriptableKampfstate NewState;
 }

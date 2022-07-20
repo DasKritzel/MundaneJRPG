@@ -17,20 +17,26 @@ MonoBehaviour:
     ResultText: "Du uberpr\xFCfst das Stromkabel.... Es ist offensichtlich richtig
       drin..."
     HP: 0
-    Stress: 0
-    Cost: 0
+    SolveValueChange: 0
+    PlayerStressChange: -5
+    EnergyCost: -5
+    ExhaustedSprite: 0
     NewState: {fileID: 11400000}
   - ChoiceName: "LAN-Kabel \xFCberpr\xFCfen"
     ResultText: "Du uberpr\xFCfst das LAN-Kabel... Es war ein bisschen locker aber
       sitzt jetzt wieder richtig.... Nichts \xE4ndert sich"
     HP: 0
-    Stress: 0
-    Cost: 0
+    SolveValueChange: 0
+    PlayerStressChange: 0
+    EnergyCost: 0
+    ExhaustedSprite: 0
     NewState: {fileID: 11400000}
   - ChoiceName: Sich aufraffen
     ResultText: "Du stehst vom Boden auf und b\xE4umst dich erneut vor dem Drucker
       auf..."
     HP: 0
-    Stress: 0
-    Cost: 0
+    SolveValueChange: 0
+    PlayerStressChange: 0
+    EnergyCost: 0
+    ExhaustedSprite: 0
     NewState: {fileID: 11400000, guid: 49e660d38a3fc964bb92f48209ef6d34, type: 2}

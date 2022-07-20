@@ -16,7 +16,10 @@ enum BattleStates
 }
 public class Player
 {
-    public int HP = 20;
+    public int Stress = 20;
+    public int MaxStress = 100;
+    public int Energy = 20;
+    public int MaxEnergy = 100;
 }
 
 public class Button
@@ -33,9 +36,17 @@ public class Button
     public UnityEngine.UI.Button ButtonField;
 }
 
+
 public class Kampfsystem : MonoBehaviour
 {
     public static Kampfsystem Instance;
+
+    [SerializeField]
+    private GameObject[] EnemyPrefabs;
+    private Dictionary<string, GameObject> EnemyPrefabsLUT;
+
+    [SerializeField]
+    private Transform EnemySpawnPos;
 
     [SerializeField]
     private GameObject[] ButtonGameObjects = new GameObject[3];
@@ -58,11 +69,36 @@ public class Kampfsystem : MonoBehaviour
 
     private BattleStates CurrentBattleState;
 
+
+    [Header("UI Elements")]
+    [SerializeField]
+    private Image[] UIBars;
+
     private void Awake()
     {
         Instance = this;
+
+        EnemyPrefabsLUT = new Dictionary<string, GameObject>();
+        foreach (GameObject obj in EnemyPrefabs)
+        {
+            EnemyPrefabsLUT.Add(obj.name, obj);
+        }    
     }
-    
+
+    private void Start()
+    {
+        EnemyPrefabsLUT.TryGetValue(load_main_menu.EnemyName, out GameObject obj);
+        Instantiate(obj, EnemySpawnPos);
+
+        InitBattle(obj.GetComponent<AEnemyBaseClass>());
+
+        foreach (Image UIBar in UIBars)
+        {
+            UIBar.type = Image.Type.Filled;
+            UIBar.fillMethod = Image.FillMethod.Horizontal;
+        }    
+    }
+
     private void Update()
     {
         if (isActiveBattle)
@@ -83,6 +119,7 @@ public class Kampfsystem : MonoBehaviour
     //TODO: To-Do Liste für den Spieler erstellen
     public void InitBattle(AEnemyBaseClass newenemy)
     {
+
         //ruft bei Kampfstart das UI auf
         for (int i = 0; i < ButtonGameObjects.Length; i++)
         {
@@ -103,43 +140,14 @@ public class Kampfsystem : MonoBehaviour
         currentState = newState;
         SetButtonText(currentState);
     }
-    //TODO: Player HP und Gegner HP unabhängig voneinander im UI anzeigen
+
     private void UpdateUI()
     {
-        //Zeigt die derzeitigen HP des Spielers und Gegners an
-        UI.text = "Player HP: " + Player.HP + " " + "Enemy HP: " + Enemy.GetHP;
+        UIBars[0].fillAmount = ((float)Enemy.GetHP / (float)Enemy.MaxHP);
+        UIBars[1].fillAmount = ((float)Player.Stress / (float)Player.MaxStress);
+        UIBars[2].fillAmount = ((float)Player.Energy / (float)Player.MaxEnergy);
     }
-    //public enum LeosState
-    //{
-        //despair,
-        //cry,
-        //happy,
-        //sadsoup,
-        //iloveyoubaby,
-    //}
-    //public void LeosSwitch(LeosState currentState)
-    //{
-        //if (currentState == LeosState.despair)
-        //{
-            ////lie down
-        //}
-        //else if (currentState == LeosState.cry)
-        //{
-            ////cry
-        //}
-        //else if (currentState == LeosState.happy)
-        //{
-            ////laugh
-        //}
-        //else if (currentState == LeosState.sadsoup)
-        //{
-            ////number E
-        //}
-        //else if (currentState == LeosState.iloveyoubaby)
-        //{
-            ////*intense head bopping*
-        //}
-    //}
+  
     //TODO: Mit Dialog/Monologsystem verbinden, Namenskonvention ändern, (UI Update mit Event)
     /// <summary>
     /// Geht schrittweise die Zugreihenfolge ab: Spielerangriff > Ergebnistext > Gegnerangriff > Ergebnistext, repeat oder Kampfende
@@ -210,9 +218,9 @@ public class Kampfsystem : MonoBehaviour
     public void ResolveEnemy()
     {
         Dialogbox.text = Enemy.AttackDisplay;
-        Player.HP += Enemy.Attack();
+        Player.Stress += Enemy.Attack();
 
-        if (Player.HP <= 0)
+        if (Player.Stress >= 100 || Player.Energy <= 0) 
         {
             CurrentBattleState = BattleStates.END;
             return;
@@ -227,13 +235,14 @@ public class Kampfsystem : MonoBehaviour
     /// <param name="choice"></param>
     private void ResolvePlayerChoice(KampfstateListItem choice)
     {
-        Enemy.SetDamage(choice.HP, choice.Stress);
+        Enemy.SetDamage(choice.HP, choice.SolveValueChange);
         if (Enemy.EndCheck())
         {
             CurrentBattleState = BattleStates.END;
             return;
         }
-
+        Player.Energy -= choice.EnergyCost;
+        Player.Stress += choice.PlayerStressChange;
         Dialogbox.text = choice.ResultText;
         SetStep(choice.NewState);
         if (Buttons[0].ButtonObject.activeInHierarchy)

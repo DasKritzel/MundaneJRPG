@@ -28,7 +28,9 @@ public class select_objects : MonoBehaviour
                 if (hit.transform.gameObject.CompareTag("Enemy"))
                 {
                     Debug.Log("Hit Enemy");
-                    hit.transform.gameObject.GetComponent<load_main_menu>().loadbattle();
+                    string enemyname = hit.transform.gameObject.name;
+                    hit.transform.gameObject.GetComponent<load_main_menu>().loadbattle(enemyname);
+
                 }
                 else if (hit.transform.gameObject.CompareTag("Gadget"))
                 {

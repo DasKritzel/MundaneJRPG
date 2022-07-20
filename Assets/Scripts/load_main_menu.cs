@@ -5,6 +5,7 @@ using UnityEngine.SceneManagement;
 public class load_main_menu : MonoBehaviour
 {
     public string SceneName;
+    static public string EnemyName;
     // Start is called before the first frame update
     void Start()
     {
@@ -23,8 +24,9 @@ public class load_main_menu : MonoBehaviour
         SceneManager.LoadScene(SceneName, LoadSceneMode.Single);
     }
 
-    public void loadbattle()
+    public void loadbattle(string enemyname)
     {
+        EnemyName = enemyname;
         Debug.Log("Ich lade jetzt die Scene " + SceneName);
         SceneManager.LoadScene(SceneName, LoadSceneMode.Additive);
         menu_controller.RoomScene.SetActive(false);

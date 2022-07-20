@@ -20,11 +20,11 @@ MonoBehaviour:
       guid: 00000000000000000000000000000000
     - ElementName: Default Work Unit
       ObjectType: 12
-      guid: 5d5b9ae775fd3e4596cd3e6dc7de7046
+      guid: 5a89376d3803dd46addb3dc132c736b4
     ParentPath: Virtual Acoustics\Default Work Unit
-    guid: 5d5b9ae775fd3e4596cd3e6dc7de7046
+    guid: 5a89376d3803dd46addb3dc132c736b4
     GuidInternal: 
-    m_lastTime: -8585455370685500175
+    m_lastTime: -8585481158534775808
     List: []
   - PhysicalPath: Virtual Acoustics\Factory Acoustic Textures.wwu
     PathAndIcons:
@@ -37,7 +37,7 @@ MonoBehaviour:
     ParentPath: Virtual Acoustics\Factory Acoustic Textures
     guid: 6b663d46a83ca54f8b4a5fef12b883f6
     GuidInternal: 
-    m_lastTime: -8585496780326036652
+    m_lastTime: -8585496780314775808
     List:
     - name: Acoustic_Banner
       guid: f2532d2fccda8e408b8898b1b52a26d6
@@ -303,7 +303,7 @@ MonoBehaviour:
     ParentPath: Master-Mixer Hierarchy\Default Work Unit
     guid: 9deece6b380b684db81ee17343311db9
     GuidInternal: 
-    m_lastTime: -8585446592571814983
+    m_lastTime: -8585438011354775808
     List:
     - name: Buttons
       guid: d1ba1f51f70d55478a7411ea8c333419
@@ -373,7 +373,7 @@ MonoBehaviour:
     ParentPath: SoundBanks\Default Work Unit
     guid: 59f46ce21aeff347bb44bd6a307a6312
     GuidInternal: 
-    m_lastTime: -8585449383120998109
+    m_lastTime: -8585449383114775808
     List:
     - name: Music
       guid: a69b919c1787d349afb7d49588354d8b
@@ -415,7 +415,7 @@ MonoBehaviour:
     ParentPath: Events\Default Work Unit
     guid: 7a27071d4f853a4a8d5bd54d417b440d
     GuidInternal: 
-    m_lastTime: -8585449383121023120
+    m_lastTime: -8585449383114775808
     List:
     - name: Buttons
       guid: fe254861deb5e14484d8937d1a5e6ece
@@ -576,7 +576,7 @@ MonoBehaviour:
     ParentPath: Events\Music
     guid: cf516bf22b10d14d8f897a1ee28ba579
     GuidInternal: 
-    m_lastTime: -8585462320320867030
+    m_lastTime: -8585462320314775808
     List:
     - name: Play_Soundtracks
       guid: b24a90c06382ed46b626c24978df76b9
@@ -607,7 +607,7 @@ MonoBehaviour:
     ParentPath: Game Parameters\Default Work Unit
     guid: 154a74d0438ad449b7ce2fa31ef67649
     GuidInternal: 
-    m_lastTime: -8585449383121018106
+    m_lastTime: -8585449383114775808
     List:
     - name: Door_OpenClose
       guid: 37fad065b2960f49a9bc79f1766eef21
@@ -645,12 +645,126 @@ MonoBehaviour:
       guid: 00000000000000000000000000000000
     - ElementName: Default Work Unit
       ObjectType: 12
-      guid: a9f303b3c71ace45b3300759dd14f689
+      guid: 9cfbfac268dada4080b9339ccdfbeee3
     ParentPath: States\Default Work Unit
-    guid: a9f303b3c71ace45b3300759dd14f689
+    guid: 9cfbfac268dada4080b9339ccdfbeee3
     GuidInternal: 
-    m_lastTime: -8585455370687195472
-    List: []
+    m_lastTime: -8585470048034775808
+    List:
+    - name: Music_States
+      guid: d6b8f569a2aacc49a2f6843e53fc342f
+      id: 1690668539
+      PathAndIcons:
+      - ElementName: States
+        ObjectType: 5
+        guid: 00000000000000000000000000000000
+      - ElementName: Default Work Unit
+        ObjectType: 12
+        guid: 9cfbfac268dada4080b9339ccdfbeee3
+      - ElementName: Music_States
+        ObjectType: 9
+        guid: d6b8f569a2aacc49a2f6843e53fc342f
+      Path: States\Default Work Unit\Music_States
+      values:
+      - name: Defeated
+        guid: 67019519823355458931d2c70c5a384c
+        id: 2791675679
+        PathAndIcons:
+        - ElementName: States
+          ObjectType: 5
+          guid: 00000000000000000000000000000000
+        - ElementName: Default Work Unit
+          ObjectType: 12
+          guid: 9cfbfac268dada4080b9339ccdfbeee3
+        - ElementName: Music_States
+          ObjectType: 9
+          guid: d6b8f569a2aacc49a2f6843e53fc342f
+        - ElementName: Defeated
+          ObjectType: 8
+          guid: 67019519823355458931d2c70c5a384c
+      - name: Fight_Scene
+        guid: 6495ab2237cf0946b2da2de428c20f0a
+        id: 649557016
+        PathAndIcons:
+        - ElementName: States
+          ObjectType: 5
+          guid: 00000000000000000000000000000000
+        - ElementName: Default Work Unit
+          ObjectType: 12
+          guid: 9cfbfac268dada4080b9339ccdfbeee3
+        - ElementName: Music_States
+          ObjectType: 9
+          guid: d6b8f569a2aacc49a2f6843e53fc342f
+        - ElementName: Fight_Scene
+          ObjectType: 8
+          guid: 6495ab2237cf0946b2da2de428c20f0a
+      - name: Main_Scene
+        guid: 1697d882e0b8274fab90fd7ad37e530d
+        id: 1594779195
+        PathAndIcons:
+        - ElementName: States
+          ObjectType: 5
+          guid: 00000000000000000000000000000000
+        - ElementName: Default Work Unit
+          ObjectType: 12
+          guid: 9cfbfac268dada4080b9339ccdfbeee3
+        - ElementName: Music_States
+          ObjectType: 9
+          guid: d6b8f569a2aacc49a2f6843e53fc342f
+        - ElementName: Main_Scene
+          ObjectType: 8
+          guid: 1697d882e0b8274fab90fd7ad37e530d
+      - name: Menu_Scene
+        guid: bf872efc1ed4514a8caa11b2af8f03d8
+        id: 4094426505
+        PathAndIcons:
+        - ElementName: States
+          ObjectType: 5
+          guid: 00000000000000000000000000000000
+        - ElementName: Default Work Unit
+          ObjectType: 12
+          guid: 9cfbfac268dada4080b9339ccdfbeee3
+        - ElementName: Music_States
+          ObjectType: 9
+          guid: d6b8f569a2aacc49a2f6843e53fc342f
+        - ElementName: Menu_Scene
+          ObjectType: 8
+          guid: bf872efc1ed4514a8caa11b2af8f03d8
+      - name: None
+        guid: 9b5051df76d45a46984b191aa991555f
+        id: 748895195
+        PathAndIcons:
+        - ElementName: States
+          ObjectType: 5
+          guid: 00000000000000000000000000000000
+        - ElementName: Default Work Unit
+          ObjectType: 12
+          guid: 9cfbfac268dada4080b9339ccdfbeee3
+        - ElementName: Music_States
+          ObjectType: 9
+          guid: d6b8f569a2aacc49a2f6843e53fc342f
+        - ElementName: None
+          ObjectType: 8
+          guid: 9b5051df76d45a46984b191aa991555f
+      - name: Win
+        guid: 832d7001ca5f0f45ade3fabae21e5c0a
+        id: 979765101
+        PathAndIcons:
+        - ElementName: States
+          ObjectType: 5
+          guid: 00000000000000000000000000000000
+        - ElementName: Default Work Unit
+          ObjectType: 12
+          guid: 9cfbfac268dada4080b9339ccdfbeee3
+        - ElementName: Music_States
+          ObjectType: 9
+          guid: d6b8f569a2aacc49a2f6843e53fc342f
+        - ElementName: Win
+          ObjectType: 8
+          guid: 832d7001ca5f0f45ade3fabae21e5c0a
+      ValueGuids: []
+      ValueIcons: []
+      valuesInternal: []
   SwitchWwu:
   - PhysicalPath: Switches\Default Work Unit.wwu
     PathAndIcons:
@@ -659,12 +773,78 @@ MonoBehaviour:
       guid: 00000000000000000000000000000000
     - ElementName: Default Work Unit
       ObjectType: 12
-      guid: cc45477ea48c954e9d6e72a0759e7173
+      guid: 710f293d1c8ade4aa2253f7c5b23cd37
     ParentPath: Switches\Default Work Unit
-    guid: cc45477ea48c954e9d6e72a0759e7173
+    guid: 710f293d1c8ade4aa2253f7c5b23cd37
     GuidInternal: 
-    m_lastTime: -8585455370685795223
-    List: []
+    m_lastTime: -8585481125674775808
+    List:
+    - name: Music_Switches
+      guid: c42f8294025d924e8b4753eeeb373537
+      id: 226124245
+      PathAndIcons:
+      - ElementName: Switches
+        ObjectType: 5
+        guid: 00000000000000000000000000000000
+      - ElementName: Default Work Unit
+        ObjectType: 12
+        guid: 710f293d1c8ade4aa2253f7c5b23cd37
+      - ElementName: Music_Switches
+        ObjectType: 11
+        guid: c42f8294025d924e8b4753eeeb373537
+      Path: Switches\Default Work Unit\Music_Switches
+      values:
+      - name: Fight_Scene
+        guid: f7333797b1d58346824f03cef9fa422a
+        id: 649557016
+        PathAndIcons:
+        - ElementName: Switches
+          ObjectType: 5
+          guid: 00000000000000000000000000000000
+        - ElementName: Default Work Unit
+          ObjectType: 12
+          guid: 710f293d1c8ade4aa2253f7c5b23cd37
+        - ElementName: Music_Switches
+          ObjectType: 11
+          guid: c42f8294025d924e8b4753eeeb373537
+        - ElementName: Fight_Scene
+          ObjectType: 10
+          guid: f7333797b1d58346824f03cef9fa422a
+      - name: Main_Scene
+        guid: f77ce7089040e84399b26f73b72066da
+        id: 1594779195
+        PathAndIcons:
+        - ElementName: Switches
+          ObjectType: 5
+          guid: 00000000000000000000000000000000
+        - ElementName: Default Work Unit
+          ObjectType: 12
+          guid: 710f293d1c8ade4aa2253f7c5b23cd37
+        - ElementName: Music_Switches
+          ObjectType: 11
+          guid: c42f8294025d924e8b4753eeeb373537
+        - ElementName: Main_Scene
+          ObjectType: 10
+          guid: f77ce7089040e84399b26f73b72066da
+      - name: Menu_Scene
+        guid: 2ba056a0897c86489832005c663b6722
+        id: 4094426505
+        PathAndIcons:
+        - ElementName: Switches
+          ObjectType: 5
+          guid: 00000000000000000000000000000000
+        - ElementName: Default Work Unit
+          ObjectType: 12
+          guid: 710f293d1c8ade4aa2253f7c5b23cd37
+        - ElementName: Music_Switches
+          ObjectType: 11
+          guid: c42f8294025d924e8b4753eeeb373537
+        - ElementName: Menu_Scene
+          ObjectType: 10
+          guid: 2ba056a0897c86489832005c663b6722
+      ValueGuids: []
+      ValueIcons: []
+      valuesInternal: []
   TriggerWwu:
   - PhysicalPath: Triggers\Default Work Unit.wwu
     PathAndIcons:
@@ -673,14 +853,14 @@ MonoBehaviour:
       guid: 00000000000000000000000000000000
     - ElementName: Default Work Unit
       ObjectType: 12
-      guid: ae5f1cc3d6f8ab42a484a9810f29fa01
+      guid: c413c6c7b8ad0942affbebe959e75cc5
     ParentPath: Triggers\Default Work Unit
-    guid: ae5f1cc3d6f8ab42a484a9810f29fa01
+    guid: c413c6c7b8ad0942affbebe959e75cc5
     GuidInternal: 
-    m_lastTime: -8585455370687125463
+    m_lastTime: -8585481158534775808
     List: []
   ExpandedFileSystemItemIds: 
-  ExpandedWaapiItemIds: 060000000700000008000000090000000a00000022000000
+  ExpandedWaapiItemIds: 
   AutoSyncSelection: 0
   autoPopulateEnabled: 1
   currentDataSource: 0

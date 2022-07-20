@@ -80,6 +80,7 @@ public class Kampfsystem : MonoBehaviour
     }
 
     //TODO: Kämpfe sollen abgebrochen werden können und Gegner behalten ihre HP/Stress bei Wiederaufnahme
+    //TODO: To-Do Liste für den Spieler erstellen
     public void InitBattle(AEnemyBaseClass newenemy)
     {
         //ruft bei Kampfstart das UI auf

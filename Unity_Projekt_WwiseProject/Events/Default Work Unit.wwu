@@ -84,6 +84,17 @@
 						</Event>
 					</ChildrenList>
 				</Folder>
+				<Event Name="Play_Coffee_Machine" ID="{2D029070-DDAB-42DC-A63B-67EC85164C97}">
+					<ChildrenList>
+						<Action Name="" ID="{B501E0C9-3B58-4183-92F9-69FB515DE091}" ShortID="17670619">
+							<ReferenceList>
+								<Reference Name="Target">
+									<ObjectRef Name="Coffee Machine" ID="{BF00F71C-0976-4EC9-82EF-F90AAC1B38E8}" WorkUnitID="{FED79B37-4E58-40BC-BE67-59BDB74BEA60}"/>
+								</Reference>
+							</ReferenceList>
+						</Action>
+					</ChildrenList>
+				</Event>
 			</ChildrenList>
 		</WorkUnit>
 	</Events>

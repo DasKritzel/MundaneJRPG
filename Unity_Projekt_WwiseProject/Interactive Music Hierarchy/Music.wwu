@@ -17,7 +17,7 @@
 							<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{BCB6C5A7-A54E-4C84-8011-DBB801000DB2}"/>
 						</Reference>
 						<Reference Name="OutputBus">
-							<ObjectRef Name="Music" ID="{E2C023CF-D866-48C0-854C-7CC48F5CDBCF}" WorkUnitID="{6BCEEE9D-0B38-4D68-B81E-E17343311DB9}"/>
+							<ObjectRef Name="Music" ID="{1D57D27A-758A-4D0A-A1E6-15023489D834}" WorkUnitID="{6BCEEE9D-0B38-4D68-B81E-E17343311DB9}"/>
 						</Reference>
 					</ReferenceList>
 					<ChildrenList>

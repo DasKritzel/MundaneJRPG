@@ -4,6 +4,32 @@
 		<WorkUnit Name="Default Work Unit" ID="{40C91F05-8830-44CB-9EB8-DF604B2B88ED}" PersistMode="Standalone">
 			<ChildrenList>
 				<SoundcasterSession Name="New Soundcaster Session" ID="{DCA97881-9C14-4FA7-8631-6D738C5AD829}">
+					<ModuleList>
+						<Module>
+							<ObjectRef Name="Button" ID="{BA1CFC25-89BB-4257-B2CF-17AA9706C2A3}" WorkUnitID="{6BCEEE9D-0B38-4D68-B81E-E17343311DB9}"/>
+							<Position X="0" Y="0"/>
+						</Module>
+						<Module>
+							<ObjectRef Name="Fight Scene" ID="{E3CA8103-F87B-476D-811D-4F1AE2D0B882}" WorkUnitID="{7E722D2B-BD56-43E1-A653-6AFB63CA3C04}"/>
+							<Position X="0" Y="1"/>
+						</Module>
+						<Module>
+							<ObjectRef Name="Enemy" ID="{E3474B94-6047-4F27-8824-1CD615BFAC03}" WorkUnitID="{6BCEEE9D-0B38-4D68-B81E-E17343311DB9}"/>
+							<Position X="1" Y="0"/>
+						</Module>
+						<Module>
+							<ObjectRef Name="Main Theme" ID="{EFF6A2CF-8177-4B4E-B7CF-AB2C5928C7BD}" WorkUnitID="{7E722D2B-BD56-43E1-A653-6AFB63CA3C04}"/>
+							<Position X="1" Y="1"/>
+						</Module>
+						<Module>
+							<ObjectRef Name="Music" ID="{1D57D27A-758A-4D0A-A1E6-15023489D834}" WorkUnitID="{6BCEEE9D-0B38-4D68-B81E-E17343311DB9}"/>
+							<Position X="2" Y="0"/>
+						</Module>
+						<Module>
+							<ObjectRef Name="Player" ID="{5675B6F1-7710-48B2-80DA-43454C12A353}" WorkUnitID="{6BCEEE9D-0B38-4D68-B81E-E17343311DB9}"/>
+							<Position X="3" Y="0"/>
+						</Module>
+					</ModuleList>
 					<RTPCValueList ShowAll="true">
 						<RTPCValue>
 							<GameParameterRef Name="Door_OpenClose" ID="{65D0FA37-96B2-490F-A9BC-79F1766EEF21}"/>

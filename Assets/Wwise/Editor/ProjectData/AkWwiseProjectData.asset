@@ -303,11 +303,11 @@ MonoBehaviour:
     ParentPath: Master-Mixer Hierarchy\Default Work Unit
     guid: 9deece6b380b684db81ee17343311db9
     GuidInternal: 
-    m_lastTime: -8585438011354775808
+    m_lastTime: -8585432043103365789
     List:
-    - name: Buttons
-      guid: d1ba1f51f70d55478a7411ea8c333419
-      id: 203100604
+    - name: Atmo
+      guid: 025ea60f08727d4e8469e901b88d9073
+      id: 3083130986
       PathAndIcons:
       - ElementName: Master-Mixer Hierarchy
         ObjectType: 5
@@ -315,13 +315,19 @@ MonoBehaviour:
       - ElementName: Default Work Unit
         ObjectType: 12
         guid: 9deece6b380b684db81ee17343311db9
-      - ElementName: Buttons
+      - ElementName: Master Audio Bus
         ObjectType: 2
-        guid: d1ba1f51f70d55478a7411ea8c333419
-      Path: Master-Mixer Hierarchy\Default Work Unit\Buttons
-    - name: Enemys
-      guid: 8a50073e8b3db245bed5c686238b7521
-      id: 1312765294
+        guid: d8a41415a61d2a41a17e75ca0c2149f3
+      - ElementName: Button
+        ObjectType: 2
+        guid: 25fc1cbabb895742b2cf17aa9706c2a3
+      - ElementName: Atmo
+        ObjectType: 2
+        guid: 025ea60f08727d4e8469e901b88d9073
+      Path: Master-Mixer Hierarchy\Default Work Unit\Master Audio Bus\Button\Atmo
+    - name: Button
+      guid: 25fc1cbabb895742b2cf17aa9706c2a3
+      id: 977454165
       PathAndIcons:
       - ElementName: Master-Mixer Hierarchy
         ObjectType: 5
@@ -329,10 +335,30 @@ MonoBehaviour:
       - ElementName: Default Work Unit
         ObjectType: 12
         guid: 9deece6b380b684db81ee17343311db9
-      - ElementName: Enemys
+      - ElementName: Master Audio Bus
         ObjectType: 2
-        guid: 8a50073e8b3db245bed5c686238b7521
-      Path: Master-Mixer Hierarchy\Default Work Unit\Enemys
+        guid: d8a41415a61d2a41a17e75ca0c2149f3
+      - ElementName: Button
+        ObjectType: 2
+        guid: 25fc1cbabb895742b2cf17aa9706c2a3
+      Path: Master-Mixer Hierarchy\Default Work Unit\Master Audio Bus\Button
+    - name: Enemy
+      guid: 944b47e34760274f88241cd615bfac03
+      id: 2299321487
+      PathAndIcons:
+      - ElementName: Master-Mixer Hierarchy
+        ObjectType: 5
+        guid: 00000000000000000000000000000000
+      - ElementName: Default Work Unit
+        ObjectType: 12
+        guid: 9deece6b380b684db81ee17343311db9
+      - ElementName: Master Audio Bus
+        ObjectType: 2
+        guid: d8a41415a61d2a41a17e75ca0c2149f3
+      - ElementName: Enemy
+        ObjectType: 2
+        guid: 944b47e34760274f88241cd615bfac03
+      Path: Master-Mixer Hierarchy\Default Work Unit\Master Audio Bus\Enemy
     - name: Master Audio Bus
       guid: d8a41415a61d2a41a17e75ca0c2149f3
       id: 3803692087
@@ -348,7 +374,7 @@ MonoBehaviour:
         guid: d8a41415a61d2a41a17e75ca0c2149f3
       Path: Master-Mixer Hierarchy\Default Work Unit\Master Audio Bus
     - name: Music
-      guid: cf23c0e266d8c048854c7cc48f5cdbcf
+      guid: 7ad2571d8a750a4da1e615023489d834
       id: 3991942870
       PathAndIcons:
       - ElementName: Master-Mixer Hierarchy
@@ -357,10 +383,30 @@ MonoBehaviour:
       - ElementName: Default Work Unit
         ObjectType: 12
         guid: 9deece6b380b684db81ee17343311db9
+      - ElementName: Master Audio Bus
+        ObjectType: 2
+        guid: d8a41415a61d2a41a17e75ca0c2149f3
       - ElementName: Music
         ObjectType: 2
-        guid: cf23c0e266d8c048854c7cc48f5cdbcf
-      Path: Master-Mixer Hierarchy\Default Work Unit\Music
+        guid: 7ad2571d8a750a4da1e615023489d834
+      Path: Master-Mixer Hierarchy\Default Work Unit\Master Audio Bus\Music
+    - name: Player
+      guid: f1b675561077b24880da43454c12a353
+      id: 1069431850
+      PathAndIcons:
+      - ElementName: Master-Mixer Hierarchy
+        ObjectType: 5
+        guid: 00000000000000000000000000000000
+      - ElementName: Default Work Unit
+        ObjectType: 12
+        guid: 9deece6b380b684db81ee17343311db9
+      - ElementName: Master Audio Bus
+        ObjectType: 2
+        guid: d8a41415a61d2a41a17e75ca0c2149f3
+      - ElementName: Player
+        ObjectType: 2
+        guid: f1b675561077b24880da43454c12a353
+      Path: Master-Mixer Hierarchy\Default Work Unit\Master Audio Bus\Player
   BankWwu:
   - PhysicalPath: SoundBanks\Default Work Unit.wwu
     PathAndIcons:
@@ -415,7 +461,7 @@ MonoBehaviour:
     ParentPath: Events\Default Work Unit
     guid: 7a27071d4f853a4a8d5bd54d417b440d
     GuidInternal: 
-    m_lastTime: -8585449383114775808
+    m_lastTime: -8585432043103210756
     List:
     - name: Buttons
       guid: fe254861deb5e14484d8937d1a5e6ece
@@ -494,6 +540,23 @@ MonoBehaviour:
       maxAttenuation: 0
       maxDuration: 0.278833
       minDuration: 0.278833
+    - name: Play_Coffee_Machine
+      guid: 7090022dabdddc42a63b67ec85164c97
+      id: 3311391268
+      PathAndIcons:
+      - ElementName: Events
+        ObjectType: 5
+        guid: 00000000000000000000000000000000
+      - ElementName: Default Work Unit
+        ObjectType: 12
+        guid: 7a27071d4f853a4a8d5bd54d417b440d
+      - ElementName: Play_Coffee_Machine
+        ObjectType: 3
+        guid: 7090022dabdddc42a63b67ec85164c97
+      Path: Events\Default Work Unit\Play_Coffee_Machine
+      maxAttenuation: 0
+      maxDuration: -1
+      minDuration: -1
     - name: Play_ESC_Menu_Button
       guid: 5b6571eede5e5049b2e4fc8535260e83
       id: 922140700
@@ -860,7 +923,7 @@ MonoBehaviour:
     m_lastTime: -8585481158534775808
     List: []
   ExpandedFileSystemItemIds: 
-  ExpandedWaapiItemIds: 
+  ExpandedWaapiItemIds: 08000000090000000a00000014000000150000001101000012010000
   AutoSyncSelection: 0
   autoPopulateEnabled: 1
   currentDataSource: 0

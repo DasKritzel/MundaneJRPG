@@ -4,78 +4,10 @@
 		<WorkUnit Name="Default Work Unit" ID="{6BCEEE9D-0B38-4D68-B81E-E17343311DB9}" PersistMode="Standalone">
 			<ChildrenList>
 				<Bus Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}">
-					<ReferenceList>
-						<Reference Name="AudioDevice">
-							<ObjectRef Name="System" ID="{E86CD9BB-3398-4E56-B7EF-FA76E7F56659}" WorkUnitID="{5F75AC31-1823-413C-B873-807713572C5C}"/>
-						</Reference>
-					</ReferenceList>
-					<ObjectLists/>
-				</Bus>
-				<Bus Name="Buttons" ID="{511FBAD1-0DF7-4755-8A74-11EA8C333419}">
-					<PropertyList>
-						<Property Name="BusVolume" Type="Real64">
-							<ValueList>
-								<Value>-11</Value>
-							</ValueList>
-						</Property>
-					</PropertyList>
-					<ReferenceList>
-						<Reference Name="AudioDevice">
-							<ObjectRef Name="System" ID="{E86CD9BB-3398-4E56-B7EF-FA76E7F56659}" WorkUnitID="{5F75AC31-1823-413C-B873-807713572C5C}"/>
-						</Reference>
-					</ReferenceList>
-					<ObjectLists/>
-				</Bus>
-				<Bus Name="Enemys" ID="{3E07508A-3D8B-45B2-BED5-C686238B7521}">
 					<PropertyList>
 						<Property Name="Volume" Type="Real64">
-							<RTPCList>
-								<RTPC Name="" ID="{9C663F0E-060D-44C7-97D0-EF902725911C}" ShortID="920949021">
-									<ReferenceList>
-										<Reference Name="ControlInput">
-											<ObjectRef Name="Music_Volume" ID="{1A5E2F11-83A1-4FC1-8EA9-A19A2338CB4E}" WorkUnitID="{D0744A15-8A43-49D4-B7CE-2FA31EF67649}"/>
-										</Reference>
-									</ReferenceList>
-									<Curve Name="" ID="{5065EA79-AC4C-44EC-AE9F-E5EE5BA3473B}">
-										<PropertyList>
-											<Property Name="Flags" Type="int32" Value="3"/>
-										</PropertyList>
-										<PointList>
-											<Point>
-												<XPos>-48</XPos>
-												<YPos>0</YPos>
-												<Flags>5</Flags>
-												<SegmentShape>Log1</SegmentShape>
-											</Point>
-											<Point>
-												<XPos>-34.56</XPos>
-												<YPos>-1.71528</YPos>
-												<Flags>0</Flags>
-												<SegmentShape>Exp1</SegmentShape>
-											</Point>
-											<Point>
-												<XPos>0</XPos>
-												<YPos>-200</YPos>
-												<Flags>37</Flags>
-											</Point>
-										</PointList>
-									</Curve>
-								</RTPC>
-							</RTPCList>
-						</Property>
-					</PropertyList>
-					<ReferenceList>
-						<Reference Name="AudioDevice">
-							<ObjectRef Name="System" ID="{E86CD9BB-3398-4E56-B7EF-FA76E7F56659}" WorkUnitID="{5F75AC31-1823-413C-B873-807713572C5C}"/>
-						</Reference>
-					</ReferenceList>
-					<ObjectLists/>
-				</Bus>
-				<Bus Name="Music" ID="{E2C023CF-D866-48C0-854C-7CC48F5CDBCF}">
-					<PropertyList>
-						<Property Name="BusVolume" Type="Real64">
 							<ValueList>
-								<Value>-11</Value>
+								<Value>16</Value>
 							</ValueList>
 						</Property>
 					</PropertyList>
@@ -83,20 +15,45 @@
 						<Reference Name="AudioDevice">
 							<ObjectRef Name="System" ID="{E86CD9BB-3398-4E56-B7EF-FA76E7F56659}" WorkUnitID="{5F75AC31-1823-413C-B873-807713572C5C}"/>
 						</Reference>
-						<Reference Name="Effect0">
-							<Custom>
-								<Effect Name="Wwise Meter (Custom)" ID="{33B486C4-BDFD-482C-B68A-68323F5ED13A}" ShortID="418666341" PluginName="Wwise Meter" CompanyID="0" PluginID="129" PluginType="3">
-									<PropertyList>
-										<Property Name="AttackTime" Type="Real32" Value="0.1"/>
-										<Property Name="MeterMode" Type="int32" Value="1"/>
-									</PropertyList>
-									<PluginData>
-	<GameParameter Name="Music_Volume" ID="{1A5E2F11-83A1-4FC1-8EA9-A19A2338CB4E}"/>
-</PluginData>
-								</Effect>
-							</Custom>
-						</Reference>
 					</ReferenceList>
+					<ChildrenList>
+						<Bus Name="Music" ID="{1D57D27A-758A-4D0A-A1E6-15023489D834}">
+							<PropertyList>
+								<Property Name="Volume" Type="Real64">
+									<ValueList>
+										<Value>-6</Value>
+									</ValueList>
+								</Property>
+							</PropertyList>
+							<ObjectLists/>
+						</Bus>
+						<Bus Name="Enemy" ID="{E3474B94-6047-4F27-8824-1CD615BFAC03}">
+							<ObjectLists/>
+						</Bus>
+						<Bus Name="Button" ID="{BA1CFC25-89BB-4257-B2CF-17AA9706C2A3}">
+							<PropertyList>
+								<Property Name="BusVolume" Type="Real64">
+									<ValueList>
+										<Value>-6</Value>
+									</ValueList>
+								</Property>
+								<Property Name="Volume" Type="Real64">
+									<ValueList>
+										<Value>-7</Value>
+									</ValueList>
+								</Property>
+							</PropertyList>
+							<ChildrenList>
+								<Bus Name="Atmo" ID="{0FA65E02-7208-4E7D-8469-E901B88D9073}">
+									<ObjectLists/>
+								</Bus>
+							</ChildrenList>
+							<ObjectLists/>
+						</Bus>
+						<Bus Name="Player" ID="{5675B6F1-7710-48B2-80DA-43454C12A353}">
+							<ObjectLists/>
+						</Bus>
+					</ChildrenList>
 					<ObjectLists/>
 				</Bus>
 			</ChildrenList>

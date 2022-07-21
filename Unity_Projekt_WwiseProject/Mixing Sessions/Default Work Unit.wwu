@@ -1,6 +1,18 @@
 <?xml version="1.0" encoding="utf-8"?>
 <WwiseDocument Type="WorkUnit" ID="{031CE1FD-7505-427C-8366-C0C13C7B386F}" SchemaVersion="103">
 	<MixingSessions>
-		<WorkUnit Name="Default Work Unit" ID="{031CE1FD-7505-427C-8366-C0C13C7B386F}" PersistMode="Standalone"/>
+		<WorkUnit Name="Default Work Unit" ID="{031CE1FD-7505-427C-8366-C0C13C7B386F}" PersistMode="Standalone">
+			<ChildrenList>
+				<MixingSession Name="Main Mix" ID="{DC57EDB8-8F31-47BC-82BF-181308660A2D}">
+					<ObjectList>
+						<ObjectRef Name="Button" ID="{BA1CFC25-89BB-4257-B2CF-17AA9706C2A3}" WorkUnitID="{6BCEEE9D-0B38-4D68-B81E-E17343311DB9}"/>
+						<ObjectRef Name="Enemy" ID="{E3474B94-6047-4F27-8824-1CD615BFAC03}" WorkUnitID="{6BCEEE9D-0B38-4D68-B81E-E17343311DB9}"/>
+						<ObjectRef Name="Music" ID="{1D57D27A-758A-4D0A-A1E6-15023489D834}" WorkUnitID="{6BCEEE9D-0B38-4D68-B81E-E17343311DB9}"/>
+						<ObjectRef Name="Player" ID="{5675B6F1-7710-48B2-80DA-43454C12A353}" WorkUnitID="{6BCEEE9D-0B38-4D68-B81E-E17343311DB9}"/>
+						<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{6BCEEE9D-0B38-4D68-B81E-E17343311DB9}"/>
+					</ObjectList>
+				</MixingSession>
+			</ChildrenList>
+		</WorkUnit>
 	</MixingSessions>
 </WwiseDocument>

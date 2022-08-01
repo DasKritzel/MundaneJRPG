@@ -87,7 +87,7 @@ GameObject:
   - component: {fileID: 2032744303759910911}
   - component: {fileID: 5769992767808799003}
   m_Layer: 0
-  m_Name: Coffe_maker
+  m_Name: Coffee_maker
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0

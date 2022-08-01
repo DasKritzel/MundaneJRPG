@@ -10,30 +10,30 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: a8a83d138610e9e43b0773c467b3da6f, type: 3}
-  m_Name: END
+  m_Name: BG_A
   m_EditorClassIdentifier: 
   Choices:
-  - ChoiceName: Back to Work
-    ResultText: Work
+  - ChoiceName: 
+    ResultText: 
     HP: 0
-    SolveValueChange: 100
-    PlayerStressChange: -50
-    EnergyCost: -50
+    SolveValueChange: 0
+    PlayerStressChange: 0
+    EnergyCost: 0
     ExhaustedSprite: 0
     NewState: {fileID: 0}
-  - ChoiceName: Back to Work
-    ResultText: Work
+  - ChoiceName: 
+    ResultText: 
     HP: 0
-    SolveValueChange: 100
-    PlayerStressChange: -50
-    EnergyCost: -50
+    SolveValueChange: 0
+    PlayerStressChange: 0
+    EnergyCost: 0
     ExhaustedSprite: 0
     NewState: {fileID: 0}
-  - ChoiceName: Back to Work
-    ResultText: Work
+  - ChoiceName: 
+    ResultText: 
     HP: 0
-    SolveValueChange: 100
-    PlayerStressChange: -50
-    EnergyCost: -50
+    SolveValueChange: 0
+    PlayerStressChange: 0
+    EnergyCost: 0
     ExhaustedSprite: 0
     NewState: {fileID: 0}

@@ -18,7 +18,7 @@ MonoBehaviour:
       inside gives off a rancid smell...
     HP: 0
     SolveValueChange: 0
-    PlayerStressChange: 10
+    PlayerStressChange: 0
     EnergyCost: 0
     ExhaustedSprite: 0
     NewState: {fileID: 11400000, guid: 1ff6a2c7970bdbe45917199f7784f30c, type: 2}

@@ -17,8 +17,8 @@ MonoBehaviour:
     ResultText: You put in the new beans. The smell of fresh coffee alleviates all
       the sorrow of wasting some perfectly (not really) good beans.
     HP: 0
-    SolveValueChange: 0
-    PlayerStressChange: 0
+    SolveValueChange: 25
+    PlayerStressChange: -3
     EnergyCost: 0
     ExhaustedSprite: 0
     NewState: {fileID: 11400000, guid: 311b55733fc604742b22dd7e3cb1ee17, type: 2}
@@ -30,12 +30,14 @@ MonoBehaviour:
     PlayerStressChange: 0
     EnergyCost: 0
     ExhaustedSprite: 0
-    NewState: {fileID: 0}
+    NewState: {fileID: 11400000, guid: e9f0c75d03ae5034e9d58b9dbe5372ce, type: 2}
   - ChoiceName: Clean Container
-    ResultText: 
-    HP: 0
-    SolveValueChange: 0
-    PlayerStressChange: 0
-    EnergyCost: 0
+    ResultText: You clean up the Bean Container. It wasn't really dirty or took up
+      any of the smell, but it's still nice to do. Good on you for getting your shit
+      together! You put new beans in the freshly cleaned container.
+    HP: 1
+    SolveValueChange: 25
+    PlayerStressChange: -5
+    EnergyCost: -5
     ExhaustedSprite: 0
-    NewState: {fileID: 0}
+    NewState: {fileID: 11400000, guid: 311b55733fc604742b22dd7e3cb1ee17, type: 2}

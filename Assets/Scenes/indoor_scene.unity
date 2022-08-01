@@ -13450,7 +13450,7 @@ PrefabInstance:
     - target: {fileID: 5415813992126727229, guid: 1e305a32ae4de6048bceb22e216f58b5,
         type: 3}
       propertyPath: m_Name
-      value: Coffe_maker
+      value: Coffee_maker
       objectReference: {fileID: 0}
     - target: {fileID: 5415813992126727229, guid: 1e305a32ae4de6048bceb22e216f58b5,
         type: 3}

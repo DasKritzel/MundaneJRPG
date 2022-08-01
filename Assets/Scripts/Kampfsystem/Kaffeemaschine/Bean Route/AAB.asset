@@ -10,32 +10,30 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: a8a83d138610e9e43b0773c467b3da6f, type: 3}
-  m_Name: A
+  m_Name: AAB
   m_EditorClassIdentifier: 
   Choices:
-  - ChoiceName: Check Beans
-    ResultText: You check the bean compartment. There are a few inside. Something
-      inside gives off a rancid smell...
-    HP: 0
-    SolveValueChange: 0
-    PlayerStressChange: 10
-    EnergyCost: 0
-    ExhaustedSprite: 0
-    NewState: {fileID: 11400000, guid: 1ff6a2c7970bdbe45917199f7784f30c, type: 2}
-  - ChoiceName: Check Water
-    ResultText: You check the water compartment. There is no water inside.
+  - ChoiceName: 
+    ResultText: 
     HP: 0
     SolveValueChange: 0
     PlayerStressChange: 0
     EnergyCost: 0
     ExhaustedSprite: 0
-    NewState: {fileID: 11400000, guid: fa24a6f1a6c82584e807fa19322195fd, type: 2}
-  - ChoiceName: Check Grounds
-    ResultText: You check the coffee grounds. They have been in there for quite a
-      while and it's almost as though they are looking back at you.
+    NewState: {fileID: 11400000, guid: 1ff6a2c7970bdbe45917199f7784f30c, type: 2}
+  - ChoiceName: 
+    ResultText: 
     HP: 0
     SolveValueChange: 0
-    PlayerStressChange: 5
+    PlayerStressChange: 0
     EnergyCost: 0
     ExhaustedSprite: 0
-    NewState: {fileID: 11400000, guid: 60145add64126a94db5b444960f3bab5, type: 2}
+    NewState: {fileID: 0}
+  - ChoiceName: 
+    ResultText: 
+    HP: 0
+    SolveValueChange: 0
+    PlayerStressChange: 0
+    EnergyCost: 0
+    ExhaustedSprite: 0
+    NewState: {fileID: 0}

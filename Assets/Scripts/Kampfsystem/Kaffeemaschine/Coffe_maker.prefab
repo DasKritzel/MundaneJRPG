@@ -124,8 +124,8 @@ MonoBehaviour:
   InitState: {fileID: 11400000, guid: 7828b9e1f713e2d40bf3e2da9b1c79a9, type: 2}
   HP: 20
   SolveValue: 0
-  ATK: 10
-  AttackText: "Ich will Wasser! Ich will Kaffee! Meine D\xFCse is dreckig! Mein Sammelbeh\xE4lter
-    is voll!"
-  HPEndCondition: 0
+  ATK: 1
+  AttackText: I NEED WATER! I NEED COFFEE! MY STEAMER IS DIRTY! THE COFFEE GROUNDS
+    ARE FULL!
+  HPEndCondition: 1
   SolveEndCondition: 100

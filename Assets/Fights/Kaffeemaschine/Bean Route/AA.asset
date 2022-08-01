@@ -22,9 +22,9 @@ MonoBehaviour:
     EnergyCost: 0
     ExhaustedSprite: 0
     NewState: {fileID: 11400000, guid: 8167b0c7bf5385b46b890c6b6a86fa89, type: 2}
-  - ChoiceName: Find the rancid Bean
-    ResultText: You try to find the rancid beans. After picking out each and everyone,
-      smelling them indiviudally, you realize it's all of them...
+  - ChoiceName: Find the rancid Beans
+    ResultText: You try to sort out the rancid beans. After picking out each and
+      everyone, smelling them indiviudally, you realize it's all of them...
     HP: 0
     SolveValueChange: 0
     PlayerStressChange: 3

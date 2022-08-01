@@ -10,25 +10,29 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: a8a83d138610e9e43b0773c467b3da6f, type: 3}
-  m_Name: AAC
+  m_Name: AACC
   m_EditorClassIdentifier: 
   Choices:
-  - ChoiceName: 
-    ResultText: 
+  - ChoiceName: Fill Water
+    ResultText: 'You take the water compartment and fill it with water under the
+      sink. We''re you supposed to use filtered or unfiltered water for coffee? You
+      don''t remember. '
     HP: 0
     SolveValueChange: 0
     PlayerStressChange: 0
     EnergyCost: 0
     ExhaustedSprite: 0
-    NewState: {fileID: 0}
-  - ChoiceName: 
-    ResultText: 
+    NewState: {fileID: 11400000, guid: 25ffcaee55c4ef84284f3af68cab9101, type: 2}
+  - ChoiceName: Check Grounds
+    ResultText: You open the grounds container. You are greeted by an overflowing
+      amount of coffee grounds. After some lightly annoyed pushing, theres a bit
+      of free space again. Good enough.
     HP: 0
     SolveValueChange: 0
     PlayerStressChange: 0
     EnergyCost: 0
     ExhaustedSprite: 0
-    NewState: {fileID: 0}
+    NewState: {fileID: 11400000, guid: 0432998bf37d309488ee17b649a8243c, type: 2}
   - ChoiceName: 
     ResultText: 
     HP: 0

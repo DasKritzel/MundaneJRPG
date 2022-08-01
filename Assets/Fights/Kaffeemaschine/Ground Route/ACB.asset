@@ -10,27 +10,28 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: a8a83d138610e9e43b0773c467b3da6f, type: 3}
-  m_Name: Bean Finish
+  m_Name: ACB
   m_EditorClassIdentifier: 
   Choices:
-  - ChoiceName: Check Water
-    ResultText: You check the water compartment. It's empty...
+  - ChoiceName: Clean Container
+    ResultText: You clean the container, its tedious, but feels right. You put it
+      back
     HP: 0
     SolveValueChange: 0
-    PlayerStressChange: 0
-    EnergyCost: 0
+    PlayerStressChange: -5
+    EnergyCost: 2
     ExhaustedSprite: 0
-    NewState: {fileID: 11400000, guid: 35774a942ff0e6743bc35009e58d7ea8, type: 2}
-  - ChoiceName: Check Grounds
-    ResultText: You check the coffee grounds. They have been in there for quite a
-      while and it's almost as though they are looking back at you.
+    NewState: {fileID: 11400000, guid: 84ce6c4d53f6384459abb37d2646a323, type: 2}
+  - ChoiceName: Put it back
+    ResultText: You put the container back... The coffee ground residue feels like
+      they're judging you.
     HP: 0
     SolveValueChange: 0
-    PlayerStressChange: 0
+    PlayerStressChange: 5
     EnergyCost: 0
     ExhaustedSprite: 0
-    NewState: {fileID: 0}
-  - ChoiceName: Check Steamer
+    NewState: {fileID: 11400000, guid: 84ce6c4d53f6384459abb37d2646a323, type: 2}
+  - ChoiceName: '-'
     ResultText: 
     HP: 0
     SolveValueChange: 0

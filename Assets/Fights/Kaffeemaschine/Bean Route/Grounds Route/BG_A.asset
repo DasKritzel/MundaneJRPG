@@ -13,27 +13,33 @@ MonoBehaviour:
   m_Name: BG_A
   m_EditorClassIdentifier: 
   Choices:
-  - ChoiceName: 
-    ResultText: 
+  - ChoiceName: Leave it
+    ResultText: You stare into the coffee grounds. Contemplating the value of life.
+      You push the coffee grounds down and put the container back. What an unnerving
+      encounter.
+    HP: 0
+    SolveValueChange: 0
+    PlayerStressChange: 5
+    EnergyCost: 0
+    ExhaustedSprite: 0
+    NewState: {fileID: 11400000, guid: 84ce6c4d53f6384459abb37d2646a323, type: 2}
+  - ChoiceName: Trash it
+    ResultText: You stare into the coffee grounds. Contemplating the value of life.
+      After a while you just throw the black mass into the trash, close the bag and
+      put it outside.
     HP: 0
     SolveValueChange: 0
     PlayerStressChange: 0
     EnergyCost: 0
     ExhaustedSprite: 0
-    NewState: {fileID: 0}
-  - ChoiceName: 
-    ResultText: 
+    NewState: {fileID: 11400000, guid: d4b32571a9d5b434eb2e364ee752ce49, type: 2}
+  - ChoiceName: Keep it
+    ResultText: You read about Coffee Grounds being great DIY material some time
+      ago. What it was you don't remember, but if you ever need to do some biological
+      warfare, this will probably come in handy.
     HP: 0
     SolveValueChange: 0
     PlayerStressChange: 0
     EnergyCost: 0
     ExhaustedSprite: 0
-    NewState: {fileID: 0}
-  - ChoiceName: 
-    ResultText: 
-    HP: 0
-    SolveValueChange: 0
-    PlayerStressChange: 0
-    EnergyCost: 0
-    ExhaustedSprite: 0
-    NewState: {fileID: 0}
+    NewState: {fileID: 11400000, guid: 84ce6c4d53f6384459abb37d2646a323, type: 2}

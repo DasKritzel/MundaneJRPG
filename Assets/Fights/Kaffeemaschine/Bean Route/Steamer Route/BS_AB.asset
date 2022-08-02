@@ -1,0 +1,42 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: a8a83d138610e9e43b0773c467b3da6f, type: 3}
+  m_Name: BS_AB
+  m_EditorClassIdentifier: 
+  Choices:
+  - ChoiceName: Try a Knife
+    ResultText: You try to pry it open with the tip of a kitchen knife. It doesn't
+      do much, but the knifes tip is a little bent now. You leave the steamer be.
+    HP: 0
+    SolveValueChange: 0
+    PlayerStressChange: 9
+    EnergyCost: 0
+    ExhaustedSprite: 1
+    NewState: {fileID: 11400000, guid: 2a68b2a7adff7dd4095ef1561c53db82, type: 2}
+  - ChoiceName: Try Blunt Force
+    ResultText: You smack the steamer against the counter. The crusted milk chips
+      off bit by bit, eventually leaving the whole thing clean-ish as well as acting
+      as a great stress reliever. Perfect!
+    HP: 0
+    SolveValueChange: 0
+    PlayerStressChange: -5
+    EnergyCost: 0
+    ExhaustedSprite: 0
+    NewState: {fileID: 11400000, guid: 2a68b2a7adff7dd4095ef1561c53db82, type: 2}
+  - ChoiceName: Leave it
+    ResultText: You decide it's not worth the effort and just drink your coffee black.
+    HP: 0
+    SolveValueChange: 0
+    PlayerStressChange: 0
+    EnergyCost: 0
+    ExhaustedSprite: 0
+    NewState: {fileID: 11400000, guid: 2a68b2a7adff7dd4095ef1561c53db82, type: 2}

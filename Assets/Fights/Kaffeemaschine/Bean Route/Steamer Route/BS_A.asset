@@ -13,27 +13,29 @@ MonoBehaviour:
   m_Name: BS_A
   m_EditorClassIdentifier: 
   Choices:
-  - ChoiceName: 
-    ResultText: 
+  - ChoiceName: Clean it
+    ResultText: You detach the steamer to soak it in some hot water and soap... This
+      might take a while
+    HP: 0
+    SolveValueChange: 0
+    PlayerStressChange: 9
+    EnergyCost: 0
+    ExhaustedSprite: 0
+    NewState: {fileID: 11400000, guid: 28240a10b35fce54abbd1c81e5830690, type: 2}
+  - ChoiceName: Use a Needle
+    ResultText: You look around for a needle or something sharp to pry open the clogged
+      up steamer. You can't find a needle
     HP: 0
     SolveValueChange: 0
     PlayerStressChange: 0
     EnergyCost: 0
     ExhaustedSprite: 0
-    NewState: {fileID: 0}
-  - ChoiceName: 
-    ResultText: 
+    NewState: {fileID: 11400000, guid: 249eb1363aafc514790f1b76cd8ae108, type: 2}
+  - ChoiceName: Leave it
+    ResultText: You decide it's not worth the effort and just drink your coffee black.
     HP: 0
     SolveValueChange: 0
     PlayerStressChange: 0
     EnergyCost: 0
     ExhaustedSprite: 0
-    NewState: {fileID: 0}
-  - ChoiceName: 
-    ResultText: 
-    HP: 0
-    SolveValueChange: 0
-    PlayerStressChange: 0
-    EnergyCost: 0
-    ExhaustedSprite: 0
-    NewState: {fileID: 0}
+    NewState: {fileID: 11400000, guid: 2a68b2a7adff7dd4095ef1561c53db82, type: 2}

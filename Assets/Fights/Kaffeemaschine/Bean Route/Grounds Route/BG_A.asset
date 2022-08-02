@@ -22,7 +22,7 @@ MonoBehaviour:
     PlayerStressChange: 5
     EnergyCost: 0
     ExhaustedSprite: 0
-    NewState: {fileID: 11400000, guid: 84ce6c4d53f6384459abb37d2646a323, type: 2}
+    NewState: {fileID: 11400000, guid: 640ca5720aa4b884e8bcebc0f92b54a7, type: 2}
   - ChoiceName: Trash it
     ResultText: You stare into the coffee grounds. Contemplating the value of life.
       After a while you just throw the black mass into the trash, close the bag and
@@ -42,4 +42,4 @@ MonoBehaviour:
     PlayerStressChange: 0
     EnergyCost: 0
     ExhaustedSprite: 0
-    NewState: {fileID: 11400000, guid: 84ce6c4d53f6384459abb37d2646a323, type: 2}
+    NewState: {fileID: 11400000, guid: d4b32571a9d5b434eb2e364ee752ce49, type: 2}

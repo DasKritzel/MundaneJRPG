@@ -13,27 +13,27 @@ MonoBehaviour:
   m_Name: Grounds_Finish
   m_EditorClassIdentifier: 
   Choices:
-  - ChoiceName: 
+  - ChoiceName: Check Water
+    ResultText: You check the water compartment. It's empty...
+    HP: 0
+    SolveValueChange: 0
+    PlayerStressChange: 0
+    EnergyCost: 0
+    ExhaustedSprite: 0
+    NewState: {fileID: 11400000, guid: ce70334afe97c774c9a76a88f3ca1e46, type: 2}
+  - ChoiceName: Check Steamer
+    ResultText: The steamer is crusted with old milk and limescale.
+    HP: 0
+    SolveValueChange: 0
+    PlayerStressChange: 0
+    EnergyCost: 0
+    ExhaustedSprite: 0
+    NewState: {fileID: 11400000, guid: c704a257ff9cb6641976d214a1311046, type: 2}
+  - ChoiceName: '-'
     ResultText: 
     HP: 0
     SolveValueChange: 0
     PlayerStressChange: 0
     EnergyCost: 0
     ExhaustedSprite: 0
-    NewState: {fileID: 0}
-  - ChoiceName: 
-    ResultText: 
-    HP: 0
-    SolveValueChange: 0
-    PlayerStressChange: 0
-    EnergyCost: 0
-    ExhaustedSprite: 0
-    NewState: {fileID: 0}
-  - ChoiceName: 
-    ResultText: 
-    HP: 0
-    SolveValueChange: 0
-    PlayerStressChange: 0
-    EnergyCost: 0
-    ExhaustedSprite: 0
-    NewState: {fileID: 0}
+    NewState: {fileID: 11400000}

@@ -20,7 +20,7 @@ MonoBehaviour:
     PlayerStressChange: 0
     EnergyCost: 0
     ExhaustedSprite: 0
-    NewState: {fileID: 11400000, guid: 35774a942ff0e6743bc35009e58d7ea8, type: 2}
+    NewState: {fileID: 11400000, guid: ce70334afe97c774c9a76a88f3ca1e46, type: 2}
   - ChoiceName: Check Grounds
     ResultText: You check the coffee grounds. They have been in there for quite a
       while and it's almost as though they are looking back at you.
@@ -29,12 +29,12 @@ MonoBehaviour:
     PlayerStressChange: 0
     EnergyCost: 0
     ExhaustedSprite: 0
-    NewState: {fileID: 0}
+    NewState: {fileID: 11400000, guid: a812032de8adc34488b2c3b916b4de5b, type: 2}
   - ChoiceName: Check Steamer
-    ResultText: 
+    ResultText: The steamer is crusted with old milk and limescale.
     HP: 0
     SolveValueChange: 0
     PlayerStressChange: 0
     EnergyCost: 0
     ExhaustedSprite: 0
-    NewState: {fileID: 0}
+    NewState: {fileID: 11400000, guid: ca07f44e2355d5c40b2610d34b291a63, type: 2}

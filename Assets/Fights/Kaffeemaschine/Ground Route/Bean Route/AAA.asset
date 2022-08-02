@@ -1,0 +1,43 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: a8a83d138610e9e43b0773c467b3da6f, type: 3}
+  m_Name: AAA
+  m_EditorClassIdentifier: 
+  Choices:
+  - ChoiceName: New beans
+    ResultText: You put in the new beans. The smell of fresh coffee alleviates all
+      the sorrow of wasting some perfectly (not really) good beans.
+    HP: 0
+    SolveValueChange: 0
+    PlayerStressChange: -3
+    EnergyCost: 0
+    ExhaustedSprite: 0
+    NewState: {fileID: 11400000, guid: 908a5bce421889145a5f031e571d5971, type: 2}
+  - ChoiceName: Mourn beans
+    ResultText: You kneel down in front of the trash can. May the beans forever be
+      remembered and cherished by their loved ones...
+    HP: 0
+    SolveValueChange: 0
+    PlayerStressChange: 10
+    EnergyCost: 0
+    ExhaustedSprite: 1
+    NewState: {fileID: 11400000, guid: 23b17b4de0f57744fb55d2866027338c, type: 2}
+  - ChoiceName: Clean Container
+    ResultText: You clean up the Bean Container. It wasn't really dirty or took up
+      any of the smell, but it's still nice to do. Good on you for getting your shit
+      together! You put new beans in the freshly cleaned container.
+    HP: 0
+    SolveValueChange: 0
+    PlayerStressChange: -5
+    EnergyCost: -5
+    ExhaustedSprite: 0
+    NewState: {fileID: 11400000, guid: 908a5bce421889145a5f031e571d5971, type: 2}

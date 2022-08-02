@@ -1,0 +1,42 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: a8a83d138610e9e43b0773c467b3da6f, type: 3}
+  m_Name: ABA
+  m_EditorClassIdentifier: 
+  Choices:
+  - ChoiceName: Get the Duct Tape
+    ResultText: You duct tape the crack shut. It holds. Nice.
+    HP: 0
+    SolveValueChange: 0
+    PlayerStressChange: -3
+    EnergyCost: 1
+    ExhaustedSprite: 0
+    NewState: {fileID: 11400000, guid: 1200eb9b4f6ff2f4687935ecb0c41029, type: 2}
+  - ChoiceName: Hold the crack shut
+    ResultText: You press your hand against the bottom of the container as you fill
+      it and rush over to the machine. A bit of water starts leaking from the bottom,
+      but hopefully it'll be good enough until you get your coffee.
+    HP: 0
+    SolveValueChange: 0
+    PlayerStressChange: 5
+    EnergyCost: 1
+    ExhaustedSprite: 0
+    NewState: {fileID: 11400000, guid: 32c19714419a13b4e98c6832edf037c1, type: 2}
+  - ChoiceName: Drink Water instead
+    ResultText: Well, the container is broken. Time to give up and drink water instead...
+      You tell yourself that it's cheaper anyway.
+    HP: 0
+    SolveValueChange: 0
+    PlayerStressChange: -10
+    EnergyCost: -30
+    ExhaustedSprite: 0
+    NewState: {fileID: 11400000, guid: a6204c7c3545d5140a0fd006226dcabe, type: 2}

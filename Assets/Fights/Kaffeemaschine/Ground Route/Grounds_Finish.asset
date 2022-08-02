@@ -13,27 +13,28 @@ MonoBehaviour:
   m_Name: Grounds_Finish
   m_EditorClassIdentifier: 
   Choices:
-  - ChoiceName: 
-    ResultText: 
+  - ChoiceName: Check Water
+    ResultText: You check the water compartment. It's empty...
     HP: 0
     SolveValueChange: 0
     PlayerStressChange: 0
     EnergyCost: 0
     ExhaustedSprite: 0
-    NewState: {fileID: 0}
-  - ChoiceName: 
-    ResultText: 
+    NewState: {fileID: 11400000, guid: ba5b186041622f446afcd9e1337215c7, type: 2}
+  - ChoiceName: Check Steamer
+    ResultText: The steamer is crusted with old milk and limescale.
     HP: 0
     SolveValueChange: 0
     PlayerStressChange: 0
     EnergyCost: 0
     ExhaustedSprite: 0
-    NewState: {fileID: 0}
-  - ChoiceName: 
-    ResultText: 
+    NewState: {fileID: 11400000, guid: 0cdab3a8ba6783241a6c2202606c95bf, type: 2}
+  - ChoiceName: Check Beans
+    ResultText: You check the bean compartment. There are a few inside. Something
+      inside gives off a rancid smell...
     HP: 0
     SolveValueChange: 0
     PlayerStressChange: 0
     EnergyCost: 0
     ExhaustedSprite: 0
-    NewState: {fileID: 0}
+    NewState: {fileID: 11400000, guid: c6c432254266992439bd4fb715c0d202, type: 2}

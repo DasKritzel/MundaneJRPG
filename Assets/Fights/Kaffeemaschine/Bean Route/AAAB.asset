@@ -18,7 +18,7 @@ MonoBehaviour:
       the sorrow of wasting some perfectly (not really) good beans.
     HP: 0
     SolveValueChange: 0
-    PlayerStressChange: 0
+    PlayerStressChange: -3
     EnergyCost: 0
     ExhaustedSprite: 0
     NewState: {fileID: 11400000, guid: 311b55733fc604742b22dd7e3cb1ee17, type: 2}
@@ -27,10 +27,10 @@ MonoBehaviour:
       companions have made. In order for their sacrifice to not go to waste, you
       get up with new determination to seize the day.
     HP: 0
-    SolveValueChange: 100
+    SolveValueChange: 0
     PlayerStressChange: -50
     EnergyCost: -100
-    ExhaustedSprite: 0
+    ExhaustedSprite: 1
     NewState: {fileID: 11400000, guid: a6204c7c3545d5140a0fd006226dcabe, type: 2}
   - ChoiceName: Clean Container
     ResultText: You clean up the Bean Container. It wasn't really dirty or took up
@@ -41,4 +41,4 @@ MonoBehaviour:
     PlayerStressChange: -5
     EnergyCost: -5
     ExhaustedSprite: 0
-    NewState: {fileID: 0}
+    NewState: {fileID: 11400000, guid: 311b55733fc604742b22dd7e3cb1ee17, type: 2}

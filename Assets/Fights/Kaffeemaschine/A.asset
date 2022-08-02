@@ -38,4 +38,4 @@ MonoBehaviour:
     PlayerStressChange: 5
     EnergyCost: 0
     ExhaustedSprite: 0
-    NewState: {fileID: 11400000, guid: 60145add64126a94db5b444960f3bab5, type: 2}
+    NewState: {fileID: 11400000, guid: 58d5b12be1877e14096ba1175a00ebbb, type: 2}

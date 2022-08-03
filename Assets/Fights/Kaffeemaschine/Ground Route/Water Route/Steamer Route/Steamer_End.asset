@@ -13,15 +13,15 @@ MonoBehaviour:
   m_Name: Steamer_End
   m_EditorClassIdentifier: 
   Choices:
-  - ChoiceName: Check Grounds
-    ResultText: You check the coffee grounds. They have been in there for quite a
-      while and it's almost as though they are looking back at you.
+  - ChoiceName: Check Beans
+    ResultText: You check the bean compartment. There are a few inside. Something
+      inside gives off a rancid smell...
     HP: 0
     SolveValueChange: 0
     PlayerStressChange: 0
     EnergyCost: 0
     ExhaustedSprite: 1
-    NewState: {fileID: 11400000, guid: 7d71424e38b85584da349aaf19325557, type: 2}
+    NewState: {fileID: 11400000, guid: 97b10f85a1695eb43a9a3f499323f6ec, type: 2}
   - ChoiceName: '-'
     ResultText: '-'
     HP: 0

@@ -1,0 +1,47 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: a8a83d138610e9e43b0773c467b3da6f, type: 3}
+  m_Name: AAAB
+  m_EditorClassIdentifier: 
+  Choices:
+  - ChoiceName: New beans
+    ResultText: You put in the new beans. The smell of fresh coffee alleviates all
+      the sorrow of wasting some perfectly (not really) good beans.
+    HP: 0
+    SolveValueChange: 0
+    PlayerStressChange: -3
+    EnergyCost: 0
+    ExhaustedSprite: 0
+    NewState: {fileID: 11400000, guid: 4cffac7aff6c28a47a56b085dd8fb880, type: 2}
+    box: {fileID: 0}
+  - ChoiceName: Mourn further
+    ResultText: You shed a tear and vow to forever remember the sacrifice your beany
+      companions have made. In order for their sacrifice to not go to waste, you
+      get up with new determination to seize the day.
+    HP: 0
+    SolveValueChange: 0
+    PlayerStressChange: -50
+    EnergyCost: -100
+    ExhaustedSprite: 1
+    NewState: {fileID: 11400000, guid: a6204c7c3545d5140a0fd006226dcabe, type: 2}
+    box: {fileID: 0}
+  - ChoiceName: Clean Container
+    ResultText: You clean up the Bean Container. It wasn't really dirty or took up
+      any of the smell, but it's still nice to do. Good on you for getting your shit
+      together! You put new beans in the freshly cleaned container.
+    HP: 0
+    SolveValueChange: 0
+    PlayerStressChange: -5
+    EnergyCost: -5
+    ExhaustedSprite: 0
+    NewState: {fileID: 11400000, guid: 4cffac7aff6c28a47a56b085dd8fb880, type: 2}
+    box: {fileID: 0}

@@ -21,7 +21,7 @@ MonoBehaviour:
     PlayerStressChange: 10
     EnergyCost: 0
     ExhaustedSprite: 0
-    NewState: {fileID: 11400000, guid: b64941ad84b4ab949829983b11856989, type: 2}
+    NewState: {fileID: 11400000, guid: 87b833ba6205d534eb935aa2b841b7a5, type: 2}
   - ChoiceName: Clean Container
     ResultText: You clean some of the limescale in the container. You notice a crack
       in it, which is why you haven' been using the coffee machine in the past few

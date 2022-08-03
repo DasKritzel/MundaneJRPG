@@ -21,7 +21,7 @@ MonoBehaviour:
     PlayerStressChange: 9
     EnergyCost: 0
     ExhaustedSprite: 1
-    NewState: {fileID: 11400000, guid: 2a68b2a7adff7dd4095ef1561c53db82, type: 2}
+    NewState: {fileID: 11400000, guid: 1a00d6bfa3238f1499e185aae8e77702, type: 2}
   - ChoiceName: Try Blunt Force
     ResultText: You smack the steamer against the counter. The crusted milk chips
       off bit by bit, eventually leaving the whole thing clean-ish as well as acting
@@ -31,7 +31,7 @@ MonoBehaviour:
     PlayerStressChange: -10
     EnergyCost: 0
     ExhaustedSprite: 0
-    NewState: {fileID: 11400000, guid: 2a68b2a7adff7dd4095ef1561c53db82, type: 2}
+    NewState: {fileID: 11400000, guid: 1a00d6bfa3238f1499e185aae8e77702, type: 2}
   - ChoiceName: Leave it
     ResultText: You decide it's not worth the effort and just drink your coffee black.
     HP: 0
@@ -39,4 +39,4 @@ MonoBehaviour:
     PlayerStressChange: 0
     EnergyCost: 0
     ExhaustedSprite: 1
-    NewState: {fileID: 11400000, guid: 2a68b2a7adff7dd4095ef1561c53db82, type: 2}
+    NewState: {fileID: 11400000, guid: 1a00d6bfa3238f1499e185aae8e77702, type: 2}

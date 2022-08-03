@@ -21,7 +21,7 @@ MonoBehaviour:
     PlayerStressChange: 0
     EnergyCost: 0
     ExhaustedSprite: 0
-    NewState: {fileID: 11400000, guid: 8cf3ddf9957b09d4e8b4d0faa57fa2c6, type: 2}
+    NewState: {fileID: 11400000, guid: a27f2535bdd8f3c4593cee6b5ca992d0, type: 2}
   - ChoiceName: '-'
     ResultText: 
     HP: 0

@@ -1,0 +1,45 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: a8a83d138610e9e43b0773c467b3da6f, type: 3}
+  m_Name: AA
+  m_EditorClassIdentifier: 
+  Choices:
+  - ChoiceName: Empty Beans
+    ResultText: You take out the bean compartment and dump the beans in the trash
+      can. You take some emotional damage from the wasted money
+    HP: 0
+    SolveValueChange: 0
+    PlayerStressChange: 1
+    EnergyCost: 0
+    ExhaustedSprite: 0
+    NewState: {fileID: 11400000, guid: 7c238bde2e491544ca49ef7133613917, type: 2}
+    box: {fileID: 0}
+  - ChoiceName: Find the rancid Beans
+    ResultText: You try to sort out the rancid beans. After picking out each and
+      everyone, smelling them indiviudally, you realize it's all of them...
+    HP: 0
+    SolveValueChange: 0
+    PlayerStressChange: 3
+    EnergyCost: 0
+    ExhaustedSprite: 0
+    NewState: {fileID: 11400000, guid: 62f8cd85cb5260143bc81859c50d50d2, type: 2}
+    box: {fileID: 0}
+  - ChoiceName: Fill up Beans
+    ResultText: '"I''m not made out of money" you proudly proclaim, filling the bean
+      container with fresher beans. You close the lid.'
+    HP: 0
+    SolveValueChange: 0
+    PlayerStressChange: 0
+    EnergyCost: 0
+    ExhaustedSprite: 0
+    NewState: {fileID: 11400000, guid: 75966ccda1afc984095cea4f22b812c3, type: 2}
+    box: {fileID: 0}

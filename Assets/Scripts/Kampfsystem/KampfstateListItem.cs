@@ -14,4 +14,7 @@ public class KampfstateListItem
     public int EnergyCost;
     public bool ExhaustedSprite;
     public ScriptableKampfstate NewState;
+
+    bool hasDialogue;
+    public ScriptableDialoguebox box;
 }

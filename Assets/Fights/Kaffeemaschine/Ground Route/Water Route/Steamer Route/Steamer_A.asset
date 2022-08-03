@@ -21,7 +21,7 @@ MonoBehaviour:
     PlayerStressChange: 5
     EnergyCost: 0
     ExhaustedSprite: 0
-    NewState: {fileID: 11400000, guid: 9bdb6fb689549fd41bf4b5d4a5d68d6d, type: 2}
+    NewState: {fileID: 11400000, guid: ce363db1abb8577428a3c05a0d8a0fdc, type: 2}
   - ChoiceName: Use a Needle
     ResultText: You look around for a needle or something sharp to pry open the clogged
       up steamer. You can't find a needle
@@ -30,7 +30,7 @@ MonoBehaviour:
     PlayerStressChange: 0
     EnergyCost: 0
     ExhaustedSprite: 0
-    NewState: {fileID: 11400000, guid: f31d3afd44650694cba2c9031223ef55, type: 2}
+    NewState: {fileID: 11400000, guid: 0489a1f6a27919640aef10d8700dcc64, type: 2}
   - ChoiceName: Leave it
     ResultText: You decide it's not worth the effort and just drink your coffee black.
     HP: 0
@@ -38,4 +38,4 @@ MonoBehaviour:
     PlayerStressChange: 0
     EnergyCost: 0
     ExhaustedSprite: 1
-    NewState: {fileID: 11400000, guid: 2a68b2a7adff7dd4095ef1561c53db82, type: 2}
+    NewState: {fileID: 11400000, guid: 1a00d6bfa3238f1499e185aae8e77702, type: 2}

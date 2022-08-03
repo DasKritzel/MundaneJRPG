@@ -1,0 +1,43 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: a8a83d138610e9e43b0773c467b3da6f, type: 3}
+  m_Name: Bean Finish
+  m_EditorClassIdentifier: 
+  Choices:
+  - ChoiceName: Check Water
+    ResultText: You check the water compartment. It's empty...
+    HP: 0
+    SolveValueChange: 0
+    PlayerStressChange: 0
+    EnergyCost: 0
+    ExhaustedSprite: 0
+    NewState: {fileID: 11400000, guid: ce70334afe97c774c9a76a88f3ca1e46, type: 2}
+    box: {fileID: 0}
+  - ChoiceName: Check Grounds
+    ResultText: You check the coffee grounds. They have been in there for quite a
+      while and it's almost as though they are looking back at you.
+    HP: 0
+    SolveValueChange: 0
+    PlayerStressChange: 0
+    EnergyCost: 0
+    ExhaustedSprite: 0
+    NewState: {fileID: 11400000, guid: 37a226a664b483c45951ac6fa9347e1a, type: 2}
+    box: {fileID: 0}
+  - ChoiceName: Check Steamer
+    ResultText: The steamer is crusted with old milk and limescale.
+    HP: 0
+    SolveValueChange: 0
+    PlayerStressChange: 0
+    EnergyCost: 0
+    ExhaustedSprite: 0
+    NewState: {fileID: 11400000, guid: 9ede3f492e26b2841bf840dd9dcea95e, type: 2}
+    box: {fileID: 0}

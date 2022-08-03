@@ -13,15 +13,15 @@ MonoBehaviour:
   m_Name: Water_Finish
   m_EditorClassIdentifier: 
   Choices:
-  - ChoiceName: Check Grounds
-    ResultText: You check the coffee grounds. They have been in there for quite a
-      while and it's almost as though they are looking back at you.
+  - ChoiceName: Check Beans
+    ResultText: You check the bean compartment. There are a few inside. Something
+      inside gives off a rancid smell...
     HP: 0
     SolveValueChange: 0
     PlayerStressChange: 0
     EnergyCost: 0
     ExhaustedSprite: 0
-    NewState: {fileID: 11400000, guid: e0b8f0a5d555d4f41bd2d4800820bf6b, type: 2}
+    NewState: {fileID: 11400000, guid: 1a185652a8426674ebe9edb026aa8b72, type: 2}
   - ChoiceName: Check Steamer
     ResultText: The steamer is crusted with old milk and limescale.
     HP: 0
@@ -29,7 +29,7 @@ MonoBehaviour:
     PlayerStressChange: 0
     EnergyCost: 0
     ExhaustedSprite: 0
-    NewState: {fileID: 11400000, guid: c406396263bf6224c8402af102daa7d2, type: 2}
+    NewState: {fileID: 11400000, guid: ec2d21f0e9c55e648bafb7fba194f756, type: 2}
   - ChoiceName: '-'
     ResultText: 
     HP: 0
@@ -37,4 +37,4 @@ MonoBehaviour:
     PlayerStressChange: 0
     EnergyCost: 0
     ExhaustedSprite: 0
-    NewState: {fileID: 0}
+    NewState: {fileID: 11400000}

@@ -20,7 +20,7 @@ MonoBehaviour:
     PlayerStressChange: -3
     EnergyCost: 1
     ExhaustedSprite: 0
-    NewState: {fileID: 11400000, guid: 1200eb9b4f6ff2f4687935ecb0c41029, type: 2}
+    NewState: {fileID: 11400000, guid: 280763d0c747d41468fa0102594ab1ac, type: 2}
   - ChoiceName: Hold the crack shut
     ResultText: You press your hand against the bottom of the container as you fill
       it and rush over to the machine. A bit of water starts leaking from the bottom,
@@ -30,7 +30,7 @@ MonoBehaviour:
     PlayerStressChange: 5
     EnergyCost: 1
     ExhaustedSprite: 0
-    NewState: {fileID: 11400000, guid: 32c19714419a13b4e98c6832edf037c1, type: 2}
+    NewState: {fileID: 11400000, guid: 9de4421470145fb45ba152c21b8c7279, type: 2}
   - ChoiceName: Drink Water instead
     ResultText: Well, the container is broken. Time to give up and drink water instead...
       You tell yourself that it's cheaper anyway.

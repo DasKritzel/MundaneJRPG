@@ -1,0 +1,42 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: a8a83d138610e9e43b0773c467b3da6f, type: 3}
+  m_Name: AAC
+  m_EditorClassIdentifier: 
+  Choices:
+  - ChoiceName: Fill Water
+    ResultText: 'You take the water compartment and fill it with water under the
+      sink. We''re you supposed to use filtered or unfiltered water for coffee? You
+      don''t remember. '
+    HP: 0
+    SolveValueChange: 0
+    PlayerStressChange: 0
+    EnergyCost: 0
+    ExhaustedSprite: 0
+    NewState: {fileID: 11400000, guid: 3013192df31b07e43a659366ea7bc900, type: 2}
+  - ChoiceName: Check Steamer
+    ResultText: The steamer is crusted with old milk and limescale. You decide it's
+      not worth the effort and will drink your coffee black.
+    HP: 0
+    SolveValueChange: 0
+    PlayerStressChange: 0
+    EnergyCost: 0
+    ExhaustedSprite: 0
+    NewState: {fileID: 11400000, guid: 5bec83891b0af504db26e71091679a62, type: 2}
+  - ChoiceName: '-'
+    ResultText: '-'
+    HP: 0
+    SolveValueChange: 0
+    PlayerStressChange: 0
+    EnergyCost: 0
+    ExhaustedSprite: 0
+    NewState: {fileID: 11400000, guid: f1e6aff17158c274087381aabffb7ec4, type: 2}

@@ -17,4 +17,11 @@ public class ScriptableDialoguebox : ScriptableObject
     [SerializeField]
     private string line4;
 
+
+    [ContextMenu("Go!")]
+    public void UpdateText()
+    {
+        Dialogmanager.Instance.OnNewText(this);
+    }
+
 }

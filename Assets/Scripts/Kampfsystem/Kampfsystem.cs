@@ -5,6 +5,7 @@ using UnityEngine.UI;
 using TMPro;
 using System;
 using UnityEngine.SceneManagement;
+using UnityEngine.Events;
 
 enum BattleStates
 {
@@ -83,6 +84,7 @@ public class Kampfsystem : MonoBehaviour
         {
             EnemyPrefabsLUT.Add(obj.name, obj);
         }    
+        
     }
 
     private void Start()
